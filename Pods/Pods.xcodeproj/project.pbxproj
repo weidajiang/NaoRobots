@@ -1,0 +1,2498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01AC803D9F663771E9158CF75ED3B370 /* AudioMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11484E0B5C308D4732ED3A837DA3EB9 /* AudioMetrics.swift */; };
+		01B6DA0154AE1A5E06411BE1241B92E6 /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 578BFB984EE3C42580D5F0A0D8257D01 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0348342B4F2B88A9BF91DFFDD8B8F6F7 /* AudioMetricsHistogramBin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797F9053E1EC11D56C61B04887A9585A /* AudioMetricsHistogramBin.swift */; };
+		0752122671F8C27F051BF434F5E4C1FF /* LogMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E39EC938885915FC7FC3459C8DFC3 /* LogMessage.swift */; };
+		07A437566B7E138602881BADDF90650F /* UpdateDialogNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489B51B09B6EDB1DAFE74D852F66840 /* UpdateDialogNode.swift */; };
+		089417308CE001315D3E38495A9E46DB /* ValueCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7886CF9DC1E15780B88D27FA8E427E /* ValueCollection.swift */; };
+		094C8922ED9DE6AF1E9F1E367C3B514A /* LogPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EDEC3C735275C69C08A7D96F9F6DE0 /* LogPagination.swift */; };
+		09FDFA06C7B7BA9D672CB47E33D3CB71 /* MessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362D5461650D191CDA77C06655A62957 /* MessageRequest.swift */; };
+		0A1E1C4715543BF891EAA8351A1DE5CA /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E6213C76414C14D6CBC47E25BB1BB /* SSLSecurity.swift */; };
+		0A1F2C010781240544FE65EEA5219A0E /* WorkspaceSystemSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32B252D4C6E7B3FF3A2B524C7438DDA /* WorkspaceSystemSettings.swift */; };
+		0A776810902D114A910482632D030E07 /* OutputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA007F66EA5E8D5586C4B53CD6A13FCE /* OutputData.swift */; };
+		0D008953AB740C9C298A21EDCA494D03 /* SpeechToTextSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB4C690EE3DAADF539115A5A29BF7B8 /* SpeechToTextSocket.swift */; };
+		0D9D4E587F1EF3486C3DA9DF538D5FEE /* AudioMetricsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE152B77374CD35ED414F5B29CAD18 /* AudioMetricsDetails.swift */; };
+		0E2101D1E5D8B08416677689ADDFCB30 /* UpdateCounterexample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CED216BCB9AF4BD488C8AC26416C97 /* UpdateCounterexample.swift */; };
+		0E4F621279623BAED595919E80F1D711 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AA4CF87101397CCC544CE22E771F7 /* Translation.swift */; };
+		0EC94307B1463B67F4DB6DBB427F22CE /* VoiceCustomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA73B908634655B1A6FBC514335BFBA /* VoiceCustomization.swift */; };
+		11FB256D3ED172BBDB373843A96BD793 /* CreateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F0EC5374DFD108DC47E5306DEEBE05 /* CreateIntent.swift */; };
+		1429F63B43F1A16FF44959B369F04AA6 /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5358DDBD3B1E8DA67EDBEB045C4CDDB /* RestRequest.swift */; };
+		145D7CD2CB51E4E08F8C53C229459793 /* WorkspaceSystemSettingsTooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B3DE071542E054DD09211B847509AA /* WorkspaceSystemSettingsTooling.swift */; };
+		170082EBB6F9344BD265F0FD8CEBFC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3F3824DD9C0924D3F3F0E0532E802D /* Foundation.framework */; };
+		184E4D13E9B19D80CF7C04DE1BCC9BF2 /* Corpus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40179CA7F407738DE73391F8195CE6 /* Corpus.swift */; };
+		187E0CB36980BFD31EDD5E730DA4F89C /* ProcessingMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B3DAEB2AD999C60AB5B57D1BBBC67 /* ProcessingMetrics.swift */; };
+		1915451A6CAE7EA039DBD56D37928306 /* Pods-NaoRobotsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9DD34E4942DC9334EA53A7F0C462CD /* Pods-NaoRobotsTests-dummy.m */; };
+		198076075958F8F5AD3F191301DCEEF2 /* Workspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8770CBA615EC018A1081ACF33C6DC2 /* Workspace.swift */; };
+		1A140BAFD706913C4B4290CE1AFB4510 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCC0D2CBD4EA13F26627AE56AF752 /* MultipartFormData.swift */; };
+		1ACBA56966A8C07F879E537171C81A29 /* SpeechModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38549D848C75640738E5A32BE786D2F /* SpeechModels.swift */; };
+		1BAA3C3BDB42BD3DB643B43138C54022 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3F3824DD9C0924D3F3F0E0532E802D /* Foundation.framework */; };
+		1BE7EE0A87115CF2E7A95D3528AF097E /* RecognitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EC0FA5AFB96AD0840683EEC849394E /* RecognitionState.swift */; };
+		1C512F007F9108A85A266E1BE1897B0B /* UpdateSynonym.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05F71D276E75FA2633A1891B5C74251 /* UpdateSynonym.swift */; };
+		1DDF32C51E4AA28C2934058A5C147CE9 /* DialogNodeNextStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3903610E57EC2E5F4605F29448493A /* DialogNodeNextStep.swift */; };
+		1E9FD1BFBB3F496F8D3B5CA46FEE1512 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C6614ADF053253C6B5838AC0083B88 /* Word.swift */; };
+		224C084A8A299D103BC1B6660680A8A1 /* RestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00597A0AF0D797B47105453161A900C6 /* RestError.swift */; };
+		23979C33D975BBA5B6B718514A4F4821 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3974031CC4C47F096BFD66020AE963E /* Example.swift */; };
+		241F31150BAEE7C28A87287EDA2DF428 /* DialogNodeOutputGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091569F141B8B77381261E272B7F600A /* DialogNodeOutputGeneric.swift */; };
+		25F3124CFB1DA71DBB8E5474D20417EC /* EntityCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D54F2AD2915F080AB4ABDA6CB9A9B8 /* EntityCollection.swift */; };
+		276877705F66D0E37D5523905D26C136 /* opus_header.h in Headers */ = {isa = PBXBuildFile; fileRef = 696FCEC7DDD2D39E8AB7F67BCBBA5D9D /* opus_header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2845C273326DAFC43BE811406EA8122F /* AcousticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D046C63F155901C6881DC0926BB2FF /* AcousticModel.swift */; };
+		286922D8EFADD6D184CCD8C7AB4B5D03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3F3824DD9C0924D3F3F0E0532E802D /* Foundation.framework */; };
+		28D92261D07974526B600F09290FC30C /* SpeechRecognitionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53878A43B106C73C147AA3CE98B9208A /* SpeechRecognitionResult.swift */; };
+		29C6CCA7DB8167A4F1CEA6981D7E8A2B /* AudioResourceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0BE543B5EEE684645C7055FFDB06E /* AudioResourceDetails.swift */; };
+		29DB0F0A6CC29778C56ECFC4223BB440 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E05614536BED60338E5550ACE98D2 /* RestKit.framework */; };
+		29E12D7150099790AA69417B5BB69E31 /* SpeechToTextEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EC20E959C1527A873DEF632EBBA651 /* SpeechToTextEncoder.swift */; };
+		2BD473F9410FC5C592B9EC7BBCE61AF8 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDA6F3304A3EF56F2373010B8EC273C /* Context.swift */; };
+		2FEFBE0C8C282682DF03F690ABC36536 /* IBMWatsonRestKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F77F7C0219F42FC4D9B97259A62333 /* IBMWatsonRestKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3003F5C49D2DF82F24D923B2689CAB1D /* EntityMention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8A8216C558BAD551E01A7E6686A8D /* EntityMention.swift */; };
+		313F0AEBF384DA5BD3C8D2925291927C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3F3824DD9C0924D3F3F0E0532E802D /* Foundation.framework */; };
+		32DDF8626C0286D3F5CE0DA4E440BFA4 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 9042379D9C606994BB0F8F8203AFC831 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333F34AE6BED4BCBA2A7E62A860984A3 /* DialogNodeOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2CEDB3D0D773401D449D756683747 /* DialogNodeOutput.swift */; };
+		357A8DB0BBAC97F1661578ED3BDC92B5 /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = 70AF812E3F010F6E3638A79A36981F74 /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3593328AB3B32A83DF4B28C39E5463F1 /* Synonym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18BB523B1B8030BEE59F18EA3A0A6C /* Synonym.swift */; };
+		377E07E2D550FE6A4A7592D5DF946B3C /* CreateAcousticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E48718AEA85DDA870216469F22451 /* CreateAcousticModel.swift */; };
+		38668071BF988A3C45B586B29FFF9BEE /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 1572B8E0ED8E9B0FE3B6FA779718025F /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AD35C0843181ADA611545474E2CAA64 /* SupportedFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171642EC3B12D817F118764FD3FA5A03 /* SupportedFeatures.swift */; };
+		3F72329E37F42C8CC8310053A300D568 /* DialogSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B29A64B724244B9532B865DBF5ECA1F /* DialogSuggestion.swift */; };
+		4111537EFA7CB0036520BE55FC4D80F8 /* DialogNodeOutputOptionsElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A456580EF5561C441005A4036FFD547 /* DialogNodeOutputOptionsElement.swift */; };
+		420EC99504FB6D16D587AE5BB41A8D78 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A038433B9B8AB7FB565962354E3A0F /* Word.swift */; };
+		430BEFA6B8A1FF1DB1A7B2CABDA3EAB1 /* RuntimeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18B14F7365472D7DBE327D21B412716 /* RuntimeEntity.swift */; };
+		433ED169B7B73C85C514475573043FEC /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B8D4AEDE2E9A7E4A1572F99394C54 /* Voice.swift */; };
+		48DDE1A44F0F882DA23E2E144C8C1DEB /* DialogNodeOutputOptionsElementValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46588FBAA98A7B91763A00067B14D10A /* DialogNodeOutputOptionsElementValue.swift */; };
+		4A8660C144E264F58DBE50A5B07D2473 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B221773513036E773AC767E8F32371A /* Words.swift */; };
+		4CEE886EEC39DB333631A977635BF38D /* CreateWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A230A0B87BB7E0EF634ACC63B4196AD7 /* CreateWorkspace.swift */; };
+		4D59CE3E96C49C60D01514525805819D /* SpeechToTextRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975920284881F6E7D74C9DCF9381BC00 /* SpeechToTextRecorder.swift */; };
+		4DB40F27B193B262370F2AB82E73AC69 /* RegisterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFF9B455D4D20E9530DF75DAFC3225 /* RegisterStatus.swift */; };
+		4DEDEDDD2EBD30342F6B08B7A824B4CB /* AudioListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EFA04290A01BBFBBDFCE12E037500C /* AudioListing.swift */; };
+		4E74F96D518B787E4B538CCE06D48951 /* CreateVoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10835E8706D5432D6198E40210DF636 /* CreateVoiceModel.swift */; };
+		4F45E786670ADEB4AEA491C05018DA31 /* SpeakerLabelsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F06F3593FB106D3019F97219A54EC7 /* SpeakerLabelsResult.swift */; };
+		5164CDB3D7C0E9B3FCA1878CD6E4D8DB /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A4EACB414F276ADF33B04E208E3B4D /* Value.swift */; };
+		52A632A039B5FBD12B3FD836B67F669A /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = C40C914BEA01AB4E6442641F02E7ED0B /* os_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52C723237B5323C28AC2DFB1D44B42E9 /* CustomWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7E4E4E8047786D187550F7120A55D /* CustomWords.swift */; };
+		52FB635FB21496FBBF0F505376C4C035 /* Pronunciation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5051B3E075484D77059EBFA6053C9A /* Pronunciation.swift */; };
+		52FF421EC22F1791791A2F9714419C06 /* Mention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF57AD8FA7C27FC3EFC7DC16D72CB05 /* Mention.swift */; };
+		543350981E7429447352C2FFEF146793 /* MessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C632E306E0E30C0A2AB6C7E01E3CFDFD /* MessageResponse.swift */; };
+		55393649034CA9C11CDBB548128853C2 /* IBMWatsonSpeechToTextV1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0B7E4D3B04E42739EB134B5A855D5B /* IBMWatsonSpeechToTextV1-dummy.m */; };
+		5616777FCEAAEF627C049B780A04007C /* ProcessedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2383E61FCDE0FDC8343B76C00972D9 /* ProcessedAudio.swift */; };
+		58358F4B57DA77447656C353E41F0B35 /* DialogRuntimeResponseGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F8B2716E0585443F9CB573BE9405D /* DialogRuntimeResponseGeneric.swift */; };
+		583767773BBE8B64B3E6B44B3C6D88EA /* AudioResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3409DC36B889AFB34C1CCAA492E1595D /* AudioResource.swift */; };
+		5A8F98A93909D54BB301B22064B4C35A /* RecognizeCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BC9E79FE0F2668E4E4D71F454FA783 /* RecognizeCallback.swift */; };
+		5C2E1607FEE67D07958289C566E6443F /* UpdateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921552DCB1DB9B4EB21A121B0584F22 /* UpdateIntent.swift */; };
+		5C92F1669599A0C257C40B4A6FB95195 /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BEAC54B68074F1D67463DD200637389 /* os_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DDA9CC01D333D4716C8E392A2AA92D3 /* IBMWatsonAssistantV1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84330F23CAF917E444337AE44FE6EBFD /* IBMWatsonAssistantV1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E6FA9B2A5F033B3441E85AC8CA48B13 /* TrainingWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302B6E2DFEAE7EFAD26E4F64C91EC805 /* TrainingWarning.swift */; };
+		5FAB00FCA917B60E6E9B5380C032B6DA /* DialogNodeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373D0A5D880A14B2DC0336A7E1313B60 /* DialogNodeAction.swift */; };
+		5FE336DE26B43B49BE8D0B8F1DA98CB1 /* CreateEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBF03F04D8ACDC0B7C8343D13EEF711 /* CreateEntity.swift */; };
+		618BD4C70D5263771540230B2BB6DBC4 /* CustomWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1B9A0B3805A49D8DB70DADFA487C7 /* CustomWord.swift */; };
+		6346493DF7A82918F3D2118ED52424D5 /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6976BEF1FA1E120683B9D2FDB6260 /* TextToSpeech.swift */; };
+		64C3995BBC5096D7AE56F03469E5B34A /* AudioDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22DF84F6C5014B01F89BEFEDE19B7AB /* AudioDetails.swift */; };
+		67775327E73D48631A89BD72F2DB3D39 /* RecognitionJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E92AD177917EF0C71569D73FC0D5B5A /* RecognitionJob.swift */; };
+		68B17D278FD39B0B7008FB2D1F1BD5E4 /* AudioListingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038092832CF56494430A8F9DDA564455 /* AudioListingDetails.swift */; };
+		6CD621300312E78764960534F315172B /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF37A2DFA57970D106521632502F4D5 /* Shared.swift */; };
+		6E56818360D0E26C7333232239C4E52A /* SynonymCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8886875618CB211AE7E13403989B9 /* SynonymCollection.swift */; };
+		710FB5CF31D3997D6EA0A5C9A9C4E410 /* IntentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56426131771A5C381A0DE42C567D306 /* IntentCollection.swift */; };
+		7125F867216F4BB4D663BFA7AE04BD92 /* IBMWatsonRestKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BCA51F4F39958E681F7F7D43E72608 /* IBMWatsonRestKit-dummy.m */; };
+		75530CDEDD9B01F48128AEF08C5FEC08 /* UpdateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17CC3D65326E6CE1F6D0AF8809D413A /* UpdateValue.swift */; };
+		75999240009F6AAC3C58DF5894064F58 /* Corpora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFACD534DC63E59FECBE867DD0D9721 /* Corpora.swift */; };
+		763DEE4F43758733FCF95E69D12D083A /* SystemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2567E1342E09754BAA0F3F0EFFFAC860 /* SystemResponse.swift */; };
+		77116C0F4A19B37210A04A22BD7A8242 /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC3ABFF92E64018F20F53E0CEAC7A5F /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		772C67483225CE5DF773F34FA4E38EB8 /* WAVRepair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169592A15664E6CD6AB1527BAA737A9B /* WAVRepair.swift */; };
+		77EAFDC7827B0AA21222172B69BBEF1C /* Pods-NaoRobots-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BA01217C5333D87CA6BF11DF352E29 /* Pods-NaoRobots-dummy.m */; };
+		7860DC4EE9E73903DCE7C8F11078248C /* CaptureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5FA7BBE3F547F7546B5A7D6645D79 /* CaptureGroup.swift */; };
+		7AC0D5DA1AD1858497A6804FB2E263C2 /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107E38A8D861787BC197321A1179527D /* InsecureConnection.swift */; };
+		7C1E0942F27196D5492A5EE29D9E90A7 /* IBMWatsonTextToSpeechV1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970E7FF5A7F660984FD197ADB9425CD /* IBMWatsonTextToSpeechV1-dummy.m */; };
+		7CA023E02569F5AE1CD4D73D66DB9C3D /* WordAlternativeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE6BE26E8695455728D0B8454FA09EE /* WordAlternativeResult.swift */; };
+		7F871E152A7DCCDC191B27957E13D77A /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E9759CB89F531E5F7E87A6364A6A19 /* Starscream.framework */; };
+		848D03318C820AD176AE67F1DF3BDEF4 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADD3B8BBB086FCD55142D30876B464 /* CodableExtensions.swift */; };
+		864367D13AE52A299E637944F9A0E524 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3F3824DD9C0924D3F3F0E0532E802D /* Foundation.framework */; };
+		86EFFFDBF513C4102917EE319C8DCC47 /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88211B1570C74BC6F9E1799310049F0D /* InsecureConnection.swift */; };
+		8772B055F6A90792E81466A6306D69DA /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6508DBC96F3D7394D657A12D6934B06E /* Shared.swift */; };
+		8B4797F532D5740D2016183EFEC75EA8 /* IBMWatsonAssistantV1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F07C34F48B9A0007A0712DB26678412 /* IBMWatsonAssistantV1-dummy.m */; };
+		8C81F866F7461AE00B0C4BFAF2738E40 /* DialogSuggestionValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A4E9F6057F4C831F141F9BE9BF334 /* DialogSuggestionValue.swift */; };
+		8D416A22835DAC269F76F6EDD2BA594C /* UpdateExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B1AF41C1295D0C14D62F35A174FF5B /* UpdateExample.swift */; };
+		8E11FF4B92074FD462237290443A05BC /* WordAlternativeResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D1980710F3E497DFED705D931DE34 /* WordAlternativeResults.swift */; };
+		8EBC0CD4C274F7CDC9E8CF913A462EC8 /* SpeechRecognitionAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C2F826C4FF82DE302FDA08117A836 /* SpeechRecognitionAlternative.swift */; };
+		911414EB0FA0675848F1DA627B391608 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366EF45EF89FAE033F733E37EA33C639 /* Words.swift */; };
+		91F7C9803B8C4DD4A50297527CF7E9E5 /* LanguageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074D0E5E2DFF0F28F5B9BEC7353A9B08 /* LanguageModels.swift */; };
+		93B9FBF9129972EB1E7F6C47E6E7172D /* IBMWatsonTextToSpeechV1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B9BAF6622C5744EEAC7F1CE137550D /* IBMWatsonTextToSpeechV1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C0F1D7191928E1A5BD3F2B3509CFF0 /* SpeechRecognitionResultsAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207AE816AA838A47D87C84E1B9A5A9C7 /* SpeechRecognitionResultsAccumulator.swift */; };
+		940CEA94E69C609A48BA719FD9EEEAE0 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = AA4C265234A4F9B41798EE4011709ABC /* ogg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95983DAD6DA6803F4B3DA7AD755D3B7A /* CreateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEBB24337532E600CE3037C01D21D58 /* CreateValue.swift */; };
+		95B6511CADD3311A3A243703C2576F70 /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6786A0E032F832874B99ADCBAE030B0A /* InsecureConnection.swift */; };
+		95EB3EB2B00E599621E7A0C416FD203B /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCEAB1006C44E22D812A18477C4B746 /* Intent.swift */; };
+		97F42C33D10233B958305A15AA270F45 /* SupportedFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579DC7DF3EA20B052B6AC833C5C46556 /* SupportedFeatures.swift */; };
+		9898BBD177911573C722998C0AAAE8B3 /* SpeechToTextSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE661F165CF0360F6CE2E1932434C26 /* SpeechToTextSession.swift */; };
+		996AEE0816720E1A2F0E834D5BC37F5F /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = 78EF5D29B0CCD5E7A5E4C3A477E3D760 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A69EC7900541CDC58B6F3227257BBCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3F3824DD9C0924D3F3F0E0532E802D /* Foundation.framework */; };
+		A07E59D0BA8A5BF18E8E02FACFA69199 /* WorkspaceSystemSettingsDisambiguation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C036D8990E27070F10030BC533651CF /* WorkspaceSystemSettingsDisambiguation.swift */; };
+		A0DFD84D18FC55C9D0271CAE942E29A6 /* AudioResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B450EDA12D4D31686451F9BB88FE1FF /* AudioResources.swift */; };
+		A278D2B2C1E39BF7CC4310506EDAD0C7 /* CounterexampleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C0C26CD0B1CB613135E72645BEFC8C /* CounterexampleCollection.swift */; };
+		A28BD7D1C335290998B1A903948EB2C1 /* CreateLanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3458F16F3A0B27FE37BFE1AF2A3B1 /* CreateLanguageModel.swift */; };
+		A33D8C4B93E13307BC7ACBC714753413 /* KeywordResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40764C0D4724ED265879678C619B4647 /* KeywordResult.swift */; };
+		A46CABAF26EAB4FA10963F85E21CC99A /* TextToSpeechDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C285DA13C05500E0231FEC86B345EC5B /* TextToSpeechDecoder.swift */; };
+		A6988D74000AC8254DF0FFBBC19756CA /* VoiceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28521D89FAC42BCC7FF3AD194411EEB /* VoiceModels.swift */; };
+		A7EEA55B8B48A58AA57BD0DEA2C04DA6 /* AudioListingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB61B410D3AC12312D2383436880AB5F /* AudioListingContainer.swift */; };
+		A9D40F5AA175AD6263C6AAF0598DD2C5 /* Voices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF2894663E5F77BDD52BA0FCB75B52 /* Voices.swift */; };
+		AB4AE37711196FE9B420E8416E0F38E2 /* RuntimeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643400D0A11FB812C627091876B9F63 /* RuntimeIntent.swift */; };
+		AB922F01D7CF8412881EE69366C7D598 /* Pods-NaoRobots-NaoRobotsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62204C0DB19F45DB28825834C98D98 /* Pods-NaoRobots-NaoRobotsUITests-dummy.m */; };
+		AC1FF0B66268AD305EF11D8B663C4D26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3F3824DD9C0924D3F3F0E0532E802D /* Foundation.framework */; };
+		AD693AAB14D6384BD9A3E135B756AB62 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B9ED8CE2F2B8655DC79E19085E72AF /* Starscream-dummy.m */; };
+		B05E6EFC49496E69E35971DA6D296F26 /* DialogNodeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B154ED9F6B6EE053556A1FD49575BD /* DialogNodeCollection.swift */; };
+		B157DBBD4101B32466921DC0425D70C0 /* IBMWatsonSpeechToTextV1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A46358763FF4642CBCE52667B24EF7E /* IBMWatsonSpeechToTextV1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1CA22EFB97B81060436D0F3A95CECB5 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E05614536BED60338E5550ACE98D2 /* RestKit.framework */; };
+		B269ABAC96E4164C6159A0D933B563AC /* ExampleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897C3CE8C673420A094C03D1C1017A4 /* ExampleCollection.swift */; };
+		B3B85FDAA874A2B3DA1F792B20821C76 /* WordTimestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B04B814CC9A87A0703D7C37021843E /* WordTimestamp.swift */; };
+		B7883A6474DF232F536A66026163AF00 /* RecognitionStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895E4F899AB19570AA0CBA674470C612 /* RecognitionStop.swift */; };
+		B81D44F68170EDA5C7AA27410661F2DB /* DialogNodeVisitedDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B752F2796219139A947DE9A74030329B /* DialogNodeVisitedDetails.swift */; };
+		B9103005C8A20F7EC20071050C53912B /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740B190581545DB7156DA2C5E2DEF01A /* Shared.swift */; };
+		B9963CFEBF38ACE104184C07D04A1F35 /* RecognitionJobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632748153D2C3010929A3D19B6AA6471 /* RecognitionJobs.swift */; };
+		BA12CC13E4091C58B97B454B0D8D4944 /* UpdateEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A061773467A33246D98763439BD0E1 /* UpdateEntity.swift */; };
+		BD959D95907D28203D25953FA43DF6E8 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DA8C59E3191F1DA4AC406DC2B3F42 /* Entity.swift */; };
+		BE8F81D8CED2F8105F34793C064C09A1 /* MessageInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51519C9D6FE0839E018488BCBF1BCB41 /* MessageInput.swift */; };
+		BF30107791EF3F4BCC25150CD1077BF8 /* DialogNodeOutputModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D344AB376F2A3B4BE863F8429372D /* DialogNodeOutputModifiers.swift */; };
+		C01EA64220D5666E314299992A32A55D /* LogCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4F9AE5BD6DE34EF73CD15FAA7D89AF /* LogCollection.swift */; };
+		C4B7CD50C6448038CE1B8FE9A1A5E311 /* SpeechToText+Recognize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E61EAE3100FED294142BF84CFFF00E /* SpeechToText+Recognize.swift */; };
+		C513E5EC52A756B629F092342160C338 /* opus_header.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CC2989AD45D11C159F2C7B16B0159 /* opus_header.c */; };
+		C566F427479F812423779D46B6FDD0B0 /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B302ADD174C1176EE5BFCC25C72F7C /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5EDF9F6F82836B76D19AF78F63A64FE /* WordError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91D1A268BE2797F01917DD85B47B185 /* WordError.swift */; };
+		C7C6ECBC4F4A03CF8A892FB8C8A0F4F3 /* UpdateWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D23ECDA1C9DDA64ED2F6BB9121F40 /* UpdateWorkspace.swift */; };
+		C9D54817D7BF2582836D4206414EFD38 /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = E440C9780EB8F8949255135A5A4032FF /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD447F20A6113FBF65D967D1087520D3 /* DialogNodeOutputTextValuesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95881992D9095A5F83E3CE8F49BEAA2 /* DialogNodeOutputTextValuesElement.swift */; };
+		CD943685C84CC66CFA8E848D19A60D75 /* SpeechToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079374E5B7B12DC0D7A9C074E503E74 /* SpeechToText.swift */; };
+		D0B125BE0240CE9BA49F1CD441D2957A /* Pods-NaoRobots-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0010E5E9B34B1627C160160578F54CDF /* Pods-NaoRobots-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2721AB57B370BBFD49D4919FFA6EAFB /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838B98FBCF4E620681C576BB6F6A51A /* RestResponse.swift */; };
+		D58B39E78D15AA2D9C6ADCB4B104660F /* AcousticModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F26E3869B9237A7A4A9609401EAA041 /* AcousticModels.swift */; };
+		D5D9E61BAD205D4B0FD5106F273FE25D /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D96B9BD50A826A37D7CBBCDF452597 /* WebSocket.swift */; };
+		D5DD982D5CB9515FBD58AD42C00CBD02 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B3BEE1D148B4FC13E6D00B4B4311D /* Authentication.swift */; };
+		D62864ACAC9E52719D54D7E8B4431184 /* RecognitionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053623F7E188EB235FD1E6F7F53B003 /* RecognitionSettings.swift */; };
+		D8E4E4BC36170CED4B518E2D9946D4F4 /* WorkspaceCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4444D0081220469E97FF5F448522FE /* WorkspaceCollection.swift */; };
+		DA5F1444BB39C1229DF0A2B097D75468 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E43F523BC3FE093A3CE79EB2013498 /* JSON.swift */; };
+		DD3AAC52704E2EFE1D82C5CAE78F44DA /* SpeechRecognitionResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A195B0AF3ACE77D7C7295AEED8CF66A /* SpeechRecognitionResults.swift */; };
+		DDC82A4D5237E1577E4D0077405F5896 /* SpeechModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB872E95E3AD8DE93F09307FF70528EF /* SpeechModel.swift */; };
+		DF92C4D62D447B3A62A43238B26FBD28 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE87DE3A28AB228B58F7456DCDD4A4CC /* Text.swift */; };
+		E05381D9FAB4EDE10F5BB0EC4766876E /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6E05614536BED60338E5550ACE98D2 /* RestKit.framework */; };
+		E086503478F22DF8C0CC1E1E89827FE8 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E868382524D64EE180AC90AE2844AE /* Compression.swift */; };
+		E1D2243AF31EB7533B3EA24C54FFECD9 /* DialogNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA63A19D9E91742701C9EF58D172465 /* DialogNode.swift */; };
+		E25290AB5A97AD84EEED474EF0A5AE62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3F3824DD9C0924D3F3F0E0532E802D /* Foundation.framework */; };
+		E2A00DDF28790BB9B692421F7E2BB73E /* Grammars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EED3795C05CC4981F0D0F026EFCD613 /* Grammars.swift */; };
+		E30C3D3050B19B7C88BF60AE474AA7D7 /* MessageContextMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C3462A41759CF72A9EC9C9E7E4133F /* MessageContextMetadata.swift */; };
+		E38124FAF3B6ED45E64BD9EA0D4B23D3 /* WordConfidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076150796C28EFA310CB5B08935C3D7 /* WordConfidence.swift */; };
+		E39F0E7DF46F8649E082DB24916E5FD2 /* UpdateVoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06850ACE28677A9C7D95452EA5BD40D /* UpdateVoiceModel.swift */; };
+		E4496EAFE42225558379F3F19415E643 /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F7D50014159526DB3866C700E95144 /* Assistant.swift */; };
+		E4CBF431B1ED8B0B09F11215452730FC /* EntityMentionCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDE44F8F9EF0A9E51D8B6BF42198301 /* EntityMentionCollection.swift */; };
+		E55F5531D87B8F3199890FE176C88A68 /* SpeechToTextState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E03A859CD2078A249A9CCE63E9EA2B /* SpeechToTextState.swift */; };
+		E6382BCBDD327E29ADD92C84FB4A5986 /* VoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212D1AF579BC4468A667FE65E947407 /* VoiceModel.swift */; };
+		E6D1AD98E044A61324E277D32F896F2B /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865542A3FF0EBA3DE52768360A012C1B /* Grammar.swift */; };
+		E9E6029FACEE55856E92B75B39F3AA68 /* TrainingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3CB7D4D1199349DF92FE947876D92B /* TrainingResponse.swift */; };
+		ED018F31211B5E19FE9BBF9FD1AEA360 /* Pods-NaoRobots-NaoRobotsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCE48E315B5EB570170D80964D85E5C /* Pods-NaoRobots-NaoRobotsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE2C2A16B8C934C31C45460F9C75D2EC /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86155A41E5CD342A5387A34E8010594E /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE2F94DE84E6CE2FC8A5C2EA65FBEE18 /* Counterexample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119F51EE6A358780B61B16807F6B282 /* Counterexample.swift */; };
+		F52CCC9F22B7FF399DF6CBEC9B4E5901 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6141565F6431F35C783BE16C377F5FFB /* Pagination.swift */; };
+		F64E19C19528776FC69C32BC2AE86835 /* Pods-NaoRobotsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF816027DE88F3F8605650AB9CC6D72F /* Pods-NaoRobotsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA96BA9AE7A7EF393E6C816595412635 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620344E327B987F8B1508EEB263DC0D2 /* LanguageModel.swift */; };
+		FABE9530B5BD8F53744ECE097D170891 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAF8D6114B07F920F8F106748CC231B /* ogg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDBA5CF867A146CED4233217F3CB89E4 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9168B1FD642EB0EF1F44FDAB257936 /* Log.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0811165815DB3D2DFAE5A9F8847E6BF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C808A50591FAAFF40F13A6BDC6845EB4;
+			remoteInfo = IBMWatsonAssistantV1;
+		};
+		1F0F6D6010C82982A749041687AA5288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0C8766A76CF406E4C2FDDF51E397DC3;
+			remoteInfo = IBMWatsonTextToSpeechV1;
+		};
+		22E1E5CC407A1B3AD17ED94B13F36C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		278E476AC4FA8851A53C42A57CE68134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		30B4DD248C8DEA9DDFBC097A093A5701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D0D9F7CF611B6D221589722C5CBBDE;
+			remoteInfo = IBMWatsonRestKit;
+		};
+		334B96CBEDB38BF219E33E8C26A5CCEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		41F6B9B1023C1FDE25E7BEF04AD37CA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D0D9F7CF611B6D221589722C5CBBDE;
+			remoteInfo = IBMWatsonRestKit;
+		};
+		48B5B188B6EBFECA8CD3173BCF65FEE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C808A50591FAAFF40F13A6BDC6845EB4;
+			remoteInfo = IBMWatsonAssistantV1;
+		};
+		5FD85D4E4EF2974877D2986A83E32A01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0C8766A76CF406E4C2FDDF51E397DC3;
+			remoteInfo = IBMWatsonTextToSpeechV1;
+		};
+		621D68DEF96CA23871FF78A58F987F08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D0D9F7CF611B6D221589722C5CBBDE;
+			remoteInfo = IBMWatsonRestKit;
+		};
+		9ABEE38C64D009A0E58B49F254D0CF70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85F80CBB88E15EBEE7535E1C6ED1B185;
+			remoteInfo = IBMWatsonSpeechToTextV1;
+		};
+		C365D46351074F0628A454A779356E7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D0D9F7CF611B6D221589722C5CBBDE;
+			remoteInfo = IBMWatsonRestKit;
+		};
+		DB3D03AA04F19F7435F5E6CF9856BE8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B850F15CAD98D886DF8055D0D3919D4D;
+			remoteInfo = "Pods-NaoRobots";
+		};
+		DCE0951DA80BC5A4DA6172BFAB8F798B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85F80CBB88E15EBEE7535E1C6ED1B185;
+			remoteInfo = IBMWatsonSpeechToTextV1;
+		};
+		F808B4A9C3CC359C3D24E21373104E5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D0D9F7CF611B6D221589722C5CBBDE;
+			remoteInfo = IBMWatsonRestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0010E5E9B34B1627C160160578F54CDF /* Pods-NaoRobots-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NaoRobots-umbrella.h"; sourceTree = "<group>"; };
+		00597A0AF0D797B47105453161A900C6 /* RestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestError.swift; path = Sources/RestKit/RestError.swift; sourceTree = "<group>"; };
+		02B9BAF6622C5744EEAC7F1CE137550D /* IBMWatsonTextToSpeechV1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonTextToSpeechV1-umbrella.h"; sourceTree = "<group>"; };
+		036B3BEE1D148B4FC13E6D00B4B4311D /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Sources/RestKit/Authentication.swift; sourceTree = "<group>"; };
+		038092832CF56494430A8F9DDA564455 /* AudioListingDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioListingDetails.swift; path = Source/SpeechToTextV1/Models/AudioListingDetails.swift; sourceTree = "<group>"; };
+		03CCB112B8FD5FADC684F85FFABB643D /* Pods_NaoRobots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NaoRobots.framework; path = "Pods-NaoRobots.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03CED7471E2C1ED94E516FD90F642005 /* Pods_NaoRobots_NaoRobotsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NaoRobots_NaoRobotsUITests.framework; path = "Pods-NaoRobots-NaoRobotsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CFF9B455D4D20E9530DF75DAFC3225 /* RegisterStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegisterStatus.swift; path = Source/SpeechToTextV1/Models/RegisterStatus.swift; sourceTree = "<group>"; };
+		074D0E5E2DFF0F28F5B9BEC7353A9B08 /* LanguageModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanguageModels.swift; path = Source/SpeechToTextV1/Models/LanguageModels.swift; sourceTree = "<group>"; };
+		07BE8BF66F7B3A0A47AD78153A477FC0 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
+		07F10DE944B6A35DEF451FE6D50C5994 /* SpeechToText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SpeechToText.framework; path = IBMWatsonSpeechToTextV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		091569F141B8B77381261E272B7F600A /* DialogNodeOutputGeneric.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeOutputGeneric.swift; path = Source/AssistantV1/Models/DialogNodeOutputGeneric.swift; sourceTree = "<group>"; };
+		0A46358763FF4642CBCE52667B24EF7E /* IBMWatsonSpeechToTextV1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonSpeechToTextV1-umbrella.h"; sourceTree = "<group>"; };
+		0AAF8D6114B07F920F8F106748CC231B /* ogg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ogg.h; path = Source/SupportingFiles/Dependencies/Source/ogg.h; sourceTree = "<group>"; };
+		0AD436F14F963E85B819AF87FBD33C2D /* IBMWatsonAssistantV1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonAssistantV1.modulemap; sourceTree = "<group>"; };
+		0B18BB523B1B8030BEE59F18EA3A0A6C /* Synonym.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Synonym.swift; path = Source/AssistantV1/Models/Synonym.swift; sourceTree = "<group>"; };
+		0BA6B6D61429838B5158DDF8FE9C64DE /* Pods-NaoRobots-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NaoRobots-Info.plist"; sourceTree = "<group>"; };
+		0BCE48E315B5EB570170D80964D85E5C /* Pods-NaoRobots-NaoRobotsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NaoRobots-NaoRobotsUITests-umbrella.h"; sourceTree = "<group>"; };
+		107E38A8D861787BC197321A1179527D /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Source/SupportingFiles/InsecureConnection.swift; sourceTree = "<group>"; };
+		10E868382524D64EE180AC90AE2844AE /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression.swift; sourceTree = "<group>"; };
+		11C7E4E4E8047786D187550F7120A55D /* CustomWords.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomWords.swift; path = Source/SpeechToTextV1/Models/CustomWords.swift; sourceTree = "<group>"; };
+		1212D1AF579BC4468A667FE65E947407 /* VoiceModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceModel.swift; path = Source/TextToSpeechV1/Models/VoiceModel.swift; sourceTree = "<group>"; };
+		1349A416573C2C8B69ECC17426AD18B9 /* IBMWatsonTextToSpeechV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonTextToSpeechV1.debug.xcconfig; sourceTree = "<group>"; };
+		14ADD3B8BBB086FCD55142D30876B464 /* CodableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableExtensions.swift; path = Sources/RestKit/CodableExtensions.swift; sourceTree = "<group>"; };
+		1572B8E0ED8E9B0FE3B6FA779718025F /* opus_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_types.h; path = Source/SupportingFiles/Dependencies/Source/opus_types.h; sourceTree = "<group>"; };
+		169592A15664E6CD6AB1527BAA737A9B /* WAVRepair.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WAVRepair.swift; path = Source/TextToSpeechV1/WAVRepair.swift; sourceTree = "<group>"; };
+		16D96B9BD50A826A37D7CBBCDF452597 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/WebSocket.swift; sourceTree = "<group>"; };
+		171642EC3B12D817F118764FD3FA5A03 /* SupportedFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupportedFeatures.swift; path = Source/SpeechToTextV1/Models/SupportedFeatures.swift; sourceTree = "<group>"; };
+		1897C3CE8C673420A094C03D1C1017A4 /* ExampleCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleCollection.swift; path = Source/AssistantV1/Models/ExampleCollection.swift; sourceTree = "<group>"; };
+		1B9D1980710F3E497DFED705D931DE34 /* WordAlternativeResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordAlternativeResults.swift; path = Source/SpeechToTextV1/Models/WordAlternativeResults.swift; sourceTree = "<group>"; };
+		1BCE152B77374CD35ED414F5B29CAD18 /* AudioMetricsDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioMetricsDetails.swift; path = Source/SpeechToTextV1/Models/AudioMetricsDetails.swift; sourceTree = "<group>"; };
+		1E9F3433E2040971E1AB3D4BCABBF133 /* Pods-NaoRobots-NaoRobotsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NaoRobots-NaoRobotsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2018ACCCCB4864CB66ED81C59272F08D /* IBMWatsonRestKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonRestKit.debug.xcconfig; sourceTree = "<group>"; };
+		207AE816AA838A47D87C84E1B9A5A9C7 /* SpeechRecognitionResultsAccumulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionResultsAccumulator.swift; path = Source/SpeechToTextV1/WebSockets/SpeechRecognitionResultsAccumulator.swift; sourceTree = "<group>"; };
+		2429F84FF3794D34AA0F2DF5DE8E02C9 /* IBMWatsonSpeechToTextV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonSpeechToTextV1.release.xcconfig; sourceTree = "<group>"; };
+		255B3DAEB2AD999C60AB5B57D1BBBC67 /* ProcessingMetrics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcessingMetrics.swift; path = Source/SpeechToTextV1/Models/ProcessingMetrics.swift; sourceTree = "<group>"; };
+		2567E1342E09754BAA0F3F0EFFFAC860 /* SystemResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SystemResponse.swift; path = Source/AssistantV1/Models/SystemResponse.swift; sourceTree = "<group>"; };
+		27B154ED9F6B6EE053556A1FD49575BD /* DialogNodeCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeCollection.swift; path = Source/AssistantV1/Models/DialogNodeCollection.swift; sourceTree = "<group>"; };
+		29A1B6A5BE5659A25C5E45DA4C63BE53 /* IBMWatsonAssistantV1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonAssistantV1-Info.plist"; sourceTree = "<group>"; };
+		2AA73B908634655B1A6FBC514335BFBA /* VoiceCustomization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceCustomization.swift; path = Source/TextToSpeechV1/Models/VoiceCustomization.swift; sourceTree = "<group>"; };
+		2B29A64B724244B9532B865DBF5ECA1F /* DialogSuggestion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogSuggestion.swift; path = Source/AssistantV1/Models/DialogSuggestion.swift; sourceTree = "<group>"; };
+		2B450EDA12D4D31686451F9BB88FE1FF /* AudioResources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioResources.swift; path = Source/SpeechToTextV1/Models/AudioResources.swift; sourceTree = "<group>"; };
+		2BA3458F16F3A0B27FE37BFE1AF2A3B1 /* CreateLanguageModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateLanguageModel.swift; path = Source/SpeechToTextV1/Models/CreateLanguageModel.swift; sourceTree = "<group>"; };
+		2DDC53E089CF78948D1BD7F645E1453F /* libopus_tts.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopus_tts.a; path = Source/SupportingFiles/Dependencies/Libraries/libopus_tts.a; sourceTree = "<group>"; };
+		2E6DA8C59E3191F1DA4AC406DC2B3F42 /* Entity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = Source/AssistantV1/Models/Entity.swift; sourceTree = "<group>"; };
+		302B6E2DFEAE7EFAD26E4F64C91EC805 /* TrainingWarning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrainingWarning.swift; path = Source/SpeechToTextV1/Models/TrainingWarning.swift; sourceTree = "<group>"; };
+		30CEFCC0393224105F6C800026F1BFF8 /* Pods-NaoRobots-NaoRobotsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NaoRobots-NaoRobotsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		31DA2CC814DE657F2BB2E8D9C99EFD67 /* Pods-NaoRobots-NaoRobotsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NaoRobots-NaoRobotsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		323F0380DF1B534BA281C022AE97E071 /* Pods-NaoRobots-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NaoRobots-acknowledgements.plist"; sourceTree = "<group>"; };
+		3409DC36B889AFB34C1CCAA492E1595D /* AudioResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioResource.swift; path = Source/SpeechToTextV1/Models/AudioResource.swift; sourceTree = "<group>"; };
+		362D5461650D191CDA77C06655A62957 /* MessageRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageRequest.swift; path = Source/AssistantV1/Models/MessageRequest.swift; sourceTree = "<group>"; };
+		366EF45EF89FAE033F733E37EA33C639 /* Words.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Words.swift; path = Source/TextToSpeechV1/Models/Words.swift; sourceTree = "<group>"; };
+		36EC20E959C1527A873DEF632EBBA651 /* SpeechToTextEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextEncoder.swift; path = Source/SpeechToTextV1/WebSockets/SpeechToTextEncoder.swift; sourceTree = "<group>"; };
+		36FC23FCB21A94C8D3C0E44D1DD6B442 /* TextToSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextToSpeech.framework; path = IBMWatsonTextToSpeechV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		373D0A5D880A14B2DC0336A7E1313B60 /* DialogNodeAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeAction.swift; path = Source/AssistantV1/Models/DialogNodeAction.swift; sourceTree = "<group>"; };
+		3970E7FF5A7F660984FD197ADB9425CD /* IBMWatsonTextToSpeechV1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonTextToSpeechV1-dummy.m"; sourceTree = "<group>"; };
+		3A195B0AF3ACE77D7C7295AEED8CF66A /* SpeechRecognitionResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionResults.swift; path = Source/SpeechToTextV1/Models/SpeechRecognitionResults.swift; sourceTree = "<group>"; };
+		3A456580EF5561C441005A4036FFD547 /* DialogNodeOutputOptionsElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeOutputOptionsElement.swift; path = Source/AssistantV1/Models/DialogNodeOutputOptionsElement.swift; sourceTree = "<group>"; };
+		3AEBB24337532E600CE3037C01D21D58 /* CreateValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateValue.swift; path = Source/AssistantV1/Models/CreateValue.swift; sourceTree = "<group>"; };
+		3D2CCC0D2CBD4EA13F26627AE56AF752 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Sources/RestKit/MultipartFormData.swift; sourceTree = "<group>"; };
+		3D4F9AE5BD6DE34EF73CD15FAA7D89AF /* LogCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogCollection.swift; path = Source/AssistantV1/Models/LogCollection.swift; sourceTree = "<group>"; };
+		3E92AD177917EF0C71569D73FC0D5B5A /* RecognitionJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionJob.swift; path = Source/SpeechToTextV1/Models/RecognitionJob.swift; sourceTree = "<group>"; };
+		40764C0D4724ED265879678C619B4647 /* KeywordResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeywordResult.swift; path = Source/SpeechToTextV1/Models/KeywordResult.swift; sourceTree = "<group>"; };
+		40B04B814CC9A87A0703D7C37021843E /* WordTimestamp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordTimestamp.swift; path = Source/SpeechToTextV1/Models/WordTimestamp.swift; sourceTree = "<group>"; };
+		41D54F2AD2915F080AB4ABDA6CB9A9B8 /* EntityCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EntityCollection.swift; path = Source/AssistantV1/Models/EntityCollection.swift; sourceTree = "<group>"; };
+		46588FBAA98A7B91763A00067B14D10A /* DialogNodeOutputOptionsElementValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeOutputOptionsElementValue.swift; path = Source/AssistantV1/Models/DialogNodeOutputOptionsElementValue.swift; sourceTree = "<group>"; };
+		486CFB0C76A93644F009333340B4D97A /* Pods-NaoRobotsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NaoRobotsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		48A4EACB414F276ADF33B04E208E3B4D /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Source/AssistantV1/Models/Value.swift; sourceTree = "<group>"; };
+		48C6614ADF053253C6B5838AC0083B88 /* Word.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Word.swift; path = Source/TextToSpeechV1/Models/Word.swift; sourceTree = "<group>"; };
+		497A4E9F6057F4C831F141F9BE9BF334 /* DialogSuggestionValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogSuggestionValue.swift; path = Source/AssistantV1/Models/DialogSuggestionValue.swift; sourceTree = "<group>"; };
+		49BA01217C5333D87CA6BF11DF352E29 /* Pods-NaoRobots-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NaoRobots-dummy.m"; sourceTree = "<group>"; };
+		4A40179CA7F407738DE73391F8195CE6 /* Corpus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Corpus.swift; path = Source/SpeechToTextV1/Models/Corpus.swift; sourceTree = "<group>"; };
+		4B221773513036E773AC767E8F32371A /* Words.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Words.swift; path = Source/SpeechToTextV1/Models/Words.swift; sourceTree = "<group>"; };
+		4DB2CEDB3D0D773401D449D756683747 /* DialogNodeOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeOutput.swift; path = Source/AssistantV1/Models/DialogNodeOutput.swift; sourceTree = "<group>"; };
+		4FFACD534DC63E59FECBE867DD0D9721 /* Corpora.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Corpora.swift; path = Source/SpeechToTextV1/Models/Corpora.swift; sourceTree = "<group>"; };
+		51519C9D6FE0839E018488BCBF1BCB41 /* MessageInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageInput.swift; path = Source/AssistantV1/Models/MessageInput.swift; sourceTree = "<group>"; };
+		51B0BE543B5EEE684645C7055FFDB06E /* AudioResourceDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioResourceDetails.swift; path = Source/SpeechToTextV1/Models/AudioResourceDetails.swift; sourceTree = "<group>"; };
+		53878A43B106C73C147AA3CE98B9208A /* SpeechRecognitionResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionResult.swift; path = Source/SpeechToTextV1/Models/SpeechRecognitionResult.swift; sourceTree = "<group>"; };
+		54C3462A41759CF72A9EC9C9E7E4133F /* MessageContextMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageContextMetadata.swift; path = Source/AssistantV1/Models/MessageContextMetadata.swift; sourceTree = "<group>"; };
+		578BFB984EE3C42580D5F0A0D8257D01 /* opus_defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_defines.h; path = Source/SupportingFiles/Dependencies/Source/opus_defines.h; sourceTree = "<group>"; };
+		579BBC20C7C186806BB76E3FF1BE2E16 /* IBMWatsonTextToSpeechV1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonTextToSpeechV1-prefix.pch"; sourceTree = "<group>"; };
+		579DC7DF3EA20B052B6AC833C5C46556 /* SupportedFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupportedFeatures.swift; path = Source/TextToSpeechV1/Models/SupportedFeatures.swift; sourceTree = "<group>"; };
+		57BCECCF1670393F1F5C3B4B0EB714DD /* Pods-NaoRobots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NaoRobots.release.xcconfig"; sourceTree = "<group>"; };
+		5B6D23ECDA1C9DDA64ED2F6BB9121F40 /* UpdateWorkspace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateWorkspace.swift; path = Source/AssistantV1/Models/UpdateWorkspace.swift; sourceTree = "<group>"; };
+		5D8CC2989AD45D11C159F2C7B16B0159 /* opus_header.c */ = {isa = PBXFileReference; includeInIndex = 1; name = opus_header.c; path = Source/SupportingFiles/Dependencies/Source/opus_header.c; sourceTree = "<group>"; };
+		5EF37A2DFA57970D106521632502F4D5 /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Source/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
+		6141565F6431F35C783BE16C377F5FFB /* Pagination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pagination.swift; path = Source/AssistantV1/Models/Pagination.swift; sourceTree = "<group>"; };
+		616A807A5B626EEA96679F73991A0D05 /* IBMWatsonAssistantV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonAssistantV1.release.xcconfig; sourceTree = "<group>"; };
+		620344E327B987F8B1508EEB263DC0D2 /* LanguageModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanguageModel.swift; path = Source/SpeechToTextV1/Models/LanguageModel.swift; sourceTree = "<group>"; };
+		62A038433B9B8AB7FB565962354E3A0F /* Word.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Word.swift; path = Source/SpeechToTextV1/Models/Word.swift; sourceTree = "<group>"; };
+		632748153D2C3010929A3D19B6AA6471 /* RecognitionJobs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionJobs.swift; path = Source/SpeechToTextV1/Models/RecognitionJobs.swift; sourceTree = "<group>"; };
+		63F77F7C0219F42FC4D9B97259A62333 /* IBMWatsonRestKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonRestKit-umbrella.h"; sourceTree = "<group>"; };
+		64F0EC5374DFD108DC47E5306DEEBE05 /* CreateIntent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateIntent.swift; path = Source/AssistantV1/Models/CreateIntent.swift; sourceTree = "<group>"; };
+		6508DBC96F3D7394D657A12D6934B06E /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Source/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
+		658D344AB376F2A3B4BE863F8429372D /* DialogNodeOutputModifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeOutputModifiers.swift; path = Source/AssistantV1/Models/DialogNodeOutputModifiers.swift; sourceTree = "<group>"; };
+		6786A0E032F832874B99ADCBAE030B0A /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Source/SupportingFiles/InsecureConnection.swift; sourceTree = "<group>"; };
+		6838B98FBCF4E620681C576BB6F6A51A /* RestResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestResponse.swift; path = Sources/RestKit/RestResponse.swift; sourceTree = "<group>"; };
+		68EC0FA5AFB96AD0840683EEC849394E /* RecognitionState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionState.swift; path = Source/SpeechToTextV1/WebSockets/RecognitionState.swift; sourceTree = "<group>"; };
+		6921552DCB1DB9B4EB21A121B0584F22 /* UpdateIntent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateIntent.swift; path = Source/AssistantV1/Models/UpdateIntent.swift; sourceTree = "<group>"; };
+		696FCEC7DDD2D39E8AB7F67BCBBA5D9D /* opus_header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_header.h; path = Source/SupportingFiles/Dependencies/Source/opus_header.h; sourceTree = "<group>"; };
+		6B6E05614536BED60338E5550ACE98D2 /* RestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C036D8990E27070F10030BC533651CF /* WorkspaceSystemSettingsDisambiguation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceSystemSettingsDisambiguation.swift; path = Source/AssistantV1/Models/WorkspaceSystemSettingsDisambiguation.swift; sourceTree = "<group>"; };
+		6F07C34F48B9A0007A0712DB26678412 /* IBMWatsonAssistantV1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonAssistantV1-dummy.m"; sourceTree = "<group>"; };
+		6F3903610E57EC2E5F4605F29448493A /* DialogNodeNextStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeNextStep.swift; path = Source/AssistantV1/Models/DialogNodeNextStep.swift; sourceTree = "<group>"; };
+		6FDA6F3304A3EF56F2373010B8EC273C /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Source/AssistantV1/Models/Context.swift; sourceTree = "<group>"; };
+		70AF812E3F010F6E3638A79A36981F74 /* opus_multistream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_multistream.h; path = Source/SupportingFiles/Dependencies/Source/opus_multistream.h; sourceTree = "<group>"; };
+		71F06F3593FB106D3019F97219A54EC7 /* SpeakerLabelsResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeakerLabelsResult.swift; path = Source/SpeechToTextV1/Models/SpeakerLabelsResult.swift; sourceTree = "<group>"; };
+		73B1AF41C1295D0C14D62F35A174FF5B /* UpdateExample.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateExample.swift; path = Source/AssistantV1/Models/UpdateExample.swift; sourceTree = "<group>"; };
+		740B190581545DB7156DA2C5E2DEF01A /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Source/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
+		78EF5D29B0CCD5E7A5E4C3A477E3D760 /* opus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus.h; path = Source/SupportingFiles/Dependencies/Source/opus.h; sourceTree = "<group>"; };
+		797F9053E1EC11D56C61B04887A9585A /* AudioMetricsHistogramBin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioMetricsHistogramBin.swift; path = Source/SpeechToTextV1/Models/AudioMetricsHistogramBin.swift; sourceTree = "<group>"; };
+		7E3CB7D4D1199349DF92FE947876D92B /* TrainingResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrainingResponse.swift; path = Source/SpeechToTextV1/Models/TrainingResponse.swift; sourceTree = "<group>"; };
+		7E3F3824DD9C0924D3F3F0E0532E802D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7E9DD34E4942DC9334EA53A7F0C462CD /* Pods-NaoRobotsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NaoRobotsTests-dummy.m"; sourceTree = "<group>"; };
+		7F5AC211724540372D57815B61D55E61 /* IBMWatsonTextToSpeechV1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonTextToSpeechV1.modulemap; sourceTree = "<group>"; };
+		7FCEAB1006C44E22D812A18477C4B746 /* Intent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Intent.swift; path = Source/AssistantV1/Models/Intent.swift; sourceTree = "<group>"; };
+		8053623F7E188EB235FD1E6F7F53B003 /* RecognitionSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionSettings.swift; path = Source/SpeechToTextV1/WebSockets/RecognitionSettings.swift; sourceTree = "<group>"; };
+		842B8D4AEDE2E9A7E4A1572F99394C54 /* Voice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Voice.swift; path = Source/TextToSpeechV1/Models/Voice.swift; sourceTree = "<group>"; };
+		84330F23CAF917E444337AE44FE6EBFD /* IBMWatsonAssistantV1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonAssistantV1-umbrella.h"; sourceTree = "<group>"; };
+		843C2F826C4FF82DE302FDA08117A836 /* SpeechRecognitionAlternative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionAlternative.swift; path = Source/SpeechToTextV1/Models/SpeechRecognitionAlternative.swift; sourceTree = "<group>"; };
+		845F8B2716E0585443F9CB573BE9405D /* DialogRuntimeResponseGeneric.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogRuntimeResponseGeneric.swift; path = Source/AssistantV1/Models/DialogRuntimeResponseGeneric.swift; sourceTree = "<group>"; };
+		8489B51B09B6EDB1DAFE74D852F66840 /* UpdateDialogNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateDialogNode.swift; path = Source/AssistantV1/Models/UpdateDialogNode.swift; sourceTree = "<group>"; };
+		8572E938C1A03967979B101E9ABBB2AF /* Pods-NaoRobotsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NaoRobotsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		85D046C63F155901C6881DC0926BB2FF /* AcousticModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcousticModel.swift; path = Source/SpeechToTextV1/Models/AcousticModel.swift; sourceTree = "<group>"; };
+		86155A41E5CD342A5387A34E8010594E /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		865542A3FF0EBA3DE52768360A012C1B /* Grammar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grammar.swift; path = Source/SpeechToTextV1/Models/Grammar.swift; sourceTree = "<group>"; };
+		88211B1570C74BC6F9E1799310049F0D /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Source/SupportingFiles/InsecureConnection.swift; sourceTree = "<group>"; };
+		88FF2894663E5F77BDD52BA0FCB75B52 /* Voices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Voices.swift; path = Source/TextToSpeechV1/Models/Voices.swift; sourceTree = "<group>"; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		895E4F899AB19570AA0CBA674470C612 /* RecognitionStop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionStop.swift; path = Source/SpeechToTextV1/WebSockets/RecognitionStop.swift; sourceTree = "<group>"; };
+		8BEAC54B68074F1D67463DD200637389 /* os_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_types.h; path = Source/SupportingFiles/Dependencies/Source/os_types.h; sourceTree = "<group>"; };
+		8E1AA4CF87101397CCC544CE22E771F7 /* Translation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Translation.swift; path = Source/TextToSpeechV1/Models/Translation.swift; sourceTree = "<group>"; };
+		8E7886CF9DC1E15780B88D27FA8E427E /* ValueCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueCollection.swift; path = Source/AssistantV1/Models/ValueCollection.swift; sourceTree = "<group>"; };
+		8EED3795C05CC4981F0D0F026EFCD613 /* Grammars.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grammars.swift; path = Source/SpeechToTextV1/Models/Grammars.swift; sourceTree = "<group>"; };
+		8F26E3869B9237A7A4A9609401EAA041 /* AcousticModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcousticModels.swift; path = Source/SpeechToTextV1/Models/AcousticModels.swift; sourceTree = "<group>"; };
+		8FDE44F8F9EF0A9E51D8B6BF42198301 /* EntityMentionCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EntityMentionCollection.swift; path = Source/AssistantV1/Models/EntityMentionCollection.swift; sourceTree = "<group>"; };
+		9042379D9C606994BB0F8F8203AFC831 /* opus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus.h; path = Source/SupportingFiles/Dependencies/Source/opus.h; sourceTree = "<group>"; };
+		9067ED99B4EB0478DA35960D2CC8F12B /* Pods_NaoRobotsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NaoRobotsTests.framework; path = "Pods-NaoRobotsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E9759CB89F531E5F7E87A6364A6A19 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9165FF1EC16098468A9F034448D94C1C /* libogg_tts.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libogg_tts.a; path = Source/SupportingFiles/Dependencies/Libraries/libogg_tts.a; sourceTree = "<group>"; };
+		975920284881F6E7D74C9DCF9381BC00 /* SpeechToTextRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextRecorder.swift; path = Source/SpeechToTextV1/WebSockets/SpeechToTextRecorder.swift; sourceTree = "<group>"; };
+		98BABE7F9CD1605122E14B7AB32B9811 /* libogg_stt.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libogg_stt.a; path = Source/SupportingFiles/Dependencies/Libraries/libogg_stt.a; sourceTree = "<group>"; };
+		98BCA51F4F39958E681F7F7D43E72608 /* IBMWatsonRestKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonRestKit-dummy.m"; sourceTree = "<group>"; };
+		99F7D50014159526DB3866C700E95144 /* Assistant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assistant.swift; path = Source/AssistantV1/Assistant.swift; sourceTree = "<group>"; };
+		99F8DBF821F2C7E79F7349C77CC11ED9 /* libopus_stt.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopus_stt.a; path = Source/SupportingFiles/Dependencies/Libraries/libopus_stt.a; sourceTree = "<group>"; };
+		9B7A9C081237F3AB11B0F05A92BC0867 /* Pods-NaoRobots-NaoRobotsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NaoRobots-NaoRobotsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		9BBDD35BB99406DFC950B707E0162646 /* Pods-NaoRobots-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NaoRobots-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E9F9272DFCFE096A30FE1E6667AE47D /* IBMWatsonSpeechToTextV1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonSpeechToTextV1-prefix.pch"; sourceTree = "<group>"; };
+		9EC3ABFF92E64018F20F53E0CEAC7A5F /* opus_defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_defines.h; path = Source/SupportingFiles/Dependencies/Source/opus_defines.h; sourceTree = "<group>"; };
+		9FA5FA7BBE3F547F7546B5A7D6645D79 /* CaptureGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureGroup.swift; path = Source/AssistantV1/Models/CaptureGroup.swift; sourceTree = "<group>"; };
+		A06850ACE28677A9C7D95452EA5BD40D /* UpdateVoiceModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateVoiceModel.swift; path = Source/TextToSpeechV1/Models/UpdateVoiceModel.swift; sourceTree = "<group>"; };
+		A076150796C28EFA310CB5B08935C3D7 /* WordConfidence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordConfidence.swift; path = Source/SpeechToTextV1/Models/WordConfidence.swift; sourceTree = "<group>"; };
+		A0EFA04290A01BBFBBDFCE12E037500C /* AudioListing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioListing.swift; path = Source/SpeechToTextV1/Models/AudioListing.swift; sourceTree = "<group>"; };
+		A10835E8706D5432D6198E40210DF636 /* CreateVoiceModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateVoiceModel.swift; path = Source/TextToSpeechV1/Models/CreateVoiceModel.swift; sourceTree = "<group>"; };
+		A11484E0B5C308D4732ED3A837DA3EB9 /* AudioMetrics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioMetrics.swift; path = Source/SpeechToTextV1/Models/AudioMetrics.swift; sourceTree = "<group>"; };
+		A230A0B87BB7E0EF634ACC63B4196AD7 /* CreateWorkspace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateWorkspace.swift; path = Source/AssistantV1/Models/CreateWorkspace.swift; sourceTree = "<group>"; };
+		A4E61EAE3100FED294142BF84CFFF00E /* SpeechToText+Recognize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SpeechToText+Recognize.swift"; path = "Source/SpeechToTextV1/SpeechToText+Recognize.swift"; sourceTree = "<group>"; };
+		A583B8542F40FF926A43B870194269DF /* IBMWatsonTextToSpeechV1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonTextToSpeechV1-Info.plist"; sourceTree = "<group>"; };
+		A91D1A268BE2797F01917DD85B47B185 /* WordError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordError.swift; path = Source/SpeechToTextV1/Models/WordError.swift; sourceTree = "<group>"; };
+		A9E43F523BC3FE093A3CE79EB2013498 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/RestKit/JSON.swift; sourceTree = "<group>"; };
+		AA4C265234A4F9B41798EE4011709ABC /* ogg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ogg.h; path = Source/SupportingFiles/Dependencies/Source/ogg.h; sourceTree = "<group>"; };
+		AB872E95E3AD8DE93F09307FF70528EF /* SpeechModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechModel.swift; path = Source/SpeechToTextV1/Models/SpeechModel.swift; sourceTree = "<group>"; };
+		AC4444D0081220469E97FF5F448522FE /* WorkspaceCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceCollection.swift; path = Source/AssistantV1/Models/WorkspaceCollection.swift; sourceTree = "<group>"; };
+		AC8770CBA615EC018A1081ACF33C6DC2 /* Workspace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Workspace.swift; path = Source/AssistantV1/Models/Workspace.swift; sourceTree = "<group>"; };
+		ACF6976BEF1FA1E120683B9D2FDB6260 /* TextToSpeech.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextToSpeech.swift; path = Source/TextToSpeechV1/TextToSpeech.swift; sourceTree = "<group>"; };
+		AD62204C0DB19F45DB28825834C98D98 /* Pods-NaoRobots-NaoRobotsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NaoRobots-NaoRobotsUITests-dummy.m"; sourceTree = "<group>"; };
+		ADBF03F04D8ACDC0B7C8343D13EEF711 /* CreateEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateEntity.swift; path = Source/AssistantV1/Models/CreateEntity.swift; sourceTree = "<group>"; };
+		ADDEC3133C3453F45569F95F0DB0797C /* Pods-NaoRobots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NaoRobots.debug.xcconfig"; sourceTree = "<group>"; };
+		ADE661F165CF0360F6CE2E1932434C26 /* SpeechToTextSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextSession.swift; path = Source/SpeechToTextV1/WebSockets/SpeechToTextSession.swift; sourceTree = "<group>"; };
+		AF816027DE88F3F8605650AB9CC6D72F /* Pods-NaoRobotsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NaoRobotsTests-umbrella.h"; sourceTree = "<group>"; };
+		B084F17B148960927C297DE3C6EDE68A /* IBMWatsonRestKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonRestKit-prefix.pch"; sourceTree = "<group>"; };
+		B1D18B09018B2231EDC6AF13D5883B6C /* IBMWatsonSpeechToTextV1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonSpeechToTextV1-Info.plist"; sourceTree = "<group>"; };
+		B22DF84F6C5014B01F89BEFEDE19B7AB /* AudioDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioDetails.swift; path = Source/SpeechToTextV1/Models/AudioDetails.swift; sourceTree = "<group>"; };
+		B25981602FD249421553180E6F99DB30 /* Pods-NaoRobots-NaoRobotsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NaoRobots-NaoRobotsUITests.modulemap"; sourceTree = "<group>"; };
+		B2B9ED8CE2F2B8655DC79E19085E72AF /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		B3CED216BCB9AF4BD488C8AC26416C97 /* UpdateCounterexample.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateCounterexample.swift; path = Source/AssistantV1/Models/UpdateCounterexample.swift; sourceTree = "<group>"; };
+		B6CCDE61AED833E891DFE0AFF4E7AC52 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		B752F2796219139A947DE9A74030329B /* DialogNodeVisitedDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeVisitedDetails.swift; path = Source/AssistantV1/Models/DialogNodeVisitedDetails.swift; sourceTree = "<group>"; };
+		B79240122B9044C232282C412342BA7E /* RestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RestKit.framework; path = IBMWatsonRestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9DFCAAC039849E20D9FE9EFCD729448 /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
+		BA007F66EA5E8D5586C4B53CD6A13FCE /* OutputData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OutputData.swift; path = Source/AssistantV1/Models/OutputData.swift; sourceTree = "<group>"; };
+		BA7BC583767651CA135FFF418F6D4E48 /* Pods-NaoRobotsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NaoRobotsTests.modulemap"; sourceTree = "<group>"; };
+		BE148C3BF30A18CE3152350026AF7A5B /* Pods-NaoRobots-NaoRobotsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NaoRobots-NaoRobotsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE6AF0B5C4AB442B60CE18DD5E539002 /* Pods-NaoRobots-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NaoRobots-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C079374E5B7B12DC0D7A9C074E503E74 /* SpeechToText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToText.swift; path = Source/SpeechToTextV1/SpeechToText.swift; sourceTree = "<group>"; };
+		C18B14F7365472D7DBE327D21B412716 /* RuntimeEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuntimeEntity.swift; path = Source/AssistantV1/Models/RuntimeEntity.swift; sourceTree = "<group>"; };
+		C1A891B54285B554D0BAD0DB6777ADDA /* IBMWatsonRestKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonRestKit-Info.plist"; sourceTree = "<group>"; };
+		C285DA13C05500E0231FEC86B345EC5B /* TextToSpeechDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextToSpeechDecoder.swift; path = Source/TextToSpeechV1/TextToSpeechDecoder.swift; sourceTree = "<group>"; };
+		C40C914BEA01AB4E6442641F02E7ED0B /* os_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_types.h; path = Source/SupportingFiles/Dependencies/Source/os_types.h; sourceTree = "<group>"; };
+		C4E8886875618CB211AE7E13403989B9 /* SynonymCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynonymCollection.swift; path = Source/AssistantV1/Models/SynonymCollection.swift; sourceTree = "<group>"; };
+		C5358DDBD3B1E8DA67EDBEB045C4CDDB /* RestRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestRequest.swift; path = Sources/RestKit/RestRequest.swift; sourceTree = "<group>"; };
+		C5721B1B658AB2ECDECEB577EF0AA645 /* IBMWatsonTextToSpeechV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonTextToSpeechV1.release.xcconfig; sourceTree = "<group>"; };
+		C5A061773467A33246D98763439BD0E1 /* UpdateEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateEntity.swift; path = Source/AssistantV1/Models/UpdateEntity.swift; sourceTree = "<group>"; };
+		C5B302ADD174C1176EE5BFCC25C72F7C /* opus_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_types.h; path = Source/SupportingFiles/Dependencies/Source/opus_types.h; sourceTree = "<group>"; };
+		C632E306E0E30C0A2AB6C7E01E3CFDFD /* MessageResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageResponse.swift; path = Source/AssistantV1/Models/MessageResponse.swift; sourceTree = "<group>"; };
+		C95881992D9095A5F83E3CE8F49BEAA2 /* DialogNodeOutputTextValuesElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeOutputTextValuesElement.swift; path = Source/AssistantV1/Models/DialogNodeOutputTextValuesElement.swift; sourceTree = "<group>"; };
+		C9FE7A2531D56E29B1DA3CB096FB057A /* IBMWatsonRestKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonRestKit.release.xcconfig; sourceTree = "<group>"; };
+		CA5051B3E075484D77059EBFA6053C9A /* Pronunciation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pronunciation.swift; path = Source/TextToSpeechV1/Models/Pronunciation.swift; sourceTree = "<group>"; };
+		CE2383E61FCDE0FDC8343B76C00972D9 /* ProcessedAudio.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcessedAudio.swift; path = Source/SpeechToTextV1/Models/ProcessedAudio.swift; sourceTree = "<group>"; };
+		CEA1B9A0B3805A49D8DB70DADFA487C7 /* CustomWord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomWord.swift; path = Source/SpeechToTextV1/Models/CustomWord.swift; sourceTree = "<group>"; };
+		CF9E5DC026FBB27A9AE20A9414257AAC /* Pods-NaoRobotsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NaoRobotsTests.release.xcconfig"; sourceTree = "<group>"; };
+		D2A8A8216C558BAD551E01A7E6686A8D /* EntityMention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EntityMention.swift; path = Source/AssistantV1/Models/EntityMention.swift; sourceTree = "<group>"; };
+		D32B252D4C6E7B3FF3A2B524C7438DDA /* WorkspaceSystemSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceSystemSettings.swift; path = Source/AssistantV1/Models/WorkspaceSystemSettings.swift; sourceTree = "<group>"; };
+		D400BA4533D5BEE8DB07098677CAC7A9 /* Pods-NaoRobotsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NaoRobotsTests-Info.plist"; sourceTree = "<group>"; };
+		D720EED8AB44C60D520FF2429EE0AF13 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		D99E39EC938885915FC7FC3459C8DFC3 /* LogMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogMessage.swift; path = Source/AssistantV1/Models/LogMessage.swift; sourceTree = "<group>"; };
+		D9C0C26CD0B1CB613135E72645BEFC8C /* CounterexampleCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CounterexampleCollection.swift; path = Source/AssistantV1/Models/CounterexampleCollection.swift; sourceTree = "<group>"; };
+		D9D62046AFFEEF59EFA0FB1C83C1DE54 /* IBMWatsonRestKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonRestKit.modulemap; sourceTree = "<group>"; };
+		DA0B7E4D3B04E42739EB134B5A855D5B /* IBMWatsonSpeechToTextV1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonSpeechToTextV1-dummy.m"; sourceTree = "<group>"; };
+		DB61B410D3AC12312D2383436880AB5F /* AudioListingContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioListingContainer.swift; path = Source/SpeechToTextV1/Models/AudioListingContainer.swift; sourceTree = "<group>"; };
+		DD138F5AD11751B40EA830F8B8325FA9 /* IBMWatsonSpeechToTextV1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonSpeechToTextV1.modulemap; sourceTree = "<group>"; };
+		DD5E48718AEA85DDA870216469F22451 /* CreateAcousticModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateAcousticModel.swift; path = Source/SpeechToTextV1/Models/CreateAcousticModel.swift; sourceTree = "<group>"; };
+		DDB4C690EE3DAADF539115A5A29BF7B8 /* SpeechToTextSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextSocket.swift; path = Source/SpeechToTextV1/WebSockets/SpeechToTextSocket.swift; sourceTree = "<group>"; };
+		E28521D89FAC42BCC7FF3AD194411EEB /* VoiceModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceModels.swift; path = Source/TextToSpeechV1/Models/VoiceModels.swift; sourceTree = "<group>"; };
+		E3B3DE071542E054DD09211B847509AA /* WorkspaceSystemSettingsTooling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WorkspaceSystemSettingsTooling.swift; path = Source/AssistantV1/Models/WorkspaceSystemSettingsTooling.swift; sourceTree = "<group>"; };
+		E440C9780EB8F8949255135A5A4032FF /* opus_multistream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_multistream.h; path = Source/SupportingFiles/Dependencies/Source/opus_multistream.h; sourceTree = "<group>"; };
+		E56426131771A5C381A0DE42C567D306 /* IntentCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntentCollection.swift; path = Source/AssistantV1/Models/IntentCollection.swift; sourceTree = "<group>"; };
+		E5DA4B0D1CC7D80DE3966C590DFC922F /* IBMWatsonSpeechToTextV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonSpeechToTextV1.debug.xcconfig; sourceTree = "<group>"; };
+		E643400D0A11FB812C627091876B9F63 /* RuntimeIntent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuntimeIntent.swift; path = Source/AssistantV1/Models/RuntimeIntent.swift; sourceTree = "<group>"; };
+		E70C2809C6CA1412FC5D56F6567A8EF4 /* Pods-NaoRobots-NaoRobotsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NaoRobots-NaoRobotsUITests-Info.plist"; sourceTree = "<group>"; };
+		E8657D0F65AB69DF90B10E506F30D09E /* IBMWatsonAssistantV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonAssistantV1.debug.xcconfig; sourceTree = "<group>"; };
+		E8E03A859CD2078A249A9CCE63E9EA2B /* SpeechToTextState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextState.swift; path = Source/SpeechToTextV1/WebSockets/SpeechToTextState.swift; sourceTree = "<group>"; };
+		E9EDEC3C735275C69C08A7D96F9F6DE0 /* LogPagination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogPagination.swift; path = Source/AssistantV1/Models/LogPagination.swift; sourceTree = "<group>"; };
+		EDA63A19D9E91742701C9EF58D172465 /* DialogNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNode.swift; path = Source/AssistantV1/Models/DialogNode.swift; sourceTree = "<group>"; };
+		EE6E6213C76414C14D6CBC47E25BB1BB /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/SSLSecurity.swift; sourceTree = "<group>"; };
+		EE87DE3A28AB228B58F7456DCDD4A4CC /* Text.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Text.swift; path = Source/TextToSpeechV1/Models/Text.swift; sourceTree = "<group>"; };
+		EE9168B1FD642EB0EF1F44FDAB257936 /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Source/AssistantV1/Models/Log.swift; sourceTree = "<group>"; };
+		F05F71D276E75FA2633A1891B5C74251 /* UpdateSynonym.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateSynonym.swift; path = Source/AssistantV1/Models/UpdateSynonym.swift; sourceTree = "<group>"; };
+		F0C47DA9583345F6EF79C2752D401335 /* Assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Assistant.framework; path = IBMWatsonAssistantV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F119F51EE6A358780B61B16807F6B282 /* Counterexample.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Counterexample.swift; path = Source/AssistantV1/Models/Counterexample.swift; sourceTree = "<group>"; };
+		F17CC3D65326E6CE1F6D0AF8809D413A /* UpdateValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateValue.swift; path = Source/AssistantV1/Models/UpdateValue.swift; sourceTree = "<group>"; };
+		F258ED0994F8A32457FA2B8065612D3F /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		F286D7310B97BA9411CC8D79B2C2C3C4 /* Pods-NaoRobots.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NaoRobots.modulemap"; sourceTree = "<group>"; };
+		F2BC9E79FE0F2668E4E4D71F454FA783 /* RecognizeCallback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognizeCallback.swift; path = Source/SpeechToTextV1/WebSockets/RecognizeCallback.swift; sourceTree = "<group>"; };
+		F38549D848C75640738E5A32BE786D2F /* SpeechModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechModels.swift; path = Source/SpeechToTextV1/Models/SpeechModels.swift; sourceTree = "<group>"; };
+		F3974031CC4C47F096BFD66020AE963E /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Source/AssistantV1/Models/Example.swift; sourceTree = "<group>"; };
+		F48040A1716444DB8C7E3361EFC45F74 /* Pods-NaoRobotsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NaoRobotsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F63267462420D4DECC3B2B0BC7F5A26D /* IBMWatsonAssistantV1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonAssistantV1-prefix.pch"; sourceTree = "<group>"; };
+		FBE6BE26E8695455728D0B8454FA09EE /* WordAlternativeResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordAlternativeResult.swift; path = Source/SpeechToTextV1/Models/WordAlternativeResult.swift; sourceTree = "<group>"; };
+		FBF57AD8FA7C27FC3EFC7DC16D72CB05 /* Mention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mention.swift; path = Source/AssistantV1/Models/Mention.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0820ED4CDC9B19F72FE3E5EC3884CAEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25290AB5A97AD84EEED474EF0A5AE62 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A6AEFB53E754EE8F20EF269D5B4B003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1FF0B66268AD305EF11D8B663C4D26 /* Foundation.framework in Frameworks */,
+				E05381D9FAB4EDE10F5BB0EC4766876E /* RestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ED54C4FF829379E64E5993BCA39A2D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864367D13AE52A299E637944F9A0E524 /* Foundation.framework in Frameworks */,
+				B1CA22EFB97B81060436D0F3A95CECB5 /* RestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		316F170FEBA3DE415D2110293B8B76A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A69EC7900541CDC58B6F3227257BBCC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3469AC4D9D1C3041DCBE94B6F339AE55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				313F0AEBF384DA5BD3C8D2925291927C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDDAD512E122BAA7FC87D2F15E29EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAA3C3BDB42BD3DB643B43138C54022 /* Foundation.framework in Frameworks */,
+				29DB0F0A6CC29778C56ECFC4223BB440 /* RestKit.framework in Frameworks */,
+				7F871E152A7DCCDC191B27957E13D77A /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D889BF6E77A48D50ECF656913FDDAC9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170082EBB6F9344BD265F0FD8CEBFC8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0EFE16408FEB2CEAF3BC983E883CFB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286922D8EFADD6D184CCD8C7AB4B5D03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		012B32E371005A0A5BCAC9578688BFE2 /* IBMWatsonTextToSpeechV1 */ = {
+			isa = PBXGroup;
+			children = (
+				A10835E8706D5432D6198E40210DF636 /* CreateVoiceModel.swift */,
+				107E38A8D861787BC197321A1179527D /* InsecureConnection.swift */,
+				AA4C265234A4F9B41798EE4011709ABC /* ogg.h */,
+				78EF5D29B0CCD5E7A5E4C3A477E3D760 /* opus.h */,
+				9EC3ABFF92E64018F20F53E0CEAC7A5F /* opus_defines.h */,
+				5D8CC2989AD45D11C159F2C7B16B0159 /* opus_header.c */,
+				696FCEC7DDD2D39E8AB7F67BCBBA5D9D /* opus_header.h */,
+				E440C9780EB8F8949255135A5A4032FF /* opus_multistream.h */,
+				C5B302ADD174C1176EE5BFCC25C72F7C /* opus_types.h */,
+				8BEAC54B68074F1D67463DD200637389 /* os_types.h */,
+				CA5051B3E075484D77059EBFA6053C9A /* Pronunciation.swift */,
+				5EF37A2DFA57970D106521632502F4D5 /* Shared.swift */,
+				579DC7DF3EA20B052B6AC833C5C46556 /* SupportedFeatures.swift */,
+				EE87DE3A28AB228B58F7456DCDD4A4CC /* Text.swift */,
+				ACF6976BEF1FA1E120683B9D2FDB6260 /* TextToSpeech.swift */,
+				C285DA13C05500E0231FEC86B345EC5B /* TextToSpeechDecoder.swift */,
+				8E1AA4CF87101397CCC544CE22E771F7 /* Translation.swift */,
+				A06850ACE28677A9C7D95452EA5BD40D /* UpdateVoiceModel.swift */,
+				842B8D4AEDE2E9A7E4A1572F99394C54 /* Voice.swift */,
+				2AA73B908634655B1A6FBC514335BFBA /* VoiceCustomization.swift */,
+				1212D1AF579BC4468A667FE65E947407 /* VoiceModel.swift */,
+				E28521D89FAC42BCC7FF3AD194411EEB /* VoiceModels.swift */,
+				88FF2894663E5F77BDD52BA0FCB75B52 /* Voices.swift */,
+				169592A15664E6CD6AB1527BAA737A9B /* WAVRepair.swift */,
+				48C6614ADF053253C6B5838AC0083B88 /* Word.swift */,
+				366EF45EF89FAE033F733E37EA33C639 /* Words.swift */,
+				34A27221F8A6BEFCAF35721923E9BF1E /* Frameworks */,
+				A75DF8E88E963344A9D557F4F5512A32 /* Support Files */,
+			);
+			name = IBMWatsonTextToSpeechV1;
+			path = IBMWatsonTextToSpeechV1;
+			sourceTree = "<group>";
+		};
+		040DE45466CA8ACA21EDC3114F03365C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B6E05614536BED60338E5550ACE98D2 /* RestKit.framework */,
+				90E9759CB89F531E5F7E87A6364A6A19 /* Starscream.framework */,
+				12754310C3254B2DB06132ED9DF0D3F2 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12754310C3254B2DB06132ED9DF0D3F2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7E3F3824DD9C0924D3F3F0E0532E802D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		33406847B52A91F543789D7730F6F5D7 /* IBMWatsonSpeechToTextV1 */ = {
+			isa = PBXGroup;
+			children = (
+				85D046C63F155901C6881DC0926BB2FF /* AcousticModel.swift */,
+				8F26E3869B9237A7A4A9609401EAA041 /* AcousticModels.swift */,
+				B22DF84F6C5014B01F89BEFEDE19B7AB /* AudioDetails.swift */,
+				A0EFA04290A01BBFBBDFCE12E037500C /* AudioListing.swift */,
+				DB61B410D3AC12312D2383436880AB5F /* AudioListingContainer.swift */,
+				038092832CF56494430A8F9DDA564455 /* AudioListingDetails.swift */,
+				A11484E0B5C308D4732ED3A837DA3EB9 /* AudioMetrics.swift */,
+				1BCE152B77374CD35ED414F5B29CAD18 /* AudioMetricsDetails.swift */,
+				797F9053E1EC11D56C61B04887A9585A /* AudioMetricsHistogramBin.swift */,
+				3409DC36B889AFB34C1CCAA492E1595D /* AudioResource.swift */,
+				51B0BE543B5EEE684645C7055FFDB06E /* AudioResourceDetails.swift */,
+				2B450EDA12D4D31686451F9BB88FE1FF /* AudioResources.swift */,
+				4FFACD534DC63E59FECBE867DD0D9721 /* Corpora.swift */,
+				4A40179CA7F407738DE73391F8195CE6 /* Corpus.swift */,
+				DD5E48718AEA85DDA870216469F22451 /* CreateAcousticModel.swift */,
+				2BA3458F16F3A0B27FE37BFE1AF2A3B1 /* CreateLanguageModel.swift */,
+				CEA1B9A0B3805A49D8DB70DADFA487C7 /* CustomWord.swift */,
+				11C7E4E4E8047786D187550F7120A55D /* CustomWords.swift */,
+				865542A3FF0EBA3DE52768360A012C1B /* Grammar.swift */,
+				8EED3795C05CC4981F0D0F026EFCD613 /* Grammars.swift */,
+				88211B1570C74BC6F9E1799310049F0D /* InsecureConnection.swift */,
+				40764C0D4724ED265879678C619B4647 /* KeywordResult.swift */,
+				620344E327B987F8B1508EEB263DC0D2 /* LanguageModel.swift */,
+				074D0E5E2DFF0F28F5B9BEC7353A9B08 /* LanguageModels.swift */,
+				0AAF8D6114B07F920F8F106748CC231B /* ogg.h */,
+				9042379D9C606994BB0F8F8203AFC831 /* opus.h */,
+				578BFB984EE3C42580D5F0A0D8257D01 /* opus_defines.h */,
+				70AF812E3F010F6E3638A79A36981F74 /* opus_multistream.h */,
+				1572B8E0ED8E9B0FE3B6FA779718025F /* opus_types.h */,
+				C40C914BEA01AB4E6442641F02E7ED0B /* os_types.h */,
+				CE2383E61FCDE0FDC8343B76C00972D9 /* ProcessedAudio.swift */,
+				255B3DAEB2AD999C60AB5B57D1BBBC67 /* ProcessingMetrics.swift */,
+				3E92AD177917EF0C71569D73FC0D5B5A /* RecognitionJob.swift */,
+				632748153D2C3010929A3D19B6AA6471 /* RecognitionJobs.swift */,
+				8053623F7E188EB235FD1E6F7F53B003 /* RecognitionSettings.swift */,
+				68EC0FA5AFB96AD0840683EEC849394E /* RecognitionState.swift */,
+				895E4F899AB19570AA0CBA674470C612 /* RecognitionStop.swift */,
+				F2BC9E79FE0F2668E4E4D71F454FA783 /* RecognizeCallback.swift */,
+				04CFF9B455D4D20E9530DF75DAFC3225 /* RegisterStatus.swift */,
+				740B190581545DB7156DA2C5E2DEF01A /* Shared.swift */,
+				71F06F3593FB106D3019F97219A54EC7 /* SpeakerLabelsResult.swift */,
+				AB872E95E3AD8DE93F09307FF70528EF /* SpeechModel.swift */,
+				F38549D848C75640738E5A32BE786D2F /* SpeechModels.swift */,
+				843C2F826C4FF82DE302FDA08117A836 /* SpeechRecognitionAlternative.swift */,
+				53878A43B106C73C147AA3CE98B9208A /* SpeechRecognitionResult.swift */,
+				3A195B0AF3ACE77D7C7295AEED8CF66A /* SpeechRecognitionResults.swift */,
+				207AE816AA838A47D87C84E1B9A5A9C7 /* SpeechRecognitionResultsAccumulator.swift */,
+				C079374E5B7B12DC0D7A9C074E503E74 /* SpeechToText.swift */,
+				A4E61EAE3100FED294142BF84CFFF00E /* SpeechToText+Recognize.swift */,
+				36EC20E959C1527A873DEF632EBBA651 /* SpeechToTextEncoder.swift */,
+				975920284881F6E7D74C9DCF9381BC00 /* SpeechToTextRecorder.swift */,
+				ADE661F165CF0360F6CE2E1932434C26 /* SpeechToTextSession.swift */,
+				DDB4C690EE3DAADF539115A5A29BF7B8 /* SpeechToTextSocket.swift */,
+				E8E03A859CD2078A249A9CCE63E9EA2B /* SpeechToTextState.swift */,
+				171642EC3B12D817F118764FD3FA5A03 /* SupportedFeatures.swift */,
+				7E3CB7D4D1199349DF92FE947876D92B /* TrainingResponse.swift */,
+				302B6E2DFEAE7EFAD26E4F64C91EC805 /* TrainingWarning.swift */,
+				62A038433B9B8AB7FB565962354E3A0F /* Word.swift */,
+				FBE6BE26E8695455728D0B8454FA09EE /* WordAlternativeResult.swift */,
+				1B9D1980710F3E497DFED705D931DE34 /* WordAlternativeResults.swift */,
+				A076150796C28EFA310CB5B08935C3D7 /* WordConfidence.swift */,
+				A91D1A268BE2797F01917DD85B47B185 /* WordError.swift */,
+				4B221773513036E773AC767E8F32371A /* Words.swift */,
+				40B04B814CC9A87A0703D7C37021843E /* WordTimestamp.swift */,
+				629E5E29E601B1336CEA4F78720A1AEF /* Frameworks */,
+				DED2E300784AE047209EB0EA5276421F /* Support Files */,
+			);
+			name = IBMWatsonSpeechToTextV1;
+			path = IBMWatsonSpeechToTextV1;
+			sourceTree = "<group>";
+		};
+		34A27221F8A6BEFCAF35721923E9BF1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9165FF1EC16098468A9F034448D94C1C /* libogg_tts.a */,
+				2DDC53E089CF78948D1BD7F645E1453F /* libopus_tts.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F1EEDCA2653AC0CD20E55F9D695B61C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9D62046AFFEEF59EFA0FB1C83C1DE54 /* IBMWatsonRestKit.modulemap */,
+				98BCA51F4F39958E681F7F7D43E72608 /* IBMWatsonRestKit-dummy.m */,
+				C1A891B54285B554D0BAD0DB6777ADDA /* IBMWatsonRestKit-Info.plist */,
+				B084F17B148960927C297DE3C6EDE68A /* IBMWatsonRestKit-prefix.pch */,
+				63F77F7C0219F42FC4D9B97259A62333 /* IBMWatsonRestKit-umbrella.h */,
+				2018ACCCCB4864CB66ED81C59272F08D /* IBMWatsonRestKit.debug.xcconfig */,
+				C9FE7A2531D56E29B1DA3CB096FB057A /* IBMWatsonRestKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonRestKit";
+			sourceTree = "<group>";
+		};
+		54EFA013DF5BB6B6B7ECF4B0A13A1D41 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1ECCB68DF1B851025B57DD7D6DCA551 /* Pods-NaoRobots */,
+				C64897415D8A8D42031CBFCE94D731C1 /* Pods-NaoRobots-NaoRobotsUITests */,
+				5C6236083C5073DE57322C583F2D0667 /* Pods-NaoRobotsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5C6236083C5073DE57322C583F2D0667 /* Pods-NaoRobotsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA7BC583767651CA135FFF418F6D4E48 /* Pods-NaoRobotsTests.modulemap */,
+				F48040A1716444DB8C7E3361EFC45F74 /* Pods-NaoRobotsTests-acknowledgements.markdown */,
+				486CFB0C76A93644F009333340B4D97A /* Pods-NaoRobotsTests-acknowledgements.plist */,
+				7E9DD34E4942DC9334EA53A7F0C462CD /* Pods-NaoRobotsTests-dummy.m */,
+				D400BA4533D5BEE8DB07098677CAC7A9 /* Pods-NaoRobotsTests-Info.plist */,
+				AF816027DE88F3F8605650AB9CC6D72F /* Pods-NaoRobotsTests-umbrella.h */,
+				8572E938C1A03967979B101E9ABBB2AF /* Pods-NaoRobotsTests.debug.xcconfig */,
+				CF9E5DC026FBB27A9AE20A9414257AAC /* Pods-NaoRobotsTests.release.xcconfig */,
+			);
+			name = "Pods-NaoRobotsTests";
+			path = "Target Support Files/Pods-NaoRobotsTests";
+			sourceTree = "<group>";
+		};
+		629E5E29E601B1336CEA4F78720A1AEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98BABE7F9CD1605122E14B7AB32B9811 /* libogg_stt.a */,
+				99F8DBF821F2C7E79F7349C77CC11ED9 /* libopus_stt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		806F7973C3D98DEF917886C950200E2C /* IBMWatsonAssistantV1 */ = {
+			isa = PBXGroup;
+			children = (
+				99F7D50014159526DB3866C700E95144 /* Assistant.swift */,
+				9FA5FA7BBE3F547F7546B5A7D6645D79 /* CaptureGroup.swift */,
+				6FDA6F3304A3EF56F2373010B8EC273C /* Context.swift */,
+				F119F51EE6A358780B61B16807F6B282 /* Counterexample.swift */,
+				D9C0C26CD0B1CB613135E72645BEFC8C /* CounterexampleCollection.swift */,
+				ADBF03F04D8ACDC0B7C8343D13EEF711 /* CreateEntity.swift */,
+				64F0EC5374DFD108DC47E5306DEEBE05 /* CreateIntent.swift */,
+				3AEBB24337532E600CE3037C01D21D58 /* CreateValue.swift */,
+				A230A0B87BB7E0EF634ACC63B4196AD7 /* CreateWorkspace.swift */,
+				EDA63A19D9E91742701C9EF58D172465 /* DialogNode.swift */,
+				373D0A5D880A14B2DC0336A7E1313B60 /* DialogNodeAction.swift */,
+				27B154ED9F6B6EE053556A1FD49575BD /* DialogNodeCollection.swift */,
+				6F3903610E57EC2E5F4605F29448493A /* DialogNodeNextStep.swift */,
+				4DB2CEDB3D0D773401D449D756683747 /* DialogNodeOutput.swift */,
+				091569F141B8B77381261E272B7F600A /* DialogNodeOutputGeneric.swift */,
+				658D344AB376F2A3B4BE863F8429372D /* DialogNodeOutputModifiers.swift */,
+				3A456580EF5561C441005A4036FFD547 /* DialogNodeOutputOptionsElement.swift */,
+				46588FBAA98A7B91763A00067B14D10A /* DialogNodeOutputOptionsElementValue.swift */,
+				C95881992D9095A5F83E3CE8F49BEAA2 /* DialogNodeOutputTextValuesElement.swift */,
+				B752F2796219139A947DE9A74030329B /* DialogNodeVisitedDetails.swift */,
+				845F8B2716E0585443F9CB573BE9405D /* DialogRuntimeResponseGeneric.swift */,
+				2B29A64B724244B9532B865DBF5ECA1F /* DialogSuggestion.swift */,
+				497A4E9F6057F4C831F141F9BE9BF334 /* DialogSuggestionValue.swift */,
+				2E6DA8C59E3191F1DA4AC406DC2B3F42 /* Entity.swift */,
+				41D54F2AD2915F080AB4ABDA6CB9A9B8 /* EntityCollection.swift */,
+				D2A8A8216C558BAD551E01A7E6686A8D /* EntityMention.swift */,
+				8FDE44F8F9EF0A9E51D8B6BF42198301 /* EntityMentionCollection.swift */,
+				F3974031CC4C47F096BFD66020AE963E /* Example.swift */,
+				1897C3CE8C673420A094C03D1C1017A4 /* ExampleCollection.swift */,
+				6786A0E032F832874B99ADCBAE030B0A /* InsecureConnection.swift */,
+				7FCEAB1006C44E22D812A18477C4B746 /* Intent.swift */,
+				E56426131771A5C381A0DE42C567D306 /* IntentCollection.swift */,
+				EE9168B1FD642EB0EF1F44FDAB257936 /* Log.swift */,
+				3D4F9AE5BD6DE34EF73CD15FAA7D89AF /* LogCollection.swift */,
+				D99E39EC938885915FC7FC3459C8DFC3 /* LogMessage.swift */,
+				E9EDEC3C735275C69C08A7D96F9F6DE0 /* LogPagination.swift */,
+				FBF57AD8FA7C27FC3EFC7DC16D72CB05 /* Mention.swift */,
+				54C3462A41759CF72A9EC9C9E7E4133F /* MessageContextMetadata.swift */,
+				51519C9D6FE0839E018488BCBF1BCB41 /* MessageInput.swift */,
+				362D5461650D191CDA77C06655A62957 /* MessageRequest.swift */,
+				C632E306E0E30C0A2AB6C7E01E3CFDFD /* MessageResponse.swift */,
+				BA007F66EA5E8D5586C4B53CD6A13FCE /* OutputData.swift */,
+				6141565F6431F35C783BE16C377F5FFB /* Pagination.swift */,
+				C18B14F7365472D7DBE327D21B412716 /* RuntimeEntity.swift */,
+				E643400D0A11FB812C627091876B9F63 /* RuntimeIntent.swift */,
+				6508DBC96F3D7394D657A12D6934B06E /* Shared.swift */,
+				0B18BB523B1B8030BEE59F18EA3A0A6C /* Synonym.swift */,
+				C4E8886875618CB211AE7E13403989B9 /* SynonymCollection.swift */,
+				2567E1342E09754BAA0F3F0EFFFAC860 /* SystemResponse.swift */,
+				B3CED216BCB9AF4BD488C8AC26416C97 /* UpdateCounterexample.swift */,
+				8489B51B09B6EDB1DAFE74D852F66840 /* UpdateDialogNode.swift */,
+				C5A061773467A33246D98763439BD0E1 /* UpdateEntity.swift */,
+				73B1AF41C1295D0C14D62F35A174FF5B /* UpdateExample.swift */,
+				6921552DCB1DB9B4EB21A121B0584F22 /* UpdateIntent.swift */,
+				F05F71D276E75FA2633A1891B5C74251 /* UpdateSynonym.swift */,
+				F17CC3D65326E6CE1F6D0AF8809D413A /* UpdateValue.swift */,
+				5B6D23ECDA1C9DDA64ED2F6BB9121F40 /* UpdateWorkspace.swift */,
+				48A4EACB414F276ADF33B04E208E3B4D /* Value.swift */,
+				8E7886CF9DC1E15780B88D27FA8E427E /* ValueCollection.swift */,
+				AC8770CBA615EC018A1081ACF33C6DC2 /* Workspace.swift */,
+				AC4444D0081220469E97FF5F448522FE /* WorkspaceCollection.swift */,
+				D32B252D4C6E7B3FF3A2B524C7438DDA /* WorkspaceSystemSettings.swift */,
+				6C036D8990E27070F10030BC533651CF /* WorkspaceSystemSettingsDisambiguation.swift */,
+				E3B3DE071542E054DD09211B847509AA /* WorkspaceSystemSettingsTooling.swift */,
+				BEC86A99B87B0B1D5F59D5B1A8422F82 /* Support Files */,
+			);
+			name = IBMWatsonAssistantV1;
+			path = IBMWatsonAssistantV1;
+			sourceTree = "<group>";
+		};
+		A722EBDD7F8B54D759183B98EDF025B3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D720EED8AB44C60D520FF2429EE0AF13 /* Starscream.modulemap */,
+				B2B9ED8CE2F2B8655DC79E19085E72AF /* Starscream-dummy.m */,
+				F258ED0994F8A32457FA2B8065612D3F /* Starscream-Info.plist */,
+				B6CCDE61AED833E891DFE0AFF4E7AC52 /* Starscream-prefix.pch */,
+				86155A41E5CD342A5387A34E8010594E /* Starscream-umbrella.h */,
+				B9DFCAAC039849E20D9FE9EFCD729448 /* Starscream.debug.xcconfig */,
+				07BE8BF66F7B3A0A47AD78153A477FC0 /* Starscream.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		A75DF8E88E963344A9D557F4F5512A32 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F5AC211724540372D57815B61D55E61 /* IBMWatsonTextToSpeechV1.modulemap */,
+				3970E7FF5A7F660984FD197ADB9425CD /* IBMWatsonTextToSpeechV1-dummy.m */,
+				A583B8542F40FF926A43B870194269DF /* IBMWatsonTextToSpeechV1-Info.plist */,
+				579BBC20C7C186806BB76E3FF1BE2E16 /* IBMWatsonTextToSpeechV1-prefix.pch */,
+				02B9BAF6622C5744EEAC7F1CE137550D /* IBMWatsonTextToSpeechV1-umbrella.h */,
+				1349A416573C2C8B69ECC17426AD18B9 /* IBMWatsonTextToSpeechV1.debug.xcconfig */,
+				C5721B1B658AB2ECDECEB577EF0AA645 /* IBMWatsonTextToSpeechV1.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonTextToSpeechV1";
+			sourceTree = "<group>";
+		};
+		ABCBE99F60AC60146E699142CC647BEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				806F7973C3D98DEF917886C950200E2C /* IBMWatsonAssistantV1 */,
+				E1055A8B1813F7DA0034CDB43C4F7AEE /* IBMWatsonRestKit */,
+				33406847B52A91F543789D7730F6F5D7 /* IBMWatsonSpeechToTextV1 */,
+				012B32E371005A0A5BCAC9578688BFE2 /* IBMWatsonTextToSpeechV1 */,
+				B5B56D283BD409E04EC6C53773C5646B /* Starscream */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5B56D283BD409E04EC6C53773C5646B /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				10E868382524D64EE180AC90AE2844AE /* Compression.swift */,
+				EE6E6213C76414C14D6CBC47E25BB1BB /* SSLSecurity.swift */,
+				16D96B9BD50A826A37D7CBBCDF452597 /* WebSocket.swift */,
+				A722EBDD7F8B54D759183B98EDF025B3 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		BEC86A99B87B0B1D5F59D5B1A8422F82 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AD436F14F963E85B819AF87FBD33C2D /* IBMWatsonAssistantV1.modulemap */,
+				6F07C34F48B9A0007A0712DB26678412 /* IBMWatsonAssistantV1-dummy.m */,
+				29A1B6A5BE5659A25C5E45DA4C63BE53 /* IBMWatsonAssistantV1-Info.plist */,
+				F63267462420D4DECC3B2B0BC7F5A26D /* IBMWatsonAssistantV1-prefix.pch */,
+				84330F23CAF917E444337AE44FE6EBFD /* IBMWatsonAssistantV1-umbrella.h */,
+				E8657D0F65AB69DF90B10E506F30D09E /* IBMWatsonAssistantV1.debug.xcconfig */,
+				616A807A5B626EEA96679F73991A0D05 /* IBMWatsonAssistantV1.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonAssistantV1";
+			sourceTree = "<group>";
+		};
+		C64897415D8A8D42031CBFCE94D731C1 /* Pods-NaoRobots-NaoRobotsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B25981602FD249421553180E6F99DB30 /* Pods-NaoRobots-NaoRobotsUITests.modulemap */,
+				31DA2CC814DE657F2BB2E8D9C99EFD67 /* Pods-NaoRobots-NaoRobotsUITests-acknowledgements.markdown */,
+				1E9F3433E2040971E1AB3D4BCABBF133 /* Pods-NaoRobots-NaoRobotsUITests-acknowledgements.plist */,
+				AD62204C0DB19F45DB28825834C98D98 /* Pods-NaoRobots-NaoRobotsUITests-dummy.m */,
+				9B7A9C081237F3AB11B0F05A92BC0867 /* Pods-NaoRobots-NaoRobotsUITests-frameworks.sh */,
+				E70C2809C6CA1412FC5D56F6567A8EF4 /* Pods-NaoRobots-NaoRobotsUITests-Info.plist */,
+				0BCE48E315B5EB570170D80964D85E5C /* Pods-NaoRobots-NaoRobotsUITests-umbrella.h */,
+				BE148C3BF30A18CE3152350026AF7A5B /* Pods-NaoRobots-NaoRobotsUITests.debug.xcconfig */,
+				30CEFCC0393224105F6C800026F1BFF8 /* Pods-NaoRobots-NaoRobotsUITests.release.xcconfig */,
+			);
+			name = "Pods-NaoRobots-NaoRobotsUITests";
+			path = "Target Support Files/Pods-NaoRobots-NaoRobotsUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				040DE45466CA8ACA21EDC3114F03365C /* Frameworks */,
+				ABCBE99F60AC60146E699142CC647BEC /* Pods */,
+				FC66BB8B7A701D864DBF42E33345DB45 /* Products */,
+				54EFA013DF5BB6B6B7ECF4B0A13A1D41 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DED2E300784AE047209EB0EA5276421F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD138F5AD11751B40EA830F8B8325FA9 /* IBMWatsonSpeechToTextV1.modulemap */,
+				DA0B7E4D3B04E42739EB134B5A855D5B /* IBMWatsonSpeechToTextV1-dummy.m */,
+				B1D18B09018B2231EDC6AF13D5883B6C /* IBMWatsonSpeechToTextV1-Info.plist */,
+				9E9F9272DFCFE096A30FE1E6667AE47D /* IBMWatsonSpeechToTextV1-prefix.pch */,
+				0A46358763FF4642CBCE52667B24EF7E /* IBMWatsonSpeechToTextV1-umbrella.h */,
+				E5DA4B0D1CC7D80DE3966C590DFC922F /* IBMWatsonSpeechToTextV1.debug.xcconfig */,
+				2429F84FF3794D34AA0F2DF5DE8E02C9 /* IBMWatsonSpeechToTextV1.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonSpeechToTextV1";
+			sourceTree = "<group>";
+		};
+		E1055A8B1813F7DA0034CDB43C4F7AEE /* IBMWatsonRestKit */ = {
+			isa = PBXGroup;
+			children = (
+				036B3BEE1D148B4FC13E6D00B4B4311D /* Authentication.swift */,
+				14ADD3B8BBB086FCD55142D30876B464 /* CodableExtensions.swift */,
+				A9E43F523BC3FE093A3CE79EB2013498 /* JSON.swift */,
+				3D2CCC0D2CBD4EA13F26627AE56AF752 /* MultipartFormData.swift */,
+				00597A0AF0D797B47105453161A900C6 /* RestError.swift */,
+				C5358DDBD3B1E8DA67EDBEB045C4CDDB /* RestRequest.swift */,
+				6838B98FBCF4E620681C576BB6F6A51A /* RestResponse.swift */,
+				4F1EEDCA2653AC0CD20E55F9D695B61C /* Support Files */,
+			);
+			name = IBMWatsonRestKit;
+			path = IBMWatsonRestKit;
+			sourceTree = "<group>";
+		};
+		F1ECCB68DF1B851025B57DD7D6DCA551 /* Pods-NaoRobots */ = {
+			isa = PBXGroup;
+			children = (
+				F286D7310B97BA9411CC8D79B2C2C3C4 /* Pods-NaoRobots.modulemap */,
+				BE6AF0B5C4AB442B60CE18DD5E539002 /* Pods-NaoRobots-acknowledgements.markdown */,
+				323F0380DF1B534BA281C022AE97E071 /* Pods-NaoRobots-acknowledgements.plist */,
+				49BA01217C5333D87CA6BF11DF352E29 /* Pods-NaoRobots-dummy.m */,
+				9BBDD35BB99406DFC950B707E0162646 /* Pods-NaoRobots-frameworks.sh */,
+				0BA6B6D61429838B5158DDF8FE9C64DE /* Pods-NaoRobots-Info.plist */,
+				0010E5E9B34B1627C160160578F54CDF /* Pods-NaoRobots-umbrella.h */,
+				ADDEC3133C3453F45569F95F0DB0797C /* Pods-NaoRobots.debug.xcconfig */,
+				57BCECCF1670393F1F5C3B4B0EB714DD /* Pods-NaoRobots.release.xcconfig */,
+			);
+			name = "Pods-NaoRobots";
+			path = "Target Support Files/Pods-NaoRobots";
+			sourceTree = "<group>";
+		};
+		FC66BB8B7A701D864DBF42E33345DB45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0C47DA9583345F6EF79C2752D401335 /* Assistant.framework */,
+				03CCB112B8FD5FADC684F85FFABB643D /* Pods_NaoRobots.framework */,
+				03CED7471E2C1ED94E516FD90F642005 /* Pods_NaoRobots_NaoRobotsUITests.framework */,
+				9067ED99B4EB0478DA35960D2CC8F12B /* Pods_NaoRobotsTests.framework */,
+				B79240122B9044C232282C412342BA7E /* RestKit.framework */,
+				07F10DE944B6A35DEF451FE6D50C5994 /* SpeechToText.framework */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
+				36FC23FCB21A94C8D3C0E44D1DD6B442 /* TextToSpeech.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0EF304523F552A4433C86C2EFCB25481 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64E19C19528776FC69C32BC2AE86835 /* Pods-NaoRobotsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D9CD6433C2C9860F173209CF50BA2A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B9FBF9129972EB1E7F6C47E6E7172D /* IBMWatsonTextToSpeechV1-umbrella.h in Headers */,
+				940CEA94E69C609A48BA719FD9EEEAE0 /* ogg.h in Headers */,
+				996AEE0816720E1A2F0E834D5BC37F5F /* opus.h in Headers */,
+				77116C0F4A19B37210A04A22BD7A8242 /* opus_defines.h in Headers */,
+				276877705F66D0E37D5523905D26C136 /* opus_header.h in Headers */,
+				C9D54817D7BF2582836D4206414EFD38 /* opus_multistream.h in Headers */,
+				C566F427479F812423779D46B6FDD0B0 /* opus_types.h in Headers */,
+				5C92F1669599A0C257C40B4A6FB95195 /* os_types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BD6335E99E1635F188065D2D9F6F261 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2C2A16B8C934C31C45460F9C75D2EC /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A144E6A0C5F0FF9CEA518B95DC18C20 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DDA9CC01D333D4716C8E392A2AA92D3 /* IBMWatsonAssistantV1-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCF57401DA633A4977AB910EB316898 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B157DBBD4101B32466921DC0425D70C0 /* IBMWatsonSpeechToTextV1-umbrella.h in Headers */,
+				FABE9530B5BD8F53744ECE097D170891 /* ogg.h in Headers */,
+				32DDF8626C0286D3F5CE0DA4E440BFA4 /* opus.h in Headers */,
+				01B6DA0154AE1A5E06411BE1241B92E6 /* opus_defines.h in Headers */,
+				357A8DB0BBAC97F1661578ED3BDC92B5 /* opus_multistream.h in Headers */,
+				38668071BF988A3C45B586B29FFF9BEE /* opus_types.h in Headers */,
+				52A632A039B5FBD12B3FD836B67F669A /* os_types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804DC0D518B0382CAA0DDD90AD750368 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED018F31211B5E19FE9BBF9FD1AEA360 /* Pods-NaoRobots-NaoRobotsUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B34DA577BCE023797174F4176F8AECC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEFBE0C8C282682DF03F690ABC36536 /* IBMWatsonRestKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7FB947EECB5DE919E4889086E3CEE46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B125BE0240CE9BA49F1CD441D2957A /* Pods-NaoRobots-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0147FA11D7F04BDE7AA3DE30E6B7BC34 /* Pods-NaoRobotsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E003E702F3E4005B708DF4CD549090D4 /* Build configuration list for PBXNativeTarget "Pods-NaoRobotsTests" */;
+			buildPhases = (
+				0EF304523F552A4433C86C2EFCB25481 /* Headers */,
+				A3A109DF1167E89E84293E524E6668C3 /* Sources */,
+				316F170FEBA3DE415D2110293B8B76A4 /* Frameworks */,
+				C08A98AC2C7028C3F4543955418F9BCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				325323599AAE3F4BD01298C05C7B0F7B /* PBXTargetDependency */,
+			);
+			name = "Pods-NaoRobotsTests";
+			productName = "Pods-NaoRobotsTests";
+			productReference = 9067ED99B4EB0478DA35960D2CC8F12B /* Pods_NaoRobotsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43AE6AA6E87FF372F6962E32BB450296 /* Pods-NaoRobots-NaoRobotsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6071C96948F70B026FEF6CE86046C12 /* Build configuration list for PBXNativeTarget "Pods-NaoRobots-NaoRobotsUITests" */;
+			buildPhases = (
+				804DC0D518B0382CAA0DDD90AD750368 /* Headers */,
+				99258EF6E6ADCF05261589D74E7272C6 /* Sources */,
+				D889BF6E77A48D50ECF656913FDDAC9C /* Frameworks */,
+				776368C9C5BD2BB2C270DD32ACEFF0EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98841D0120A28A8A000DDF05EC4F970F /* PBXTargetDependency */,
+				762634195AD6FB93DA772E19023ECE1A /* PBXTargetDependency */,
+				DF393DB7584D5527D7E69E35FC6BBF50 /* PBXTargetDependency */,
+				BA5323B3B518BCF1E799299242CAAC14 /* PBXTargetDependency */,
+				B95AEC98BA365D921F813E771EBAA274 /* PBXTargetDependency */,
+			);
+			name = "Pods-NaoRobots-NaoRobotsUITests";
+			productName = "Pods-NaoRobots-NaoRobotsUITests";
+			productReference = 03CED7471E2C1ED94E516FD90F642005 /* Pods_NaoRobots_NaoRobotsUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		85F80CBB88E15EBEE7535E1C6ED1B185 /* IBMWatsonSpeechToTextV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34790F08A3480F23F2513B7B4D03557E /* Build configuration list for PBXNativeTarget "IBMWatsonSpeechToTextV1" */;
+			buildPhases = (
+				6DCF57401DA633A4977AB910EB316898 /* Headers */,
+				89A069C3558348685DA7C29D4D84BA4E /* Sources */,
+				BEDDAD512E122BAA7FC87D2F15E29EC7 /* Frameworks */,
+				ADA9B376CFA29A150A04CA0E9F44D6E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BBA932E72D9D91954CF3527CBEAB496 /* PBXTargetDependency */,
+				CAE3B58EB14B346AC6B403912604373B /* PBXTargetDependency */,
+			);
+			name = IBMWatsonSpeechToTextV1;
+			productName = IBMWatsonSpeechToTextV1;
+			productReference = 07F10DE944B6A35DEF451FE6D50C5994 /* SpeechToText.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F43C06D9E8280E06C585D05624500D6C /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				3BD6335E99E1635F188065D2D9F6F261 /* Headers */,
+				F5AC336894528A7925AD3BCB4E27B2B2 /* Sources */,
+				F0EFE16408FEB2CEAF3BC983E883CFB3 /* Frameworks */,
+				1533F07130D0229ECE9FAC454DE7D416 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0D0D9F7CF611B6D221589722C5CBBDE /* IBMWatsonRestKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5C975DAB119C40208AE2CF9BFE54EE /* Build configuration list for PBXNativeTarget "IBMWatsonRestKit" */;
+			buildPhases = (
+				B34DA577BCE023797174F4176F8AECC6 /* Headers */,
+				C6F3237E76637D8E384252AF5B4530A7 /* Sources */,
+				0820ED4CDC9B19F72FE3E5EC3884CAEB /* Frameworks */,
+				28D49979FD3225E6E30524CF0E1190FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBMWatsonRestKit;
+			productName = IBMWatsonRestKit;
+			productReference = B79240122B9044C232282C412342BA7E /* RestKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B850F15CAD98D886DF8055D0D3919D4D /* Pods-NaoRobots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3E8CB3ABA81BCBCD8E7CC424F548A14 /* Build configuration list for PBXNativeTarget "Pods-NaoRobots" */;
+			buildPhases = (
+				C7FB947EECB5DE919E4889086E3CEE46 /* Headers */,
+				E3800408D8162DAC4F96AFDE5A123171 /* Sources */,
+				3469AC4D9D1C3041DCBE94B6F339AE55 /* Frameworks */,
+				AF9C5487201BE27A59C04708C041D553 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A04D1A2B96FB4D35C0EE9A35CF75551B /* PBXTargetDependency */,
+				1BC2C3EE1A1C5F75E86E4B96D1DC8CE6 /* PBXTargetDependency */,
+				5E15EB4BE99E5A6220CE02D2515D3395 /* PBXTargetDependency */,
+				E523E8AAE5E7CF93818CFBA1EC584393 /* PBXTargetDependency */,
+				C4979F0FC7FDDC7033BA973C439E6E6E /* PBXTargetDependency */,
+			);
+			name = "Pods-NaoRobots";
+			productName = "Pods-NaoRobots";
+			productReference = 03CCB112B8FD5FADC684F85FFABB643D /* Pods_NaoRobots.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C808A50591FAAFF40F13A6BDC6845EB4 /* IBMWatsonAssistantV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2CE0AC52A8590B98BD969AA54ED4298 /* Build configuration list for PBXNativeTarget "IBMWatsonAssistantV1" */;
+			buildPhases = (
+				5A144E6A0C5F0FF9CEA518B95DC18C20 /* Headers */,
+				0DC589E7AAC6251EC11DB5A8A4AC7A6C /* Sources */,
+				0A6AEFB53E754EE8F20EF269D5B4B003 /* Frameworks */,
+				FE46A8B7912568AC627F50082E1CBFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FE9EC1ED9AD96D190699C6772893148 /* PBXTargetDependency */,
+			);
+			name = IBMWatsonAssistantV1;
+			productName = IBMWatsonAssistantV1;
+			productReference = F0C47DA9583345F6EF79C2752D401335 /* Assistant.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0C8766A76CF406E4C2FDDF51E397DC3 /* IBMWatsonTextToSpeechV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA63196014F4C98A5F55F1BF64C8D4B /* Build configuration list for PBXNativeTarget "IBMWatsonTextToSpeechV1" */;
+			buildPhases = (
+				1D9CD6433C2C9860F173209CF50BA2A7 /* Headers */,
+				9AFB81915D7AD086FCEFD711D0BE0BFD /* Sources */,
+				0ED54C4FF829379E64E5993BCA39A2D8 /* Frameworks */,
+				B139508284660A1A413D6CD8C2D78EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D55E2643AB3506D3A47B86DB1294A0FE /* PBXTargetDependency */,
+			);
+			name = IBMWatsonTextToSpeechV1;
+			productName = IBMWatsonTextToSpeechV1;
+			productReference = 36FC23FCB21A94C8D3C0E44D1DD6B442 /* TextToSpeech.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FC66BB8B7A701D864DBF42E33345DB45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C808A50591FAAFF40F13A6BDC6845EB4 /* IBMWatsonAssistantV1 */,
+				A0D0D9F7CF611B6D221589722C5CBBDE /* IBMWatsonRestKit */,
+				85F80CBB88E15EBEE7535E1C6ED1B185 /* IBMWatsonSpeechToTextV1 */,
+				D0C8766A76CF406E4C2FDDF51E397DC3 /* IBMWatsonTextToSpeechV1 */,
+				B850F15CAD98D886DF8055D0D3919D4D /* Pods-NaoRobots */,
+				43AE6AA6E87FF372F6962E32BB450296 /* Pods-NaoRobots-NaoRobotsUITests */,
+				0147FA11D7F04BDE7AA3DE30E6B7BC34 /* Pods-NaoRobotsTests */,
+				9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1533F07130D0229ECE9FAC454DE7D416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D49979FD3225E6E30524CF0E1190FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776368C9C5BD2BB2C270DD32ACEFF0EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA9B376CFA29A150A04CA0E9F44D6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9C5487201BE27A59C04708C041D553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B139508284660A1A413D6CD8C2D78EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C08A98AC2C7028C3F4543955418F9BCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE46A8B7912568AC627F50082E1CBFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DC589E7AAC6251EC11DB5A8A4AC7A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4496EAFE42225558379F3F19415E643 /* Assistant.swift in Sources */,
+				7860DC4EE9E73903DCE7C8F11078248C /* CaptureGroup.swift in Sources */,
+				2BD473F9410FC5C592B9EC7BBCE61AF8 /* Context.swift in Sources */,
+				EE2F94DE84E6CE2FC8A5C2EA65FBEE18 /* Counterexample.swift in Sources */,
+				A278D2B2C1E39BF7CC4310506EDAD0C7 /* CounterexampleCollection.swift in Sources */,
+				5FE336DE26B43B49BE8D0B8F1DA98CB1 /* CreateEntity.swift in Sources */,
+				11FB256D3ED172BBDB373843A96BD793 /* CreateIntent.swift in Sources */,
+				95983DAD6DA6803F4B3DA7AD755D3B7A /* CreateValue.swift in Sources */,
+				4CEE886EEC39DB333631A977635BF38D /* CreateWorkspace.swift in Sources */,
+				E1D2243AF31EB7533B3EA24C54FFECD9 /* DialogNode.swift in Sources */,
+				5FAB00FCA917B60E6E9B5380C032B6DA /* DialogNodeAction.swift in Sources */,
+				B05E6EFC49496E69E35971DA6D296F26 /* DialogNodeCollection.swift in Sources */,
+				1DDF32C51E4AA28C2934058A5C147CE9 /* DialogNodeNextStep.swift in Sources */,
+				333F34AE6BED4BCBA2A7E62A860984A3 /* DialogNodeOutput.swift in Sources */,
+				241F31150BAEE7C28A87287EDA2DF428 /* DialogNodeOutputGeneric.swift in Sources */,
+				BF30107791EF3F4BCC25150CD1077BF8 /* DialogNodeOutputModifiers.swift in Sources */,
+				4111537EFA7CB0036520BE55FC4D80F8 /* DialogNodeOutputOptionsElement.swift in Sources */,
+				48DDE1A44F0F882DA23E2E144C8C1DEB /* DialogNodeOutputOptionsElementValue.swift in Sources */,
+				CD447F20A6113FBF65D967D1087520D3 /* DialogNodeOutputTextValuesElement.swift in Sources */,
+				B81D44F68170EDA5C7AA27410661F2DB /* DialogNodeVisitedDetails.swift in Sources */,
+				58358F4B57DA77447656C353E41F0B35 /* DialogRuntimeResponseGeneric.swift in Sources */,
+				3F72329E37F42C8CC8310053A300D568 /* DialogSuggestion.swift in Sources */,
+				8C81F866F7461AE00B0C4BFAF2738E40 /* DialogSuggestionValue.swift in Sources */,
+				BD959D95907D28203D25953FA43DF6E8 /* Entity.swift in Sources */,
+				25F3124CFB1DA71DBB8E5474D20417EC /* EntityCollection.swift in Sources */,
+				3003F5C49D2DF82F24D923B2689CAB1D /* EntityMention.swift in Sources */,
+				E4CBF431B1ED8B0B09F11215452730FC /* EntityMentionCollection.swift in Sources */,
+				23979C33D975BBA5B6B718514A4F4821 /* Example.swift in Sources */,
+				B269ABAC96E4164C6159A0D933B563AC /* ExampleCollection.swift in Sources */,
+				8B4797F532D5740D2016183EFEC75EA8 /* IBMWatsonAssistantV1-dummy.m in Sources */,
+				95B6511CADD3311A3A243703C2576F70 /* InsecureConnection.swift in Sources */,
+				95EB3EB2B00E599621E7A0C416FD203B /* Intent.swift in Sources */,
+				710FB5CF31D3997D6EA0A5C9A9C4E410 /* IntentCollection.swift in Sources */,
+				FDBA5CF867A146CED4233217F3CB89E4 /* Log.swift in Sources */,
+				C01EA64220D5666E314299992A32A55D /* LogCollection.swift in Sources */,
+				0752122671F8C27F051BF434F5E4C1FF /* LogMessage.swift in Sources */,
+				094C8922ED9DE6AF1E9F1E367C3B514A /* LogPagination.swift in Sources */,
+				52FF421EC22F1791791A2F9714419C06 /* Mention.swift in Sources */,
+				E30C3D3050B19B7C88BF60AE474AA7D7 /* MessageContextMetadata.swift in Sources */,
+				BE8F81D8CED2F8105F34793C064C09A1 /* MessageInput.swift in Sources */,
+				09FDFA06C7B7BA9D672CB47E33D3CB71 /* MessageRequest.swift in Sources */,
+				543350981E7429447352C2FFEF146793 /* MessageResponse.swift in Sources */,
+				0A776810902D114A910482632D030E07 /* OutputData.swift in Sources */,
+				F52CCC9F22B7FF399DF6CBEC9B4E5901 /* Pagination.swift in Sources */,
+				430BEFA6B8A1FF1DB1A7B2CABDA3EAB1 /* RuntimeEntity.swift in Sources */,
+				AB4AE37711196FE9B420E8416E0F38E2 /* RuntimeIntent.swift in Sources */,
+				8772B055F6A90792E81466A6306D69DA /* Shared.swift in Sources */,
+				3593328AB3B32A83DF4B28C39E5463F1 /* Synonym.swift in Sources */,
+				6E56818360D0E26C7333232239C4E52A /* SynonymCollection.swift in Sources */,
+				763DEE4F43758733FCF95E69D12D083A /* SystemResponse.swift in Sources */,
+				0E2101D1E5D8B08416677689ADDFCB30 /* UpdateCounterexample.swift in Sources */,
+				07A437566B7E138602881BADDF90650F /* UpdateDialogNode.swift in Sources */,
+				BA12CC13E4091C58B97B454B0D8D4944 /* UpdateEntity.swift in Sources */,
+				8D416A22835DAC269F76F6EDD2BA594C /* UpdateExample.swift in Sources */,
+				5C2E1607FEE67D07958289C566E6443F /* UpdateIntent.swift in Sources */,
+				1C512F007F9108A85A266E1BE1897B0B /* UpdateSynonym.swift in Sources */,
+				75530CDEDD9B01F48128AEF08C5FEC08 /* UpdateValue.swift in Sources */,
+				C7C6ECBC4F4A03CF8A892FB8C8A0F4F3 /* UpdateWorkspace.swift in Sources */,
+				5164CDB3D7C0E9B3FCA1878CD6E4D8DB /* Value.swift in Sources */,
+				089417308CE001315D3E38495A9E46DB /* ValueCollection.swift in Sources */,
+				198076075958F8F5AD3F191301DCEEF2 /* Workspace.swift in Sources */,
+				D8E4E4BC36170CED4B518E2D9946D4F4 /* WorkspaceCollection.swift in Sources */,
+				0A1F2C010781240544FE65EEA5219A0E /* WorkspaceSystemSettings.swift in Sources */,
+				A07E59D0BA8A5BF18E8E02FACFA69199 /* WorkspaceSystemSettingsDisambiguation.swift in Sources */,
+				145D7CD2CB51E4E08F8C53C229459793 /* WorkspaceSystemSettingsTooling.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89A069C3558348685DA7C29D4D84BA4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2845C273326DAFC43BE811406EA8122F /* AcousticModel.swift in Sources */,
+				D58B39E78D15AA2D9C6ADCB4B104660F /* AcousticModels.swift in Sources */,
+				64C3995BBC5096D7AE56F03469E5B34A /* AudioDetails.swift in Sources */,
+				4DEDEDDD2EBD30342F6B08B7A824B4CB /* AudioListing.swift in Sources */,
+				A7EEA55B8B48A58AA57BD0DEA2C04DA6 /* AudioListingContainer.swift in Sources */,
+				68B17D278FD39B0B7008FB2D1F1BD5E4 /* AudioListingDetails.swift in Sources */,
+				01AC803D9F663771E9158CF75ED3B370 /* AudioMetrics.swift in Sources */,
+				0D9D4E587F1EF3486C3DA9DF538D5FEE /* AudioMetricsDetails.swift in Sources */,
+				0348342B4F2B88A9BF91DFFDD8B8F6F7 /* AudioMetricsHistogramBin.swift in Sources */,
+				583767773BBE8B64B3E6B44B3C6D88EA /* AudioResource.swift in Sources */,
+				29C6CCA7DB8167A4F1CEA6981D7E8A2B /* AudioResourceDetails.swift in Sources */,
+				A0DFD84D18FC55C9D0271CAE942E29A6 /* AudioResources.swift in Sources */,
+				75999240009F6AAC3C58DF5894064F58 /* Corpora.swift in Sources */,
+				184E4D13E9B19D80CF7C04DE1BCC9BF2 /* Corpus.swift in Sources */,
+				377E07E2D550FE6A4A7592D5DF946B3C /* CreateAcousticModel.swift in Sources */,
+				A28BD7D1C335290998B1A903948EB2C1 /* CreateLanguageModel.swift in Sources */,
+				618BD4C70D5263771540230B2BB6DBC4 /* CustomWord.swift in Sources */,
+				52C723237B5323C28AC2DFB1D44B42E9 /* CustomWords.swift in Sources */,
+				E6D1AD98E044A61324E277D32F896F2B /* Grammar.swift in Sources */,
+				E2A00DDF28790BB9B692421F7E2BB73E /* Grammars.swift in Sources */,
+				55393649034CA9C11CDBB548128853C2 /* IBMWatsonSpeechToTextV1-dummy.m in Sources */,
+				86EFFFDBF513C4102917EE319C8DCC47 /* InsecureConnection.swift in Sources */,
+				A33D8C4B93E13307BC7ACBC714753413 /* KeywordResult.swift in Sources */,
+				FA96BA9AE7A7EF393E6C816595412635 /* LanguageModel.swift in Sources */,
+				91F7C9803B8C4DD4A50297527CF7E9E5 /* LanguageModels.swift in Sources */,
+				5616777FCEAAEF627C049B780A04007C /* ProcessedAudio.swift in Sources */,
+				187E0CB36980BFD31EDD5E730DA4F89C /* ProcessingMetrics.swift in Sources */,
+				67775327E73D48631A89BD72F2DB3D39 /* RecognitionJob.swift in Sources */,
+				B9963CFEBF38ACE104184C07D04A1F35 /* RecognitionJobs.swift in Sources */,
+				D62864ACAC9E52719D54D7E8B4431184 /* RecognitionSettings.swift in Sources */,
+				1BE7EE0A87115CF2E7A95D3528AF097E /* RecognitionState.swift in Sources */,
+				B7883A6474DF232F536A66026163AF00 /* RecognitionStop.swift in Sources */,
+				5A8F98A93909D54BB301B22064B4C35A /* RecognizeCallback.swift in Sources */,
+				4DB40F27B193B262370F2AB82E73AC69 /* RegisterStatus.swift in Sources */,
+				B9103005C8A20F7EC20071050C53912B /* Shared.swift in Sources */,
+				4F45E786670ADEB4AEA491C05018DA31 /* SpeakerLabelsResult.swift in Sources */,
+				DDC82A4D5237E1577E4D0077405F5896 /* SpeechModel.swift in Sources */,
+				1ACBA56966A8C07F879E537171C81A29 /* SpeechModels.swift in Sources */,
+				8EBC0CD4C274F7CDC9E8CF913A462EC8 /* SpeechRecognitionAlternative.swift in Sources */,
+				28D92261D07974526B600F09290FC30C /* SpeechRecognitionResult.swift in Sources */,
+				DD3AAC52704E2EFE1D82C5CAE78F44DA /* SpeechRecognitionResults.swift in Sources */,
+				93C0F1D7191928E1A5BD3F2B3509CFF0 /* SpeechRecognitionResultsAccumulator.swift in Sources */,
+				C4B7CD50C6448038CE1B8FE9A1A5E311 /* SpeechToText+Recognize.swift in Sources */,
+				CD943685C84CC66CFA8E848D19A60D75 /* SpeechToText.swift in Sources */,
+				29E12D7150099790AA69417B5BB69E31 /* SpeechToTextEncoder.swift in Sources */,
+				4D59CE3E96C49C60D01514525805819D /* SpeechToTextRecorder.swift in Sources */,
+				9898BBD177911573C722998C0AAAE8B3 /* SpeechToTextSession.swift in Sources */,
+				0D008953AB740C9C298A21EDCA494D03 /* SpeechToTextSocket.swift in Sources */,
+				E55F5531D87B8F3199890FE176C88A68 /* SpeechToTextState.swift in Sources */,
+				3AD35C0843181ADA611545474E2CAA64 /* SupportedFeatures.swift in Sources */,
+				E9E6029FACEE55856E92B75B39F3AA68 /* TrainingResponse.swift in Sources */,
+				5E6FA9B2A5F033B3441E85AC8CA48B13 /* TrainingWarning.swift in Sources */,
+				420EC99504FB6D16D587AE5BB41A8D78 /* Word.swift in Sources */,
+				7CA023E02569F5AE1CD4D73D66DB9C3D /* WordAlternativeResult.swift in Sources */,
+				8E11FF4B92074FD462237290443A05BC /* WordAlternativeResults.swift in Sources */,
+				E38124FAF3B6ED45E64BD9EA0D4B23D3 /* WordConfidence.swift in Sources */,
+				C5EDF9F6F82836B76D19AF78F63A64FE /* WordError.swift in Sources */,
+				4A8660C144E264F58DBE50A5B07D2473 /* Words.swift in Sources */,
+				B3B85FDAA874A2B3DA1F792B20821C76 /* WordTimestamp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99258EF6E6ADCF05261589D74E7272C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB922F01D7CF8412881EE69366C7D598 /* Pods-NaoRobots-NaoRobotsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFB81915D7AD086FCEFD711D0BE0BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E74F96D518B787E4B538CCE06D48951 /* CreateVoiceModel.swift in Sources */,
+				7C1E0942F27196D5492A5EE29D9E90A7 /* IBMWatsonTextToSpeechV1-dummy.m in Sources */,
+				7AC0D5DA1AD1858497A6804FB2E263C2 /* InsecureConnection.swift in Sources */,
+				C513E5EC52A756B629F092342160C338 /* opus_header.c in Sources */,
+				52FB635FB21496FBBF0F505376C4C035 /* Pronunciation.swift in Sources */,
+				6CD621300312E78764960534F315172B /* Shared.swift in Sources */,
+				97F42C33D10233B958305A15AA270F45 /* SupportedFeatures.swift in Sources */,
+				DF92C4D62D447B3A62A43238B26FBD28 /* Text.swift in Sources */,
+				6346493DF7A82918F3D2118ED52424D5 /* TextToSpeech.swift in Sources */,
+				A46CABAF26EAB4FA10963F85E21CC99A /* TextToSpeechDecoder.swift in Sources */,
+				0E4F621279623BAED595919E80F1D711 /* Translation.swift in Sources */,
+				E39F0E7DF46F8649E082DB24916E5FD2 /* UpdateVoiceModel.swift in Sources */,
+				433ED169B7B73C85C514475573043FEC /* Voice.swift in Sources */,
+				0EC94307B1463B67F4DB6DBB427F22CE /* VoiceCustomization.swift in Sources */,
+				E6382BCBDD327E29ADD92C84FB4A5986 /* VoiceModel.swift in Sources */,
+				A6988D74000AC8254DF0FFBBC19756CA /* VoiceModels.swift in Sources */,
+				A9D40F5AA175AD6263C6AAF0598DD2C5 /* Voices.swift in Sources */,
+				772C67483225CE5DF773F34FA4E38EB8 /* WAVRepair.swift in Sources */,
+				1E9FD1BFBB3F496F8D3B5CA46FEE1512 /* Word.swift in Sources */,
+				911414EB0FA0675848F1DA627B391608 /* Words.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A109DF1167E89E84293E524E6668C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1915451A6CAE7EA039DBD56D37928306 /* Pods-NaoRobotsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F3237E76637D8E384252AF5B4530A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DD982D5CB9515FBD58AD42C00CBD02 /* Authentication.swift in Sources */,
+				848D03318C820AD176AE67F1DF3BDEF4 /* CodableExtensions.swift in Sources */,
+				7125F867216F4BB4D663BFA7AE04BD92 /* IBMWatsonRestKit-dummy.m in Sources */,
+				DA5F1444BB39C1229DF0A2B097D75468 /* JSON.swift in Sources */,
+				1A140BAFD706913C4B4290CE1AFB4510 /* MultipartFormData.swift in Sources */,
+				224C084A8A299D103BC1B6660680A8A1 /* RestError.swift in Sources */,
+				1429F63B43F1A16FF44959B369F04AA6 /* RestRequest.swift in Sources */,
+				D2721AB57B370BBFD49D4919FFA6EAFB /* RestResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3800408D8162DAC4F96AFDE5A123171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77EAFDC7827B0AA21222172B69BBEF1C /* Pods-NaoRobots-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5AC336894528A7925AD3BCB4E27B2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E086503478F22DF8C0CC1E1E89827FE8 /* Compression.swift in Sources */,
+				0A1E1C4715543BF891EAA8351A1DE5CA /* SSLSecurity.swift in Sources */,
+				AD693AAB14D6384BD9A3E135B756AB62 /* Starscream-dummy.m in Sources */,
+				D5D9E61BAD205D4B0FD5106F273FE25D /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FE9EC1ED9AD96D190699C6772893148 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonRestKit;
+			target = A0D0D9F7CF611B6D221589722C5CBBDE /* IBMWatsonRestKit */;
+			targetProxy = F808B4A9C3CC359C3D24E21373104E5D /* PBXContainerItemProxy */;
+		};
+		1BC2C3EE1A1C5F75E86E4B96D1DC8CE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonRestKit;
+			target = A0D0D9F7CF611B6D221589722C5CBBDE /* IBMWatsonRestKit */;
+			targetProxy = 30B4DD248C8DEA9DDFBC097A093A5701 /* PBXContainerItemProxy */;
+		};
+		2BBA932E72D9D91954CF3527CBEAB496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonRestKit;
+			target = A0D0D9F7CF611B6D221589722C5CBBDE /* IBMWatsonRestKit */;
+			targetProxy = 621D68DEF96CA23871FF78A58F987F08 /* PBXContainerItemProxy */;
+		};
+		325323599AAE3F4BD01298C05C7B0F7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NaoRobots";
+			target = B850F15CAD98D886DF8055D0D3919D4D /* Pods-NaoRobots */;
+			targetProxy = DB3D03AA04F19F7435F5E6CF9856BE8E /* PBXContainerItemProxy */;
+		};
+		5E15EB4BE99E5A6220CE02D2515D3395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonSpeechToTextV1;
+			target = 85F80CBB88E15EBEE7535E1C6ED1B185 /* IBMWatsonSpeechToTextV1 */;
+			targetProxy = 9ABEE38C64D009A0E58B49F254D0CF70 /* PBXContainerItemProxy */;
+		};
+		762634195AD6FB93DA772E19023ECE1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonRestKit;
+			target = A0D0D9F7CF611B6D221589722C5CBBDE /* IBMWatsonRestKit */;
+			targetProxy = 41F6B9B1023C1FDE25E7BEF04AD37CA3 /* PBXContainerItemProxy */;
+		};
+		98841D0120A28A8A000DDF05EC4F970F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonAssistantV1;
+			target = C808A50591FAAFF40F13A6BDC6845EB4 /* IBMWatsonAssistantV1 */;
+			targetProxy = 48B5B188B6EBFECA8CD3173BCF65FEE8 /* PBXContainerItemProxy */;
+		};
+		A04D1A2B96FB4D35C0EE9A35CF75551B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonAssistantV1;
+			target = C808A50591FAAFF40F13A6BDC6845EB4 /* IBMWatsonAssistantV1 */;
+			targetProxy = 0811165815DB3D2DFAE5A9F8847E6BF5 /* PBXContainerItemProxy */;
+		};
+		B95AEC98BA365D921F813E771EBAA274 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 22E1E5CC407A1B3AD17ED94B13F36C48 /* PBXContainerItemProxy */;
+		};
+		BA5323B3B518BCF1E799299242CAAC14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonTextToSpeechV1;
+			target = D0C8766A76CF406E4C2FDDF51E397DC3 /* IBMWatsonTextToSpeechV1 */;
+			targetProxy = 1F0F6D6010C82982A749041687AA5288 /* PBXContainerItemProxy */;
+		};
+		C4979F0FC7FDDC7033BA973C439E6E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 334B96CBEDB38BF219E33E8C26A5CCEB /* PBXContainerItemProxy */;
+		};
+		CAE3B58EB14B346AC6B403912604373B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 278E476AC4FA8851A53C42A57CE68134 /* PBXContainerItemProxy */;
+		};
+		D55E2643AB3506D3A47B86DB1294A0FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonRestKit;
+			target = A0D0D9F7CF611B6D221589722C5CBBDE /* IBMWatsonRestKit */;
+			targetProxy = C365D46351074F0628A454A779356E7E /* PBXContainerItemProxy */;
+		};
+		DF393DB7584D5527D7E69E35FC6BBF50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonSpeechToTextV1;
+			target = 85F80CBB88E15EBEE7535E1C6ED1B185 /* IBMWatsonSpeechToTextV1 */;
+			targetProxy = DCE0951DA80BC5A4DA6172BFAB8F798B /* PBXContainerItemProxy */;
+		};
+		E523E8AAE5E7CF93818CFBA1EC584393 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonTextToSpeechV1;
+			target = D0C8766A76CF406E4C2FDDF51E397DC3 /* IBMWatsonTextToSpeechV1 */;
+			targetProxy = 5FD85D4E4EF2974877D2986A83E32A01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		039B36E1FC8156586C79B3AB708F0070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FE7A2531D56E29B1DA3CB096FB057A /* IBMWatsonRestKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit.modulemap";
+				PRODUCT_MODULE_NAME = RestKit;
+				PRODUCT_NAME = RestKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1D0A4A3DDEB97E686ACF894D3210113D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5721B1B658AB2ECDECEB577EF0AA645 /* IBMWatsonTextToSpeechV1.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1.modulemap";
+				PRODUCT_MODULE_NAME = TextToSpeech;
+				PRODUCT_NAME = TextToSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3607537B4FB07ADEF853EC4E137AD92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF9E5DC026FBB27A9AE20A9414257AAC /* Pods-NaoRobotsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NaoRobotsTests/Pods-NaoRobotsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NaoRobotsTests/Pods-NaoRobotsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5CB05CC5115423376BDA762B3D5BE6C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 616A807A5B626EEA96679F73991A0D05 /* IBMWatsonAssistantV1.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonAssistantV1/IBMWatsonAssistantV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonAssistantV1/IBMWatsonAssistantV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonAssistantV1/IBMWatsonAssistantV1.modulemap";
+				PRODUCT_MODULE_NAME = Assistant;
+				PRODUCT_NAME = Assistant;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6EE73480E266D2F990E113E21D0462F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30CEFCC0393224105F6C800026F1BFF8 /* Pods-NaoRobots-NaoRobotsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NaoRobots-NaoRobotsUITests/Pods-NaoRobots-NaoRobotsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NaoRobots-NaoRobotsUITests/Pods-NaoRobots-NaoRobotsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A4EC987FD3C9D36F36119583E2B88CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07BE8BF66F7B3A0A47AD78153A477FC0 /* Starscream.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE5F2036BE7E312C1C6DC85332CDA3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57BCECCF1670393F1F5C3B4B0EB714DD /* Pods-NaoRobots.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NaoRobots/Pods-NaoRobots-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NaoRobots/Pods-NaoRobots.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B57B300C20DE2FD1D5F5EB8A15714EAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1349A416573C2C8B69ECC17426AD18B9 /* IBMWatsonTextToSpeechV1.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1.modulemap";
+				PRODUCT_MODULE_NAME = TextToSpeech;
+				PRODUCT_NAME = TextToSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B9E1F5FAAB887E50F21DCFDA70655A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DA4B0D1CC7D80DE3966C590DFC922F /* IBMWatsonSpeechToTextV1.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1.modulemap";
+				PRODUCT_MODULE_NAME = SpeechToText;
+				PRODUCT_NAME = SpeechToText;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA8D8F12A993341241415E7666490E09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2429F84FF3794D34AA0F2DF5DE8E02C9 /* IBMWatsonSpeechToTextV1.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1.modulemap";
+				PRODUCT_MODULE_NAME = SpeechToText;
+				PRODUCT_NAME = SpeechToText;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C26833B833D8002F4189AEFE8889D760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9DFCAAC039849E20D9FE9EFCD729448 /* Starscream.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCBBB8485C1568FAF3A5B3B79EC4EE44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2018ACCCCB4864CB66ED81C59272F08D /* IBMWatsonRestKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit.modulemap";
+				PRODUCT_MODULE_NAME = RestKit;
+				PRODUCT_NAME = RestKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0EC1BB1B997D53539D3DEFDEC7196D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE148C3BF30A18CE3152350026AF7A5B /* Pods-NaoRobots-NaoRobotsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NaoRobots-NaoRobotsUITests/Pods-NaoRobots-NaoRobotsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NaoRobots-NaoRobotsUITests/Pods-NaoRobots-NaoRobotsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5D8FCAB1AAA35E2BAB9031BE00B9935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8657D0F65AB69DF90B10E506F30D09E /* IBMWatsonAssistantV1.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonAssistantV1/IBMWatsonAssistantV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonAssistantV1/IBMWatsonAssistantV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonAssistantV1/IBMWatsonAssistantV1.modulemap";
+				PRODUCT_MODULE_NAME = Assistant;
+				PRODUCT_NAME = Assistant;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DCE04DFD29219ABBCAB71BF21255C126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADDEC3133C3453F45569F95F0DB0797C /* Pods-NaoRobots.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NaoRobots/Pods-NaoRobots-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NaoRobots/Pods-NaoRobots.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F87F16A6D661170FC9D47E7CC67B7FC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8572E938C1A03967979B101E9ABBB2AF /* Pods-NaoRobotsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NaoRobotsTests/Pods-NaoRobotsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NaoRobotsTests/Pods-NaoRobotsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DA63196014F4C98A5F55F1BF64C8D4B /* Build configuration list for PBXNativeTarget "IBMWatsonTextToSpeechV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57B300C20DE2FD1D5F5EB8A15714EAD /* Debug */,
+				1D0A4A3DDEB97E686ACF894D3210113D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34790F08A3480F23F2513B7B4D03557E /* Build configuration list for PBXNativeTarget "IBMWatsonSpeechToTextV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9E1F5FAAB887E50F21DCFDA70655A71 /* Debug */,
+				BA8D8F12A993341241415E7666490E09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2CE0AC52A8590B98BD969AA54ED4298 /* Build configuration list for PBXNativeTarget "IBMWatsonAssistantV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5D8FCAB1AAA35E2BAB9031BE00B9935 /* Debug */,
+				5CB05CC5115423376BDA762B3D5BE6C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6071C96948F70B026FEF6CE86046C12 /* Build configuration list for PBXNativeTarget "Pods-NaoRobots-NaoRobotsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0EC1BB1B997D53539D3DEFDEC7196D2 /* Debug */,
+				6EE73480E266D2F990E113E21D0462F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E003E702F3E4005B708DF4CD549090D4 /* Build configuration list for PBXNativeTarget "Pods-NaoRobotsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87F16A6D661170FC9D47E7CC67B7FC0 /* Debug */,
+				3607537B4FB07ADEF853EC4E137AD92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5C975DAB119C40208AE2CF9BFE54EE /* Build configuration list for PBXNativeTarget "IBMWatsonRestKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCBBB8485C1568FAF3A5B3B79EC4EE44 /* Debug */,
+				039B36E1FC8156586C79B3AB708F0070 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3E8CB3ABA81BCBCD8E7CC424F548A14 /* Build configuration list for PBXNativeTarget "Pods-NaoRobots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE04DFD29219ABBCAB71BF21255C126 /* Debug */,
+				AE5F2036BE7E312C1C6DC85332CDA3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43C06D9E8280E06C585D05624500D6C /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C26833B833D8002F4189AEFE8889D760 /* Debug */,
+				A4EC987FD3C9D36F36119583E2B88CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

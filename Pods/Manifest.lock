@@ -1,0 +1,34 @@
+PODS:
+  - IBMWatsonAssistantV1 (2.1.1):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - IBMWatsonRestKit (3.0.3)
+  - IBMWatsonSpeechToTextV1 (2.1.1):
+    - IBMWatsonRestKit (~> 3.0.0)
+    - Starscream (= 3.0.5)
+  - IBMWatsonTextToSpeechV1 (2.1.1):
+    - IBMWatsonRestKit (~> 3.0.0)
+  - Starscream (3.0.5)
+
+DEPENDENCIES:
+  - IBMWatsonAssistantV1 (~> 2.1.0)
+  - IBMWatsonSpeechToTextV1 (~> 2.1.0)
+  - IBMWatsonTextToSpeechV1 (~> 2.1.0)
+
+SPEC REPOS:
+  trunk:
+    - IBMWatsonAssistantV1
+    - IBMWatsonRestKit
+    - IBMWatsonSpeechToTextV1
+    - IBMWatsonTextToSpeechV1
+    - Starscream
+
+SPEC CHECKSUMS:
+  IBMWatsonAssistantV1: fb63ad2a18c917ad77bb07a79b59ca6fc89a5ed7
+  IBMWatsonRestKit: 47dcac7ccc12e0d15a948b79e481e0e0abacb057
+  IBMWatsonSpeechToTextV1: a494a9de94e611d2411b47cb318d89bf72dfbe39
+  IBMWatsonTextToSpeechV1: 9b1c00f7380ef612e00591da6b058d6121ae7c86
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+
+PODFILE CHECKSUM: 5e85ac5f7cdb0b80b95bfe5ca4355be07356122f
+
+COCOAPODS: 1.9.2

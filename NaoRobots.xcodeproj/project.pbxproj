@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		562567AD2322F93A00DD5C0C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562567AC2322F93A00DD5C0C /* Media.xcassets */; };
+		56464677237F50AC002D2E91 /* Math.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56464676237F50AC002D2E91 /* Math.storyboard */; };
+		5658BD78236D020700C8BA55 /* math-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5658BD77236D020700C8BA55 /* math-on.wav */; };
+		568AC59C2322DADD008F4EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A1EE3F23199D4A0048322A /* Main.storyboard */; };
+		56A1EE3C23199D4A0048322A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1EE3B23199D4A0048322A /* AppDelegate.swift */; };
+		56A1EE3E23199D4A0048322A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1EE3D23199D4A0048322A /* ViewController.swift */; };
+		56A1EE4623199D4B0048322A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A1EE4423199D4B0048322A /* LaunchScreen.storyboard */; };
+		56A1EE5123199D4B0048322A /* NaoRobotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1EE5023199D4B0048322A /* NaoRobotsTests.swift */; };
+		56A1EE5C23199D4B0048322A /* NaoRobotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1EE5B23199D4B0048322A /* NaoRobotsUITests.swift */; };
+		8001BB45244A598600D62AEE /* httpRequestBySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001BB44244A598600D62AEE /* httpRequestBySwift.swift */; };
+		80F9EB9F244A6F1B00FBB134 /* ResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9EB9E244A6F1B00FBB134 /* ResultData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56A1EE4D23199D4B0048322A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A1EE3023199D4A0048322A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A1EE3723199D4A0048322A;
+			remoteInfo = NaoRobots;
+		};
+		56A1EE5823199D4B0048322A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56A1EE3023199D4A0048322A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56A1EE3723199D4A0048322A;
+			remoteInfo = NaoRobots;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		562567AC2322F93A00DD5C0C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../Media.xcassets; sourceTree = "<group>"; };
+		56464676237F50AC002D2E91 /* Math.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Math.storyboard; sourceTree = "<group>"; };
+		5658BD77236D020700C8BA55 /* math-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "math-on.wav"; sourceTree = "<group>"; };
+		56A1EE3823199D4A0048322A /* NaoRobots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaoRobots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A1EE3B23199D4A0048322A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56A1EE3D23199D4A0048322A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56A1EE4023199D4A0048322A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56A1EE4523199D4B0048322A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56A1EE4723199D4B0048322A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A1EE4C23199D4B0048322A /* NaoRobotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaoRobotsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A1EE5023199D4B0048322A /* NaoRobotsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaoRobotsTests.swift; sourceTree = "<group>"; };
+		56A1EE5223199D4B0048322A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A1EE5723199D4B0048322A /* NaoRobotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaoRobotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A1EE5B23199D4B0048322A /* NaoRobotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaoRobotsUITests.swift; sourceTree = "<group>"; };
+		56A1EE5D23199D4B0048322A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8001BB44244A598600D62AEE /* httpRequestBySwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = httpRequestBySwift.swift; sourceTree = "<group>"; };
+		80F9EB9E244A6F1B00FBB134 /* ResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56A1EE3523199D4A0048322A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A1EE4923199D4B0048322A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A1EE5423199D4B0048322A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56A1EE2F23199D4A0048322A = {
+			isa = PBXGroup;
+			children = (
+				56A1EE3A23199D4A0048322A /* NaoRobots */,
+				56A1EE4F23199D4B0048322A /* NaoRobotsTests */,
+				56A1EE5A23199D4B0048322A /* NaoRobotsUITests */,
+				56A1EE3923199D4A0048322A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56A1EE3923199D4A0048322A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56A1EE3823199D4A0048322A /* NaoRobots.app */,
+				56A1EE4C23199D4B0048322A /* NaoRobotsTests.xctest */,
+				56A1EE5723199D4B0048322A /* NaoRobotsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56A1EE3A23199D4A0048322A /* NaoRobots */ = {
+			isa = PBXGroup;
+			children = (
+				80F9EB9D244A6EFF00FBB134 /* Model */,
+				8001BB44244A598600D62AEE /* httpRequestBySwift.swift */,
+				5658BD77236D020700C8BA55 /* math-on.wav */,
+				56A1EE3F23199D4A0048322A /* Main.storyboard */,
+				562567AC2322F93A00DD5C0C /* Media.xcassets */,
+				56A1EE3B23199D4A0048322A /* AppDelegate.swift */,
+				56A1EE3D23199D4A0048322A /* ViewController.swift */,
+				56464676237F50AC002D2E91 /* Math.storyboard */,
+				56A1EE4423199D4B0048322A /* LaunchScreen.storyboard */,
+				56A1EE4723199D4B0048322A /* Info.plist */,
+			);
+			path = NaoRobots;
+			sourceTree = "<group>";
+		};
+		56A1EE4F23199D4B0048322A /* NaoRobotsTests */ = {
+			isa = PBXGroup;
+			children = (
+				56A1EE5023199D4B0048322A /* NaoRobotsTests.swift */,
+				56A1EE5223199D4B0048322A /* Info.plist */,
+			);
+			path = NaoRobotsTests;
+			sourceTree = "<group>";
+		};
+		56A1EE5A23199D4B0048322A /* NaoRobotsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56A1EE5B23199D4B0048322A /* NaoRobotsUITests.swift */,
+				56A1EE5D23199D4B0048322A /* Info.plist */,
+			);
+			path = NaoRobotsUITests;
+			sourceTree = "<group>";
+		};
+		80F9EB9D244A6EFF00FBB134 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80F9EB9E244A6F1B00FBB134 /* ResultData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56A1EE3723199D4A0048322A /* NaoRobots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A1EE6023199D4B0048322A /* Build configuration list for PBXNativeTarget "NaoRobots" */;
+			buildPhases = (
+				56A1EE3423199D4A0048322A /* Sources */,
+				56A1EE3523199D4A0048322A /* Frameworks */,
+				56A1EE3623199D4A0048322A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NaoRobots;
+			productName = NaoRobots;
+			productReference = 56A1EE3823199D4A0048322A /* NaoRobots.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56A1EE4B23199D4B0048322A /* NaoRobotsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A1EE6323199D4B0048322A /* Build configuration list for PBXNativeTarget "NaoRobotsTests" */;
+			buildPhases = (
+				56A1EE4823199D4B0048322A /* Sources */,
+				56A1EE4923199D4B0048322A /* Frameworks */,
+				56A1EE4A23199D4B0048322A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A1EE4E23199D4B0048322A /* PBXTargetDependency */,
+			);
+			name = NaoRobotsTests;
+			productName = NaoRobotsTests;
+			productReference = 56A1EE4C23199D4B0048322A /* NaoRobotsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56A1EE5623199D4B0048322A /* NaoRobotsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56A1EE6623199D4B0048322A /* Build configuration list for PBXNativeTarget "NaoRobotsUITests" */;
+			buildPhases = (
+				56A1EE5323199D4B0048322A /* Sources */,
+				56A1EE5423199D4B0048322A /* Frameworks */,
+				56A1EE5523199D4B0048322A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56A1EE5923199D4B0048322A /* PBXTargetDependency */,
+			);
+			name = NaoRobotsUITests;
+			productName = NaoRobotsUITests;
+			productReference = 56A1EE5723199D4B0048322A /* NaoRobotsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56A1EE3023199D4A0048322A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Haoliang Zhang";
+				TargetAttributes = {
+					56A1EE3723199D4A0048322A = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					56A1EE4B23199D4B0048322A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 56A1EE3723199D4A0048322A;
+					};
+					56A1EE5623199D4B0048322A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 56A1EE3723199D4A0048322A;
+					};
+				};
+			};
+			buildConfigurationList = 56A1EE3323199D4A0048322A /* Build configuration list for PBXProject "NaoRobots" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56A1EE2F23199D4A0048322A;
+			productRefGroup = 56A1EE3923199D4A0048322A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56A1EE3723199D4A0048322A /* NaoRobots */,
+				56A1EE4B23199D4B0048322A /* NaoRobotsTests */,
+				56A1EE5623199D4B0048322A /* NaoRobotsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56A1EE3623199D4A0048322A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5658BD78236D020700C8BA55 /* math-on.wav in Resources */,
+				568AC59C2322DADD008F4EE7 /* Main.storyboard in Resources */,
+				562567AD2322F93A00DD5C0C /* Media.xcassets in Resources */,
+				56464677237F50AC002D2E91 /* Math.storyboard in Resources */,
+				56A1EE4623199D4B0048322A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A1EE4A23199D4B0048322A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A1EE5523199D4B0048322A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56A1EE3423199D4A0048322A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F9EB9F244A6F1B00FBB134 /* ResultData.swift in Sources */,
+				56A1EE3E23199D4A0048322A /* ViewController.swift in Sources */,
+				56A1EE3C23199D4A0048322A /* AppDelegate.swift in Sources */,
+				8001BB45244A598600D62AEE /* httpRequestBySwift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A1EE4823199D4B0048322A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A1EE5123199D4B0048322A /* NaoRobotsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56A1EE5323199D4B0048322A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A1EE5C23199D4B0048322A /* NaoRobotsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56A1EE4E23199D4B0048322A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A1EE3723199D4A0048322A /* NaoRobots */;
+			targetProxy = 56A1EE4D23199D4B0048322A /* PBXContainerItemProxy */;
+		};
+		56A1EE5923199D4B0048322A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56A1EE3723199D4A0048322A /* NaoRobots */;
+			targetProxy = 56A1EE5823199D4B0048322A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56A1EE3F23199D4A0048322A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56A1EE4023199D4A0048322A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56A1EE4423199D4B0048322A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56A1EE4523199D4B0048322A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56A1EE5E23199D4B0048322A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56A1EE5F23199D4B0048322A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56A1EE6123199D4B0048322A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 897365QDRT;
+				INFOPLIST_FILE = NaoRobots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "C--.NaoRobots";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56A1EE6223199D4B0048322A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 897365QDRT;
+				INFOPLIST_FILE = NaoRobots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "C--.NaoRobots";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		56A1EE6423199D4B0048322A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 897365QDRT;
+				INFOPLIST_FILE = NaoRobotsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "C--.NaoRobotsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NaoRobots.app/NaoRobots";
+			};
+			name = Debug;
+		};
+		56A1EE6523199D4B0048322A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 897365QDRT;
+				INFOPLIST_FILE = NaoRobotsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "C--.NaoRobotsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NaoRobots.app/NaoRobots";
+			};
+			name = Release;
+		};
+		56A1EE6723199D4B0048322A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 897365QDRT;
+				INFOPLIST_FILE = NaoRobotsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "C--.NaoRobotsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NaoRobots;
+			};
+			name = Debug;
+		};
+		56A1EE6823199D4B0048322A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 897365QDRT;
+				INFOPLIST_FILE = NaoRobotsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "C--.NaoRobotsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NaoRobots;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56A1EE3323199D4A0048322A /* Build configuration list for PBXProject "NaoRobots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A1EE5E23199D4B0048322A /* Debug */,
+				56A1EE5F23199D4B0048322A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A1EE6023199D4B0048322A /* Build configuration list for PBXNativeTarget "NaoRobots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A1EE6123199D4B0048322A /* Debug */,
+				56A1EE6223199D4B0048322A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A1EE6323199D4B0048322A /* Build configuration list for PBXNativeTarget "NaoRobotsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A1EE6423199D4B0048322A /* Debug */,
+				56A1EE6523199D4B0048322A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56A1EE6623199D4B0048322A /* Build configuration list for PBXNativeTarget "NaoRobotsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A1EE6723199D4B0048322A /* Debug */,
+				56A1EE6823199D4B0048322A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56A1EE3023199D4A0048322A /* Project object */;
+}

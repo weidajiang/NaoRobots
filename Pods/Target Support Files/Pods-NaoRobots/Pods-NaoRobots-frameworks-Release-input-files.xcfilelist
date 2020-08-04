@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-NaoRobots/Pods-NaoRobots-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IBMWatsonAssistantV1/Assistant.framework
+${BUILT_PRODUCTS_DIR}/IBMWatsonRestKit/RestKit.framework
+${BUILT_PRODUCTS_DIR}/IBMWatsonSpeechToTextV1/SpeechToText.framework
+${BUILT_PRODUCTS_DIR}/IBMWatsonTextToSpeechV1/TextToSpeech.framework
+${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
