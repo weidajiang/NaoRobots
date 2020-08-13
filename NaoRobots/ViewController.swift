@@ -69,18 +69,18 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
             workspaceID: workspaceID,
             input: input,
             context: context) { response, error in
-
-            if let error = error {
-                print(error)
-            }
-            guard let message = response?.result else {
-                print("Failed to get the message")
-                return
-            }
-            print(message.output.text)
-            context = message.context
+                
+                if let error = error {
+                    print(error)
+                }
+                guard let message = response?.result else {
+                    print("Failed to get the message")
+                    return
+                }
+                print(message.output.text)
+                context = message.context
         }
-
+        
         
     }
     
@@ -231,12 +231,12 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         
         speechSynthesizer.speak(speechUtterance);
         
-       
+        
         
     }
     
     
- 
+    
     
     
     @IBAction func recordButtonTapped(_ sender: UIButton) {
@@ -511,6 +511,30 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
     @IBAction func turnTaking(_ sender: UIButton) {
         turnTaking.turnTaking(self);
+        
+    }
+    
+    
+    
+    @IBAction func sneeze(_ sender: Any) {
+        
+        var url=PorjectConfiguration.localhostURL;
+        httpRequest.perfromRequest(urlSring: url + "sneeze")
+        
+        
+    }
+    
+    
+    @IBAction func eyeItchy(_ sender: Any) {
+        var url=PorjectConfiguration.localhostURL;
+        httpRequest.perfromRequest(urlSring: url + "eyeItchy")
+    }
+    
+    
+    
+    @IBAction func elbowBump(_ sender: Any) {
+        var url=PorjectConfiguration.localhostURL;
+        httpRequest.perfromRequest(urlSring: url + "elbowBump")
         
     }
 }

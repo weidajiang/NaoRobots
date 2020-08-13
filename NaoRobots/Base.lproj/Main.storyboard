@@ -20,7 +20,7 @@
                                 <rect key="frame" x="37" y="148" width="320" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Greeting "/>
+                                <state key="normal" title="Social Interaction"/>
                                 <connections>
                                     <segue destination="4TV-MX-kul" kind="presentation" id="08c-Q5-0wt"/>
                                 </connections>
@@ -40,16 +40,19 @@
                                 <rect key="frame" x="54" y="247" width="303" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Turn Taking"/>
+                                <state key="normal" title="Collarative Tasks"/>
                                 <connections>
                                     <segue destination="jRk-7r-el2" kind="show" id="OGn-8P-Est"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUA-KQ-tg2">
-                                <rect key="frame" x="104" y="339" width="187" height="66"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jva-WX-2J8">
+                                <rect key="frame" x="60" y="373" width="281" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Collarative Tasks"/>
+                                <state key="normal" title="Covid-19 Educational Suite"/>
+                                <connections>
+                                    <segue destination="BAX-VI-Pn3" kind="show" id="lUS-RW-sRp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -332,6 +335,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfA-Ke-pMp" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1303" y="-530"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o58-IK-If2">
+            <objects>
+                <viewController id="BAX-VI-Pn3" customClass="ViewController" customModule="NaoRobots" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zCB-tc-KZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tH5-10-CH7">
+                                <rect key="frame" x="171" y="195" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sneeze"/>
+                                <connections>
+                                    <action selector="sneeze:" destination="BAX-VI-Pn3" eventType="touchUpInside" id="aUd-bG-bIL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8S-Kl-U1B">
+                                <rect key="frame" x="165" y="266" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Eye Itchy"/>
+                                <connections>
+                                    <action selector="eyeItchy:" destination="BAX-VI-Pn3" eventType="touchUpInside" id="c63-6P-5R6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCT-HW-v2k">
+                                <rect key="frame" x="154" y="343" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Elbow Bump"/>
+                                <connections>
+                                    <action selector="elbowBump:" destination="BAX-VI-Pn3" eventType="touchUpInside" id="ywx-WH-Ls0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Covid -19 Educational Suite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmR-L3-2VB">
+                                <rect key="frame" x="81" y="64" width="252" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.29411764709999999" green="0.46274509800000002" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ytc-7Z-oXO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xgv-8p-opQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G6c-sa-npJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1681" y="733"/>
         </scene>
     </scenes>
     <resources>

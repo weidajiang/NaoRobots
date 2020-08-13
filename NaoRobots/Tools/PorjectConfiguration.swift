@@ -15,7 +15,7 @@ public struct PorjectConfiguration {
     public static let SpeechToTextAPIKey = ""
     public static let ServiceURL = ""
     public static let Version = "2018-02-01"
-    public static let localhostURL = "https://8378e6b3df85.ngrok.io/"
+    public static let localhostURL = "https://a8df0b399c23.ngrok.io/"
     public static let WeblocalhostURL = "https://3543d0452bb2.ngrok.io/"
  
 }

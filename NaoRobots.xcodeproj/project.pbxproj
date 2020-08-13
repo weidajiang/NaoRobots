@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		562567AD2322F93A00DD5C0C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562567AC2322F93A00DD5C0C /* Media.xcassets */; };
-		56464677237F50AC002D2E91 /* Math.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56464676237F50AC002D2E91 /* Math.storyboard */; };
 		5658BD78236D020700C8BA55 /* math-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5658BD77236D020700C8BA55 /* math-on.wav */; };
 		568AC59C2322DADD008F4EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A1EE3F23199D4A0048322A /* Main.storyboard */; };
 		56A1EE3C23199D4A0048322A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1EE3B23199D4A0048322A /* AppDelegate.swift */; };
@@ -16,8 +15,14 @@
 		56A1EE4623199D4B0048322A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A1EE4423199D4B0048322A /* LaunchScreen.storyboard */; };
 		56A1EE5123199D4B0048322A /* NaoRobotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1EE5023199D4B0048322A /* NaoRobotsTests.swift */; };
 		56A1EE5C23199D4B0048322A /* NaoRobotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1EE5B23199D4B0048322A /* NaoRobotsUITests.swift */; };
+		75F3164A4C63DB1151720CFE /* Pods_NaoRobots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC664012F9CDBC7D4DF9D168 /* Pods_NaoRobots.framework */; };
 		8001BB45244A598600D62AEE /* httpRequestBySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001BB44244A598600D62AEE /* httpRequestBySwift.swift */; };
 		80F9EB9F244A6F1B00FBB134 /* ResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9EB9E244A6F1B00FBB134 /* ResultData.swift */; };
+		80FD0F6624DCC2A600D8053D /* PorjectConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FD0F6524DCC2A600D8053D /* PorjectConfiguration.swift */; };
+		80FD0F6A24DCC2B400D8053D /* TurnTaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FD0F6824DCC2B400D8053D /* TurnTaking.swift */; };
+		80FD0F6B24DCC2B400D8053D /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FD0F6924DCC2B400D8053D /* Greeting.swift */; };
+		899EF299641CB18826405941 /* Pods_NaoRobots_NaoRobotsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E676033C6D073A7205F9286 /* Pods_NaoRobots_NaoRobotsUITests.framework */; };
+		E17F1F70B9ABB3CABBD4653B /* Pods_NaoRobotsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD205F9DC0633A08F582731 /* Pods_NaoRobotsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CB28AA7F7A418EEE34F27BA /* Pods-NaoRobots-NaoRobotsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaoRobots-NaoRobotsUITests.release.xcconfig"; path = "Target Support Files/Pods-NaoRobots-NaoRobotsUITests/Pods-NaoRobots-NaoRobotsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3CD205F9DC0633A08F582731 /* Pods_NaoRobotsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaoRobotsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E676033C6D073A7205F9286 /* Pods_NaoRobots_NaoRobotsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaoRobots_NaoRobotsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		562567AC2322F93A00DD5C0C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../Media.xcassets; sourceTree = "<group>"; };
-		56464676237F50AC002D2E91 /* Math.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Math.storyboard; sourceTree = "<group>"; };
 		5658BD77236D020700C8BA55 /* math-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "math-on.wav"; sourceTree = "<group>"; };
 		56A1EE3823199D4A0048322A /* NaoRobots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaoRobots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A1EE3B23199D4A0048322A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +62,15 @@
 		56A1EE5D23199D4B0048322A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8001BB44244A598600D62AEE /* httpRequestBySwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = httpRequestBySwift.swift; sourceTree = "<group>"; };
 		80F9EB9E244A6F1B00FBB134 /* ResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultData.swift; sourceTree = "<group>"; };
+		80FD0F6524DCC2A600D8053D /* PorjectConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PorjectConfiguration.swift; sourceTree = "<group>"; };
+		80FD0F6824DCC2B400D8053D /* TurnTaking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnTaking.swift; sourceTree = "<group>"; };
+		80FD0F6924DCC2B400D8053D /* Greeting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
+		9A52F655DBC5C535EFC0DCF1 /* Pods-NaoRobotsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaoRobotsTests.debug.xcconfig"; path = "Target Support Files/Pods-NaoRobotsTests/Pods-NaoRobotsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9ACE64AC6485F9C14E5B4E2E /* Pods-NaoRobots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaoRobots.debug.xcconfig"; path = "Target Support Files/Pods-NaoRobots/Pods-NaoRobots.debug.xcconfig"; sourceTree = "<group>"; };
+		A303C98AC78E9BDB711331A5 /* Pods-NaoRobots-NaoRobotsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaoRobots-NaoRobotsUITests.debug.xcconfig"; path = "Target Support Files/Pods-NaoRobots-NaoRobotsUITests/Pods-NaoRobots-NaoRobotsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC664012F9CDBC7D4DF9D168 /* Pods_NaoRobots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaoRobots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8029C764CE8EA4292BAA59F /* Pods-NaoRobots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaoRobots.release.xcconfig"; path = "Target Support Files/Pods-NaoRobots/Pods-NaoRobots.release.xcconfig"; sourceTree = "<group>"; };
+		C036FFFF4DF59827C1C4F8AD /* Pods-NaoRobotsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaoRobotsTests.release.xcconfig"; path = "Target Support Files/Pods-NaoRobotsTests/Pods-NaoRobotsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F3164A4C63DB1151720CFE /* Pods_NaoRobots.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17F1F70B9ABB3CABBD4653B /* Pods_NaoRobotsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899EF299641CB18826405941 /* Pods_NaoRobots_NaoRobotsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +108,8 @@
 				56A1EE4F23199D4B0048322A /* NaoRobotsTests */,
 				56A1EE5A23199D4B0048322A /* NaoRobotsUITests */,
 				56A1EE3923199D4A0048322A /* Products */,
+				E9D37E95CA8BD7A73BB09D63 /* Pods */,
+				924F121AB65938629F5E87D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +126,8 @@
 		56A1EE3A23199D4A0048322A /* NaoRobots */ = {
 			isa = PBXGroup;
 			children = (
+				80FD0F6724DCC2B400D8053D /* Controllor */,
+				80FD0F6424DCC2A600D8053D /* Tools */,
 				80F9EB9D244A6EFF00FBB134 /* Model */,
 				8001BB44244A598600D62AEE /* httpRequestBySwift.swift */,
 				5658BD77236D020700C8BA55 /* math-on.wav */,
@@ -112,7 +135,6 @@
 				562567AC2322F93A00DD5C0C /* Media.xcassets */,
 				56A1EE3B23199D4A0048322A /* AppDelegate.swift */,
 				56A1EE3D23199D4A0048322A /* ViewController.swift */,
-				56464676237F50AC002D2E91 /* Math.storyboard */,
 				56A1EE4423199D4B0048322A /* LaunchScreen.storyboard */,
 				56A1EE4723199D4B0048322A /* Info.plist */,
 			);
@@ -145,6 +167,46 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		80FD0F6424DCC2A600D8053D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				80FD0F6524DCC2A600D8053D /* PorjectConfiguration.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		80FD0F6724DCC2B400D8053D /* Controllor */ = {
+			isa = PBXGroup;
+			children = (
+				80FD0F6824DCC2B400D8053D /* TurnTaking.swift */,
+				80FD0F6924DCC2B400D8053D /* Greeting.swift */,
+			);
+			path = Controllor;
+			sourceTree = "<group>";
+		};
+		924F121AB65938629F5E87D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC664012F9CDBC7D4DF9D168 /* Pods_NaoRobots.framework */,
+				4E676033C6D073A7205F9286 /* Pods_NaoRobots_NaoRobotsUITests.framework */,
+				3CD205F9DC0633A08F582731 /* Pods_NaoRobotsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9D37E95CA8BD7A73BB09D63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9ACE64AC6485F9C14E5B4E2E /* Pods-NaoRobots.debug.xcconfig */,
+				B8029C764CE8EA4292BAA59F /* Pods-NaoRobots.release.xcconfig */,
+				A303C98AC78E9BDB711331A5 /* Pods-NaoRobots-NaoRobotsUITests.debug.xcconfig */,
+				2CB28AA7F7A418EEE34F27BA /* Pods-NaoRobots-NaoRobotsUITests.release.xcconfig */,
+				9A52F655DBC5C535EFC0DCF1 /* Pods-NaoRobotsTests.debug.xcconfig */,
+				C036FFFF4DF59827C1C4F8AD /* Pods-NaoRobotsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56A1EE6023199D4B0048322A /* Build configuration list for PBXNativeTarget "NaoRobots" */;
 			buildPhases = (
+				32DF74803571BE32D7383294 /* [CP] Check Pods Manifest.lock */,
 				56A1EE3423199D4A0048322A /* Sources */,
 				56A1EE3523199D4A0048322A /* Frameworks */,
 				56A1EE3623199D4A0048322A /* Resources */,
+				8548BB03B328F95EBC356925 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56A1EE6323199D4B0048322A /* Build configuration list for PBXNativeTarget "NaoRobotsTests" */;
 			buildPhases = (
+				CBA08BD6EF9A020BB8FD72D6 /* [CP] Check Pods Manifest.lock */,
 				56A1EE4823199D4B0048322A /* Sources */,
 				56A1EE4923199D4B0048322A /* Frameworks */,
 				56A1EE4A23199D4B0048322A /* Resources */,
@@ -187,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56A1EE6623199D4B0048322A /* Build configuration list for PBXNativeTarget "NaoRobotsUITests" */;
 			buildPhases = (
+				07CAA45DAA2BB6E6E104F561 /* [CP] Check Pods Manifest.lock */,
 				56A1EE5323199D4B0048322A /* Sources */,
 				56A1EE5423199D4B0048322A /* Frameworks */,
 				56A1EE5523199D4B0048322A /* Resources */,
+				A9AF31761812397D3B8638BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,7 +319,6 @@
 				5658BD78236D020700C8BA55 /* math-on.wav in Resources */,
 				568AC59C2322DADD008F4EE7 /* Main.storyboard in Resources */,
 				562567AD2322F93A00DD5C0C /* Media.xcassets in Resources */,
-				56464677237F50AC002D2E91 /* Math.storyboard in Resources */,
 				56A1EE4623199D4B0048322A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,12 +339,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07CAA45DAA2BB6E6E104F561 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NaoRobots-NaoRobotsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32DF74803571BE32D7383294 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NaoRobots-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8548BB03B328F95EBC356925 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaoRobots/Pods-NaoRobots-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaoRobots/Pods-NaoRobots-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaoRobots/Pods-NaoRobots-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9AF31761812397D3B8638BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaoRobots-NaoRobotsUITests/Pods-NaoRobots-NaoRobotsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaoRobots-NaoRobotsUITests/Pods-NaoRobots-NaoRobotsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaoRobots-NaoRobotsUITests/Pods-NaoRobots-NaoRobotsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBA08BD6EF9A020BB8FD72D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NaoRobotsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		56A1EE3423199D4A0048322A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80FD0F6A24DCC2B400D8053D /* TurnTaking.swift in Sources */,
+				80FD0F6B24DCC2B400D8053D /* Greeting.swift in Sources */,
 				80F9EB9F244A6F1B00FBB134 /* ResultData.swift in Sources */,
+				80FD0F6624DCC2A600D8053D /* PorjectConfiguration.swift in Sources */,
 				56A1EE3E23199D4A0048322A /* ViewController.swift in Sources */,
 				56A1EE3C23199D4A0048322A /* AppDelegate.swift in Sources */,
 				8001BB45244A598600D62AEE /* httpRequestBySwift.swift in Sources */,
@@ -454,6 +626,7 @@
 		};
 		56A1EE6123199D4B0048322A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ACE64AC6485F9C14E5B4E2E /* Pods-NaoRobots.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +645,7 @@
 		};
 		56A1EE6223199D4B0048322A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8029C764CE8EA4292BAA59F /* Pods-NaoRobots.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +664,7 @@
 		};
 		56A1EE6423199D4B0048322A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A52F655DBC5C535EFC0DCF1 /* Pods-NaoRobotsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +686,7 @@
 		};
 		56A1EE6523199D4B0048322A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C036FFFF4DF59827C1C4F8AD /* Pods-NaoRobotsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +708,7 @@
 		};
 		56A1EE6723199D4B0048322A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A303C98AC78E9BDB711331A5 /* Pods-NaoRobots-NaoRobotsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +729,7 @@
 		};
 		56A1EE6823199D4B0048322A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CB28AA7F7A418EEE34F27BA /* Pods-NaoRobots-NaoRobotsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
