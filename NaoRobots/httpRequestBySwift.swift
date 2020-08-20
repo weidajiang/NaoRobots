@@ -1,126 +1,3 @@
-////
-////  httpDemo.swift
-////  NaoRobots
-////
-////  Created by 江伟达 on 4/10/20.
-////  Copyright © 2020 Haoliang Zhang. All rights reserved.
-////
-//
-//import Foundation
-//import UIKit
-//import AVFoundation
-//import Speech
-//
-//
-//struct httpRequestBySwift {
-//    // https URL
-//    let demoURL="https://853d1cb2.ngrok.io//greeting";
-//
-//    //var semaphore = DispatchSemaphore(value: 0)
-//
-//    func fetchDemo(){
-//        perfromRequest(urlSring: demoURL);
-//
-//    }
-//
-//    func perfromRequest(urlSring: String)  {
-//        if let url = URL(string: urlSring){
-//
-//            let session = URLSession(configuration: .default);
-//
-//            let task = session.dataTask(with: url, completionHandler: handle(data:response:error:));
-//            task.resume();
-//
-//        }
-//    }
-//
-//    func handle(data: Data?, response: URLResponse?, error: Error?) {
-//
-//
-//        if (error != nil){
-//            print(error);
-//            return;
-//        }
-//        if let safeData = data {
-//            let dataString = String(data: safeData, encoding: .utf8);
-//            print(dataString);
-//        }
-//
-//    }
-//
-//    func requestNaoAndCozmo(urlSring: String){
-//        if let url = URL(string: urlSring){
-//
-//            let session = URLSession(configuration: .default);
-//
-//            let task = session.dataTask(with: url, completionHandler: handleNaoAndCozmo);
-//            task.resume();  //semaphore.wai return true
-//
-//
-//        }
-//
-//
-//    }
-//
-//    func handleNaoAndCozmo(data: Data?, response: URLResponse?, error: Error?) {
-//
-//        if (error != nil){
-//            print(error);
-//            return;
-//        }
-//
-//
-//         if let safeData = data {
-//            let dataString = String(data: safeData, encoding: .utf8);
-//            self.parseJSON(resultData: safeData)
-//
-//         }
-//
-//    }
-//
-//    func parseJSON(resultData: Data)  {
-//
-//
-//        let decoder = JSONDecoder()
-//
-//        do{
-//            let decodeData = try decoder.decode(ResultData.self, from: resultData)
-//            print(decodeData.result)
-//            let speechSynthesizer = AVSpeechSynthesizer();
-//
-//            let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: decodeData.result);
-//
-//            speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
-//
-//            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
-//
-//
-//
-//            speechSynthesizer.speak(speechUtterance);
-//            sleep(3)
-//
-//
-//
-//        }catch {
-//            print(error)
-//        }
-//
-//
-//
-//
-//    }
-//
-//
-//}
-
-//
-//  httpDemo.swift
-//  NaoRobots
-//
-//  Created by 江伟达 on 4/10/20.
-//  Copyright © 2020 Haoliang Zhang. All rights reserved.
-//
-
 import Foundation
 import UIKit
 import AVFoundation
@@ -129,13 +6,13 @@ import Speech
 
 struct httpRequestBySwift {
     // https URL
-    let demoURL="https://853d1cb2.ngrok.io//greeting";
+    
     let webURl = PorjectConfiguration.WeblocalhostURL + "t/conversation/add"
     
     //var semaphore = DispatchSemaphore(value: 0)
     
     func fetchDemo(){
-        perfromRequest(urlSring: demoURL);
+        perfromRequest(urlSring: PorjectConfiguration.localhostURL);
         
     }
     
@@ -148,6 +25,44 @@ struct httpRequestBySwift {
             task.resume();
             
         }
+    }
+    
+    func loginRequest(urlSring: String, username:String, password: String) -> Bool  {
+        
+        var result = false
+        
+        let session = URLSession(configuration: .default)
+      
+        let url = urlSring
+        var request = URLRequest(url: URL(string: url)!)
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "POST"
+       
+        let postData = ["username":username,"password":password]
+        let postString = postData.compactMap({ (key, value) -> String in
+            return "\(key)=\(value)"
+        }).joined(separator: "&")
+        request.httpBody = postString.data(using: .utf8)
+      
+        let task = session.dataTask(with: request) {(data, response, error) in
+            do {
+                let r = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+                print(r)
+                if r["code"] as! Int == 200{
+                 print(r["code"] as! Int)
+                   result = true
+                }
+                
+            } catch {
+                print("can not connect to Server")
+                return
+            }
+        }
+        task.resume()
+        sleep(1)
+        print(result)
+        return result
+        
     }
     
     func recordRequest(urlSring: String, content:String, provider: String)  {

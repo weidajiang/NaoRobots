@@ -12,7 +12,7 @@ import AVFoundation
 import Speech
 import Assistant
 
-class ViewController: UIViewController, SFSpeechRecognizerDelegate  {
+class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     @IBOutlet weak var darkBlueBG: UIImageView!
     @IBOutlet weak var powerBtn: UIButton!
@@ -21,13 +21,15 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate  {
     @IBOutlet weak var hustleLbl: UILabel!
     @IBOutlet weak var onLbl: UILabel!
     
-    
     @IBOutlet var textView: UITextView!
     @IBOutlet var recordButton: UIButton!
     
     var httpRequest = httpRequestBySwift();
     var turnTaking = TurnTaking();
+
+    @IBOutlet weak var username: UITextField!
     
+    @IBOutlet weak var password: UITextField!
     
     var player: AVAudioPlayer!
     
@@ -39,10 +41,15 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate  {
     
     private let audioEngine = AVAudioEngine()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         recordButton?.isEnabled = false
+        
+        if PorjectConfiguration.username == ""{
+            password.isSecureTextEntry = true
+            password.placeholder = "password"
+            username.placeholder = "username"
+        }
         //self.initAssistant()
         let path = Bundle.main.path(forResource: "math-on", ofType: "wav")!
         let url = URL(fileURLWithPath: path)
@@ -53,9 +60,6 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate  {
             print(error.description)
         }
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "TTS_backgroupimage.png")!)
-    
-        
-        
     }
     
     func initAssistant(){
@@ -97,6 +101,8 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate  {
         // stored in a local member variable.
         speechRecognizer.delegate = self
         
+   
+        
         // Asynchronously make the authorization request.
         SFSpeechRecognizer.requestAuthorization { authStatus in
             
@@ -126,9 +132,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate  {
         }
     }
     
-    @IBAction func openSafari(_ sender: Any) {
-        UIApplication.shared.open(URL(string: "http://www.google.com")! as URL,options: [:],completionHandler: nil)
-    }
+
     
     @IBAction func powerBtnPressed(_ sender: Any) {
         cloudHolder.isHidden = false
@@ -143,16 +147,59 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate  {
             self.hustleLbl.isHidden = false
             self.onLbl.isHidden = false
         }
+        
+         httpRequest.fetchDemo();
     }
     
+    @IBAction func sayYes(_ sender: Any) {
+          let speechSynthesizer = AVSpeechSynthesizer();
+                 let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "yes");
+                 
+                 speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
+                 
+                 speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
+                 
+                 speechSynthesizer.speak(speechUtterance);
+      }
     
-    //    @IBAction func callingTheRobot(_ sender: Any) {
-    //        UIApplication.shared.open(URL(string:))
-    //    }
+    @IBAction func sayNO(_ sender: Any) {
+            let speechSynthesizer = AVSpeechSynthesizer();
+                   let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "no");
+                   
+                   speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
+                   
+                   speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
+                   
+                   speechSynthesizer.speak(speechUtterance);
+        }
     
-    //
+    @IBAction func sayHello(_ sender: Any) {
+             let speechSynthesizer = AVSpeechSynthesizer();
+                    let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "hello");
+                    
+                    speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
+                    
+                    speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
+                    
+                    speechSynthesizer.speak(speechUtterance);
+         }
+
+    
+    @IBAction func sayBye(_ sender: Any) {
+             let speechSynthesizer = AVSpeechSynthesizer();
+                    let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "byebye");
+                    
+                    speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
+                    
+                    speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
+                    
+                    speechSynthesizer.speak(speechUtterance);
+         }
+
     
     
+    
+
     
     
     @IBAction func goStraight(_ sender: UIButton) {
@@ -237,10 +284,6 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate  {
         
         
     }
-    
-    
-    
-    
     
     @IBAction func recordButtonTapped(_ sender: UIButton) {
         
@@ -466,32 +509,30 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate  {
     }
     
     
-    @IBAction func requestNaoCozmo(_ sender: UIButton){
-        
-        let urlString = "https://8378e6b3df85.ngrok.io/greeting?content=";
-        
-        print(urlString)
-        httpRequest.requestNaoAndCozmo(urlSring: urlString)
-        
-        
-        
-        
-        if audioEngine.isRunning {
-            audioEngine.stop()
-            recognitionRequest?.endAudio()
-            //recordButton.isEnabled = false
-            //recordButton.setTitle("Stopping", for: .disabled)
-        } else {
-            do {
-                try startRecordResult()
-                //recordButton.setTitle("Stop Recording", for: [])
-            } catch {
-                //recordButton.setTitle("Recording Not Available", for: [])
-            }
-        }
-        
-    }
-    
+//    @IBAction func requestNaoCozmo(_ sender: UIButton){
+//
+//        let urlString = PorjectConfiguration.localhostURL + "greeting?content="
+//
+//        print(urlString)
+//        httpRequest.requestNaoAndCozmo(urlSring: urlString)
+//
+//
+//        if audioEngine.isRunning {
+//            audioEngine.stop()
+//            recognitionRequest?.endAudio()
+//            //recordButton.isEnabled = false
+//            //recordButton.setTitle("Stopping", for: .disabled)
+//        } else {
+//            do {
+//                try startRecordResult()
+//                //recordButton.setTitle("Stop Recording", for: [])
+//            } catch {
+//                //recordButton.setTitle("Recording Not Available", for: [])
+//            }
+//        }
+//
+//    }
+//
     @IBAction func startFindCube(_ sender: Any) {
         
         if audioEngine.isRunning {
@@ -529,15 +570,37 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate  {
     
     
     @IBAction func eyeItchy(_ sender: Any) {
-        var url=PorjectConfiguration.localhostURL;
+        var url = PorjectConfiguration.localhostURL;
         httpRequest.perfromRequest(urlSring: url + "eyeItchy")
     }
     
     
     
     @IBAction func elbowBump(_ sender: Any) {
-        var url=PorjectConfiguration.localhostURL;
+        var url = PorjectConfiguration.localhostURL;
         httpRequest.perfromRequest(urlSring: url + "elbowBump")
+        
+    }
+    
+    @IBAction func login(_ sender: Any) {
+        
+       // PorjectConfiguration.username = username.text!
+        
+        let loginUser = username.text!
+        let loginPass = password.text!
+        
+        let url = PorjectConfiguration.WeblocalhostURL;
+        let isLogin = httpRequest.loginRequest(urlSring: url + "iosLogin", username: loginUser, password: loginPass)
+        
+        if isLogin{
+            PorjectConfiguration.username = loginUser
+            self.performSegue(withIdentifier: "showMainBoard", sender: nil)
+        }else {
+            let alert = UIAlertController(title: "Alert", message: "username/password incorrect", preferredStyle: .alert)
+            let cancel = UIAlertAction(title: "Back", style: .cancel, handler: nil)
+            alert.addAction(cancel)
+            self.present(alert, animated: true, completion: nil)
+        }
         
     }
 }

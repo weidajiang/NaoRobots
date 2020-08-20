@@ -32,10 +32,12 @@ class TurnTaking{
     var temp_number_of_attempt = 0
     
     let httpRequest = httpRequestBySwift();
-    let webURl = PorjectConfiguration.WeblocalhostURL + "t/conversation/add"
+    let webURl = PorjectConfiguration.WeblocalhostURL + "conversation/add"
     private var controlle: ViewController?;
     
     public func turnTaking(_ controller:ViewController){
+        // create a trun taking tast
+        httpRequest.perfromRequest(urlSring: PorjectConfiguration.WeblocalhostURL + "data/add?task_type=2")
         
         let url = PorjectConfiguration.localhostURL + "turnTaking?content=default";
         let httpRequest = httpRequestBySwift();
@@ -48,10 +50,6 @@ class TurnTaking{
         self.startStreaming()
         
     }
-    
-    
-    
-    
     
     func getWinOrLost(){
         print("getWinOrLost")
