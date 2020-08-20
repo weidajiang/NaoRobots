@@ -15,6 +15,7 @@
 		56A1EE4623199D4B0048322A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A1EE4423199D4B0048322A /* LaunchScreen.storyboard */; };
 		56A1EE5123199D4B0048322A /* NaoRobotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1EE5023199D4B0048322A /* NaoRobotsTests.swift */; };
 		56A1EE5C23199D4B0048322A /* NaoRobotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A1EE5B23199D4B0048322A /* NaoRobotsUITests.swift */; };
+		618CCFFD24EEEFBD00EEC985 /* SlimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618CCFFC24EEEFBD00EEC985 /* SlimeViewController.swift */; };
 		75F3164A4C63DB1151720CFE /* Pods_NaoRobots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC664012F9CDBC7D4DF9D168 /* Pods_NaoRobots.framework */; };
 		8001BB45244A598600D62AEE /* httpRequestBySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8001BB44244A598600D62AEE /* httpRequestBySwift.swift */; };
 		80F9EB9F244A6F1B00FBB134 /* ResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9EB9E244A6F1B00FBB134 /* ResultData.swift */; };
@@ -60,6 +61,7 @@
 		56A1EE5723199D4B0048322A /* NaoRobotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaoRobotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A1EE5B23199D4B0048322A /* NaoRobotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaoRobotsUITests.swift; sourceTree = "<group>"; };
 		56A1EE5D23199D4B0048322A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618CCFFC24EEEFBD00EEC985 /* SlimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimeViewController.swift; sourceTree = "<group>"; };
 		8001BB44244A598600D62AEE /* httpRequestBySwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = httpRequestBySwift.swift; sourceTree = "<group>"; };
 		80F9EB9E244A6F1B00FBB134 /* ResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultData.swift; sourceTree = "<group>"; };
 		80FD0F6524DCC2A600D8053D /* PorjectConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PorjectConfiguration.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				8001BB44244A598600D62AEE /* httpRequestBySwift.swift */,
 				5658BD77236D020700C8BA55 /* math-on.wav */,
 				56A1EE3F23199D4A0048322A /* Main.storyboard */,
+				618CCFFC24EEEFBD00EEC985 /* SlimeViewController.swift */,
 				562567AC2322F93A00DD5C0C /* Media.xcassets */,
 				56A1EE3B23199D4A0048322A /* AppDelegate.swift */,
 				56A1EE3D23199D4A0048322A /* ViewController.swift */,
@@ -452,6 +455,7 @@
 				80F9EB9F244A6F1B00FBB134 /* ResultData.swift in Sources */,
 				80FD0F6624DCC2A600D8053D /* PorjectConfiguration.swift in Sources */,
 				56A1EE3E23199D4A0048322A /* ViewController.swift in Sources */,
+				618CCFFD24EEEFBD00EEC985 /* SlimeViewController.swift in Sources */,
 				56A1EE3C23199D4A0048322A /* AppDelegate.swift in Sources */,
 				8001BB45244A598600D62AEE /* httpRequestBySwift.swift in Sources */,
 			);
