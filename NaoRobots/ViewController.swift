@@ -12,7 +12,7 @@ import AVFoundation
 import Speech
 import Assistant
 
-class ViewController: UIViewController, SFSpeechRecognizerDelegate {
+class ViewController: UIViewController, SFSpeechRecognizerDelegate  {
     
     @IBOutlet weak var darkBlueBG: UIImageView!
     @IBOutlet weak var powerBtn: UIButton!
@@ -20,6 +20,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     @IBOutlet weak var rocket: UIImageView!
     @IBOutlet weak var hustleLbl: UILabel!
     @IBOutlet weak var onLbl: UILabel!
+    
     
     @IBOutlet var textView: UITextView!
     @IBOutlet var recordButton: UIButton!
@@ -52,6 +53,8 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
             print(error.description)
         }
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "TTS_backgroupimage.png")!)
+    
+        
         
     }
     
