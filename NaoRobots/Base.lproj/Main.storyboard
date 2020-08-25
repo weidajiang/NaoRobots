@@ -171,6 +171,9 @@
                                 <state key="normal" title="Yes">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="sayYes:" destination="jRk-7r-el2" eventType="touchUpInside" id="QS9-He-COd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fds-KB-x0H">
                                 <rect key="frame" x="294" y="107" width="67" height="46"/>
@@ -179,6 +182,9 @@
                                 <state key="normal" title="No">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="sayBye:" destination="jRk-7r-el2" eventType="touchUpInside" id="APX-jQ-scC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75l-0m-tUk">
                                 <rect key="frame" x="206" y="107" width="67" height="46"/>
@@ -187,6 +193,9 @@
                                 <state key="normal" title="Hello">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="sayHello:" destination="jRk-7r-el2" eventType="touchUpInside" id="TOa-a6-yGW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MY-gg-RMK">
                                 <rect key="frame" x="113" y="107" width="68" height="46"/>
@@ -195,6 +204,9 @@
                                 <state key="normal" title="bye bye">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="sayNO:" destination="jRk-7r-el2" eventType="touchUpInside" id="vgE-Kb-JZd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGd-pe-KRn">
                                 <rect key="frame" x="0.0" y="0.0" width="176" height="45"/>
@@ -349,7 +361,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaS-ck-4za" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2601.449275362319" y="628.79464285714278"/>
+            <point key="canvasLocation" x="-2687" y="549"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1V3-EE-rCL">
@@ -465,11 +477,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6c-sa-npJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1681" y="733"/>
+            <point key="canvasLocation" x="-1752" y="871"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZYf-IV-lnZ"/>
+        <segue reference="dnS-ft-L1D"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="TTS_byebye" width="1066" height="950"/>

@@ -76,6 +76,11 @@ class TurnTaking{
                 self.queue.async {
                     Thread.sleep(forTimeInterval: 5.0)
                     self.speakByPhone(outofattempt: "Excellent my partner")
+                    
+                    let url = PorjectConfiguration.WeblocalhostURL + "/data/complateTask";
+                           
+                    self.httpRequest.perfromRequest(urlSring: url)
+                    
                 }
             }
             
@@ -120,6 +125,8 @@ class TurnTaking{
             if self.temp_number_of_attempt == self.number_of_attempts{
                 Thread.sleep(forTimeInterval: self.timeout)
                 self.queue.suspend()
+                let url = PorjectConfiguration.WeblocalhostURL + "/data/currentLevel?current_level=1";
+                self.httpRequest.perfromRequest(urlSring: url)
                 self.speakByPhone(outofattempt: "Oops. we've run out of attempts. Please run the program again.")
                 speechToText.stopRecognizeMicrophone()
                 return
@@ -144,6 +151,8 @@ class TurnTaking{
                 Thread.sleep(forTimeInterval: self.timeout)
                 self.queue.suspend()
                 self.speakByPhone(outofattempt: "Oops. we've run out of attempts. Please run the program again.")
+                let url = PorjectConfiguration.WeblocalhostURL + "/data/currentLevel?current_level=2";
+                self.httpRequest.perfromRequest(urlSring: url)
                 speechToText.stopRecognizeMicrophone()
                 return
             }
@@ -169,6 +178,8 @@ class TurnTaking{
                 Thread.sleep(forTimeInterval: self.timeout)
                 self.queue.suspend()
                 self.speakByPhone(outofattempt: "Oops. we've run out of attempts. Please run the program again.")
+                let url = PorjectConfiguration.WeblocalhostURL + "/data/currentLevel?current_level=3";
+                self.httpRequest.perfromRequest(urlSring: url)
                 speechToText.stopRecognizeMicrophone()
                 return
             }
@@ -191,6 +202,8 @@ class TurnTaking{
                 Thread.sleep(forTimeInterval: self.timeout)
                 self.queue.suspend()
                 self.speakByPhone(outofattempt: "Oops. we've run out of attempts. Please run the program again.")
+                let url = PorjectConfiguration.WeblocalhostURL + "/data/currentLevel?current_level=4";
+                self.httpRequest.perfromRequest(urlSring: url)
                 speechToText.stopRecognizeMicrophone()
                 return
             }
@@ -213,6 +226,8 @@ class TurnTaking{
                 Thread.sleep(forTimeInterval: self.timeout)
                 self.queue.suspend()
                 self.speakByPhone(outofattempt: "Oops. we've run out of attempts. Please run the program again.")
+                let url = PorjectConfiguration.WeblocalhostURL + "/data/currentLevel?current_level=5";
+                self.httpRequest.perfromRequest(urlSring: url)
                 speechToText.stopRecognizeMicrophone()
                 return
             }
@@ -235,6 +250,8 @@ class TurnTaking{
                 Thread.sleep(forTimeInterval: self.timeout)
                 self.queue.suspend()
                 self.speakByPhone(outofattempt: "Oops. we've run out of attempts. Please run the program again.")
+                let url = PorjectConfiguration.WeblocalhostURL + "/data/currentLevel?current_level=6";
+                self.httpRequest.perfromRequest(urlSring: url)
                 speechToText.stopRecognizeMicrophone()
                 return
             }
@@ -257,6 +274,8 @@ class TurnTaking{
                 Thread.sleep(forTimeInterval: self.timeout)
                 self.queue.suspend()
                 self.speakByPhone(outofattempt: "Oops. we've run out of attempts. Please run the program again.")
+                let url = PorjectConfiguration.WeblocalhostURL + "/data/currentLevel?current_level=7";
+                self.httpRequest.perfromRequest(urlSring: url)
                 speechToText.stopRecognizeMicrophone()
                 return
             }
@@ -264,12 +283,12 @@ class TurnTaking{
             speechToText.stopRecognizeMicrophone()
             self.temp_number_of_attempt = 0
         }
+        
         queue.async {
             Thread.sleep(forTimeInterval: 30.0)
             self.getWinOrLost()
             
         }
-        
         
     }
     
@@ -307,9 +326,12 @@ class TurnTaking{
                     self.code = "4"
                 }
                 
-              
-                
+                    
                 // result and user input to web system, store it into database.
+                
+                let url = PorjectConfiguration.WeblocalhostURL + "/data/updateVoiceResponse";
+                       
+                self.httpRequest.perfromRequest(urlSring: url)
                 
                 let urlString = PorjectConfiguration.localhostURL + "feedback?content="+content+"&code="+self.code
                 

@@ -45,8 +45,6 @@ class SlimeViewController: UIViewController, UIDropInteractionDelegate, UIDragIn
         
         //view.addInteraction(dragInteraction)
         
-       
-        
     }
     
     func image(image1: UIImage, isEqualTo image2: UIImage) -> Bool {
@@ -70,7 +68,6 @@ class SlimeViewController: UIViewController, UIDropInteractionDelegate, UIDragIn
                 guard let draggedImage = object as? UIImage else { return}
                 DispatchQueue.main.async {
                     let centerPoint = session.location(in: self.view)
-                    
                     if self.image(image1: self.water!, isEqualTo: draggedImage) {
                         self.bowlImageView.image = self.waterbowl
                         self.bowlImageView.center = centerPoint

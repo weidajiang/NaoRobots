@@ -58,8 +58,9 @@ struct httpRequestBySwift {
                 return
             }
         }
+        
         task.resume()
-        sleep(1)
+        sleep(2)
         print(result)
         return result
         

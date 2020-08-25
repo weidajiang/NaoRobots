@@ -16,8 +16,8 @@ public struct PorjectConfiguration {
     public static let ServiceURL = "https://api.us-east.speech-to-text.watson.cloud.ibm.com/instances/12ba2965-e9a4-4111-b350-2e649a975b2f"
     public static let Version = "2018-02-01"
     
-    public static let localhostURL = "https://d7c48760cf6b.ngrok.io/"
-    public static let WeblocalhostURL = "https://a9c1335159e7.ngrok.io/"
+    public static let localhostURL = "https://e931ea4e42bc.ngrok.io/"
+    public static let WeblocalhostURL = "https://605c6e396372.ngrok.io/"
     
     public static var username: String = ""
 }

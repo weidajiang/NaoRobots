@@ -26,7 +26,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     var httpRequest = httpRequestBySwift();
     var turnTaking = TurnTaking();
-
+    
     @IBOutlet weak var username: UITextField!
     
     @IBOutlet weak var password: UITextField!
@@ -101,7 +101,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         // stored in a local member variable.
         speechRecognizer.delegate = self
         
-   
+        
         
         // Asynchronously make the authorization request.
         SFSpeechRecognizer.requestAuthorization { authStatus in
@@ -132,7 +132,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         }
     }
     
-
+    
     
     @IBAction func powerBtnPressed(_ sender: Any) {
         cloudHolder.isHidden = false
@@ -148,58 +148,70 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
             self.onLbl.isHidden = false
         }
         
-         httpRequest.fetchDemo();
+        httpRequest.fetchDemo();
     }
     
     @IBAction func sayYes(_ sender: Any) {
-          let speechSynthesizer = AVSpeechSynthesizer();
-                 let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "yes");
-                 
-                 speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
-                 
-                 speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
-                 
-                 speechSynthesizer.speak(speechUtterance);
-      }
+        let speechSynthesizer = AVSpeechSynthesizer();
+        let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "yes");
+        
+        speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
+        
+        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
+        
+        speechSynthesizer.speak(speechUtterance);
+        let url = PorjectConfiguration.WeblocalhostURL + "/data/updateBottonClick";
+        
+        httpRequest.perfromRequest(urlSring: url)
+    }
     
     @IBAction func sayNO(_ sender: Any) {
-            let speechSynthesizer = AVSpeechSynthesizer();
-                   let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "no");
-                   
-                   speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
-                   
-                   speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
-                   
-                   speechSynthesizer.speak(speechUtterance);
-        }
+        let speechSynthesizer = AVSpeechSynthesizer();
+        let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "no");
+        
+        speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
+        
+        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
+        
+        speechSynthesizer.speak(speechUtterance);
+        let url = PorjectConfiguration.WeblocalhostURL + "/data/updateBottonClick";
+        
+        httpRequest.perfromRequest(urlSring: url)
+    }
     
     @IBAction func sayHello(_ sender: Any) {
-             let speechSynthesizer = AVSpeechSynthesizer();
-                    let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "hello");
-                    
-                    speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
-                    
-                    speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
-                    
-                    speechSynthesizer.speak(speechUtterance);
-         }
-
+        let speechSynthesizer = AVSpeechSynthesizer();
+        let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "hello");
+        
+        speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
+        
+        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
+        
+        speechSynthesizer.speak(speechUtterance);
+        let url = PorjectConfiguration.WeblocalhostURL + "/data/updateBottonClick";
+        
+        httpRequest.perfromRequest(urlSring: url)
+    }
+    
     
     @IBAction func sayBye(_ sender: Any) {
-             let speechSynthesizer = AVSpeechSynthesizer();
-                    let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "byebye");
-                    
-                    speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
-                    
-                    speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
-                    
-                    speechSynthesizer.speak(speechUtterance);
-         }
-
+        let speechSynthesizer = AVSpeechSynthesizer();
+        let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "byebye");
+        
+        speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
+        
+        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
+        
+        speechSynthesizer.speak(speechUtterance);
+        let url = PorjectConfiguration.WeblocalhostURL + "/data/updateBottonClick";
+        
+        httpRequest.perfromRequest(urlSring: url)
+    }
     
     
     
-
+    
+    
     
     
     @IBAction func goStraight(_ sender: UIButton) {
@@ -214,6 +226,10 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
         
         speechSynthesizer.speak(speechUtterance);
+        
+        let url = PorjectConfiguration.WeblocalhostURL + "/data/updateBottonClick";
+        
+        httpRequest.perfromRequest(urlSring: url)
     }
     
     
@@ -229,6 +245,12 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
         
         speechSynthesizer.speak(speechUtterance);
+        
+        //
+        
+        let url = PorjectConfiguration.WeblocalhostURL + "/data/updateBottonClick";
+        
+        httpRequest.perfromRequest(urlSring: url)
     }
     
     
@@ -245,6 +267,9 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
         
         speechSynthesizer.speak(speechUtterance);
+        let url = PorjectConfiguration.WeblocalhostURL + "/data/updateBottonClick";
+        
+        httpRequest.perfromRequest(urlSring: url)
     }
     
     
@@ -263,6 +288,10 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
         
         speechSynthesizer.speak(speechUtterance);
+        
+        let url = PorjectConfiguration.WeblocalhostURL + "/data/updateBottonClick";
+        
+        httpRequest.perfromRequest(urlSring: url)
     }
     
     
@@ -280,6 +309,10 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
         
         speechSynthesizer.speak(speechUtterance);
+        
+        let url = PorjectConfiguration.WeblocalhostURL + "/data/updateBottonClick";
+        
+        httpRequest.perfromRequest(urlSring: url)
         
         
         
@@ -509,30 +542,30 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
     
     
-//    @IBAction func requestNaoCozmo(_ sender: UIButton){
-//
-//        let urlString = PorjectConfiguration.localhostURL + "greeting?content="
-//
-//        print(urlString)
-//        httpRequest.requestNaoAndCozmo(urlSring: urlString)
-//
-//
-//        if audioEngine.isRunning {
-//            audioEngine.stop()
-//            recognitionRequest?.endAudio()
-//            //recordButton.isEnabled = false
-//            //recordButton.setTitle("Stopping", for: .disabled)
-//        } else {
-//            do {
-//                try startRecordResult()
-//                //recordButton.setTitle("Stop Recording", for: [])
-//            } catch {
-//                //recordButton.setTitle("Recording Not Available", for: [])
-//            }
-//        }
-//
-//    }
-//
+    //    @IBAction func requestNaoCozmo(_ sender: UIButton){
+    //
+    //        let urlString = PorjectConfiguration.localhostURL + "greeting?content="
+    //
+    //        print(urlString)
+    //        httpRequest.requestNaoAndCozmo(urlSring: urlString)
+    //
+    //
+    //        if audioEngine.isRunning {
+    //            audioEngine.stop()
+    //            recognitionRequest?.endAudio()
+    //            //recordButton.isEnabled = false
+    //            //recordButton.setTitle("Stopping", for: .disabled)
+    //        } else {
+    //            do {
+    //                try startRecordResult()
+    //                //recordButton.setTitle("Stop Recording", for: [])
+    //            } catch {
+    //                //recordButton.setTitle("Recording Not Available", for: [])
+    //            }
+    //        }
+    //
+    //    }
+    //
     @IBAction func startFindCube(_ sender: Any) {
         
         if audioEngine.isRunning {
@@ -584,7 +617,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     @IBAction func login(_ sender: Any) {
         
-       // PorjectConfiguration.username = username.text!
+        // PorjectConfiguration.username = username.text!
         
         let loginUser = username.text!
         let loginPass = password.text!
