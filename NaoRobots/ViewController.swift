@@ -11,6 +11,7 @@ import UIKit
 import AVFoundation
 import Speech
 import Assistant
+import SpeechToText
 
 class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     
@@ -24,6 +25,8 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     @IBOutlet var textView: UITextView!
     @IBOutlet var recordButton: UIButton!
     
+    var temp_final = true
+    
     var httpRequest = httpRequestBySwift();
     var turnTaking = TurnTaking();
     
@@ -31,7 +34,11 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     @IBOutlet weak var password: UITextField!
     
+    
+    
     var player: AVAudioPlayer!
+    
+    var result = "";
     
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))!
     
@@ -318,6 +325,29 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         
     }
     
+
+    
+    @IBAction func turnAround(_ sender: Any) {
+        
+        print("botton click");
+        
+        let speechSynthesizer = AVSpeechSynthesizer();
+        let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: "Turn Around");
+        
+        speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
+        
+        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
+        
+        speechSynthesizer.speak(speechUtterance);
+        
+        let url = PorjectConfiguration.WeblocalhostURL + "/data/updateBottonClick";
+        
+        httpRequest.perfromRequest(urlSring: url)
+        
+        
+        
+    }
+    
     @IBAction func recordButtonTapped(_ sender: UIButton) {
         
         
@@ -418,11 +448,56 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
     
     
+    func findTheCubeMonitor()  {
+        print("startStreaming")
+        
+        let webURl = PorjectConfiguration.WeblocalhostURL + "conversation/add"
+        let apiKey = PorjectConfiguration.SpeechToTextAPIKey
+        let speechToText = SpeechToText(apiKey: apiKey)
+        speechToText.serviceURL = PorjectConfiguration.ServiceURL
+        
+        var accumulator = SpeechRecognitionResultsAccumulator()
+        var settings = RecognitionSettings(contentType: "audio/ogg;codecs=opus")
+        settings.interimResults = true
+        
+        var callback = RecognizeCallback()
+        callback.onError = { error in
+            print(error)
+        }
+        callback.onResults = { results in
+            
+            accumulator.add(results: results)
+            self.result = accumulator.bestTranscript
+            print(self.result)
+            if self.result.contains("amazing"){
+                speechToText.stopRecognizeMicrophone()
+                if(self.temp_final == true){
+                    self.temp_final = false
+                    self.httpRequest.recordRequest(urlSring: webURl, content: self.result, provider: "0")
+                    let url = PorjectConfiguration.WeblocalhostURL + "/data/currentLevel?current_level=9";
+                    self.httpRequest.perfromRequest(urlSring: url)
+                    let completeURL = PorjectConfiguration.WeblocalhostURL + "/data/complateTask";
+                    self.httpRequest.perfromRequest(urlSring: completeURL)
+                  
+                    self.httpRequest.recordRequest(urlSring: webURl, content: "(Cozmo) Amazing, good job", provider: "2")
+
+                }
+                
+            }
+        }
+        
+        speechToText.recognizeMicrophone(settings: settings, callback: callback)
+        
+    }
+    
+    
     private func startRecordResult() throws {
         
         // Cancel the previous task if it's running.
         recognitionTask?.cancel()
         self.recognitionTask = nil
+        
+        httpRequest.perfromRequest(urlSring: PorjectConfiguration.WeblocalhostURL + "data/add?task_type=3")
         
         // Configure the audio session for the app.
         let audioSession = AVAudioSession.sharedInstance()
@@ -444,26 +519,28 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         // Keep a reference to the task so that it can be canceled.
         var isProcess = true
         var isSecond = true
-        var isThird = true
         var isFourth = true
         var  isfifth = true
+        
+        let webURl = PorjectConfiguration.WeblocalhostURL + "conversation/add"
+        httpRequest.recordRequest(urlSring: webURl, content: "(Cozmo) oops, I can't find my cube. Hello nao, did you see my cube?", provider: "2")
+        
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
             var isFinal = false
             var url=PorjectConfiguration.localhostURL;
             
-            
-            
             if let result = result {
                 // Update the text view with the results.
-                
                 isFinal = result.isFinal
                 
-                print("Text \(result.bestTranscription.formattedString)")
+                // print("Text \(result.bestTranscription.formattedString)")
                 if result.bestTranscription.formattedString.contains("see my") && isProcess{
                     print("aaaaa")
+                    self.httpRequest.recordRequest(urlSring: webURl, content: "(NAO) yes", provider: "1")
                     isProcess = false
                     print("asdsad" + result.bestTranscription.formattedString);
                     let urlString = url + "findmycube?content=seemycube";
+                    self.httpRequest.recordRequest(urlSring: webURl, content: "(Cozmo) Great, please tell me some intrusctions", provider: "2")
                     self.httpRequest.requestNaoAndCozmo(urlSring: urlString)
                     
                 }else if result.bestTranscription.formattedString.contains("tell me") && isSecond{
@@ -476,27 +553,32 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
                     //                    self.recognitionTask = nil
                     print("asdsad" + result.bestTranscription.formattedString);
                     let urlString = url + "findmycube?content=instructions";
+                    
                     self.httpRequest.requestNaoAndCozmo(urlSring: urlString)
                     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 8) {
+                        self.httpRequest.recordRequest(urlSring: webURl, content: "(NAO) of course,turn around", provider: "1")
                         let urlString1 = url + "findmycube?content=turnaround";
                         self.httpRequest.requestNaoAndCozmo(urlSring: urlString1)
                     }
                     
                     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 13) {
+                        self.httpRequest.recordRequest(urlSring: webURl, content: "(NAO) go straight", provider: "1")
                         let urlString2 = url + "findmycube?content=gostraight";
                         self.httpRequest.requestNaoAndCozmo(urlSring: urlString2)
                     }
                     
                     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 18) {
+                        self.httpRequest.recordRequest(urlSring: webURl, content: "(NAO) keep going", provider: "1")
+                        
                         let urlString2 = url + "findmycube?content=keepgoing";
                         self.httpRequest.requestNaoAndCozmo(urlSring: urlString2)
                     }
-                    
                     //isProcess = true
                 }else if result.bestTranscription.formattedString.contains("red") && isFourth{
                     print("SECOND")
                     isFourth = false
-                    
+                    self.httpRequest.recordRequest(urlSring: webURl, content: "(Cozmo) Oh,it's blue cube. I want to find my red cube", provider: "2")
+                    self.httpRequest.recordRequest(urlSring: webURl, content: "(NAO) oh I am Sorry. I only know where the blue cube is. Hello my partner,can you help cozmo?", provider: "1")
                     print("asdsad" + result.bestTranscription.formattedString);
                     let urlString =  url + "findmycube?content=redcube";
                     self.httpRequest.requestNaoAndCozmo(urlSring: urlString)
@@ -504,14 +586,20 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
                 }else if result.bestTranscription.formattedString.contains("sure") && isfifth{
                     print("SECOND")
                     isfifth = false
+                    
+                    self.httpRequest.recordRequest(urlSring: webURl, content: "sure", provider: "0")
                     self.audioEngine.stop()
-                    inputNode.removeTap(onBus: 0)
+                    
                     self.recognitionRequest = nil
                     self.recognitionTask = nil
                     print("asdsad" + result.bestTranscription.formattedString);
                     let urlString =  url + "findmycube?content=sure";
                     self.httpRequest.requestNaoAndCozmo(urlSring: urlString)
                     //isProcess = true
+                    self.httpRequest.recordRequest(urlSring: webURl, content: "(Cozmo) Great,let's get started.", provider: "1")
+                    
+                    Thread.sleep(forTimeInterval: 4.0)
+                    self.findTheCubeMonitor()
                 }
                 
                 
@@ -542,30 +630,6 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
     
     
-    //    @IBAction func requestNaoCozmo(_ sender: UIButton){
-    //
-    //        let urlString = PorjectConfiguration.localhostURL + "greeting?content="
-    //
-    //        print(urlString)
-    //        httpRequest.requestNaoAndCozmo(urlSring: urlString)
-    //
-    //
-    //        if audioEngine.isRunning {
-    //            audioEngine.stop()
-    //            recognitionRequest?.endAudio()
-    //            //recordButton.isEnabled = false
-    //            //recordButton.setTitle("Stopping", for: .disabled)
-    //        } else {
-    //            do {
-    //                try startRecordResult()
-    //                //recordButton.setTitle("Stop Recording", for: [])
-    //            } catch {
-    //                //recordButton.setTitle("Recording Not Available", for: [])
-    //            }
-    //        }
-    //
-    //    }
-    //
     @IBAction func startFindCube(_ sender: Any) {
         
         if audioEngine.isRunning {
@@ -636,4 +700,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         }
         
     }
+    
+    
+    
 }

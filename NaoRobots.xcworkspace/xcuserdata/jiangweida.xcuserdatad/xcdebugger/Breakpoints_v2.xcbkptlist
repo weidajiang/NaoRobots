@@ -23,5 +23,69 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2A49A56-5547-4CED-B478-C16747238C13"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NaoRobots/Controllor/TurnTaking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "350"
+            endingLineNumber = "350"
+            landmarkName = "getAssistantOutput(text:content:handle:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E2A49A56-5547-4CED-B478-C16747238C13 - a8d477d841bfabdd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;RestKit.RestResponse&lt;Assistant.MessageResponse&gt;&gt;, Swift.Optional&lt;RestKit.RestError&gt;) -&gt; () in NaoRobots.TurnTaking.getAssistantOutput(text: Swift.String, content: Swift.String, handle: () -&gt; ()) -&gt; ()"
+                  moduleName = "NaoRobots"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiangweida/Documents/GitHub/NaoRobots/NaoRobots/Controllor/TurnTaking.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "350"
+                  endingLineNumber = "350"
+                  offsetFromSymbolStart = "5262">
+               </Location>
+               <Location
+                  uuid = "E2A49A56-5547-4CED-B478-C16747238C13 - 5d4b7352141f81e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;RestKit.RestResponse&lt;Assistant.MessageResponse&gt;&gt;, Swift.Optional&lt;RestKit.RestError&gt;) -&gt; () in NaoRobots.TurnTaking.getAssistantOutput(text: Swift.String, content: Swift.String, handle: () -&gt; ()) -&gt; ()"
+                  moduleName = "NaoRobots"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jiangweida/Documents/GitHub/NaoRobots/NaoRobots/Controllor/TurnTaking.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "351"
+                  endingLineNumber = "351"
+                  offsetFromSymbolStart = "219">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E6A3050-275B-49C8-B7FA-F4E20FF04D32"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NaoRobots/Controllor/TurnTaking.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "getWinOrLost()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

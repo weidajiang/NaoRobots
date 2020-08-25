@@ -198,10 +198,7 @@ struct httpRequestBySwift {
                    
             speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0;
                    
-            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
-          
-                     
-                   
+            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");    
             speechSynthesizer.speak(speechUtterance);
             self.recordRequest(urlSring: webURl, content: decodeData.result, provider: "1")
 

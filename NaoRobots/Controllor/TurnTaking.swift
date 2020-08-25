@@ -24,9 +24,12 @@ class TurnTaking{
     
     var temp = true
     var result=""
+    var winresult=""
     
     var timeout = 5.0
     var code = "0"
+    
+    var temp_final = true
     
     var number_of_attempts = 3
     var temp_number_of_attempt = 0
@@ -45,7 +48,7 @@ class TurnTaking{
         print("start request")
         
         httpRequest.requestNaoAndCozmo(urlSring: url);
-
+        
         Thread.sleep(forTimeInterval: 36.0)
         self.startStreaming()
         
@@ -66,19 +69,22 @@ class TurnTaking{
             print(error)
         }
         callback.onResults = { results in
-            
             accumulator.add(results: results)
-            self.result = accumulator.bestTranscript
-            print(self.result)
-            
-            if self.result.contains("amazing") {
+            self.winresult = accumulator.bestTranscript
+            print(self.winresult)
+            if self.winresult.contains("amazing") {
+                
                 speechToText.stopRecognizeMicrophone()
+                print("WinOrLost")
+                if(self.temp_final == true){
+                    self.httpRequest.recordRequest(urlSring: self.webURl, content: self.winresult, provider: "0")
+                    self.temp_final = false
+                }
+
                 self.queue.async {
                     Thread.sleep(forTimeInterval: 5.0)
                     self.speakByPhone(outofattempt: "Excellent my partner")
-                    
                     let url = PorjectConfiguration.WeblocalhostURL + "/data/complateTask";
-                           
                     self.httpRequest.perfromRequest(urlSring: url)
                     
                 }
@@ -86,7 +92,6 @@ class TurnTaking{
             
         }
         speechToText.recognizeMicrophone(settings: settings, callback: callback)
-        
         
     }
     
@@ -285,8 +290,15 @@ class TurnTaking{
         }
         
         queue.async {
-            Thread.sleep(forTimeInterval: 30.0)
+            Thread.sleep(forTimeInterval: 3.5)
             self.getWinOrLost()
+            let url = PorjectConfiguration.WeblocalhostURL + "/data/currentLevel?current_level=8";
+            self.httpRequest.perfromRequest(urlSring: url)
+            print("last update= " + self.winresult)
+            if self.winresult != "" {
+                self.httpRequest.recordRequest(urlSring: self.webURl, content: self.result, provider: "0")
+
+            }
             
         }
         
@@ -326,11 +338,11 @@ class TurnTaking{
                     self.code = "4"
                 }
                 
-                    
+                
                 // result and user input to web system, store it into database.
                 
                 let url = PorjectConfiguration.WeblocalhostURL + "/data/updateVoiceResponse";
-                       
+                
                 self.httpRequest.perfromRequest(urlSring: url)
                 
                 let urlString = PorjectConfiguration.localhostURL + "feedback?content="+content+"&code="+self.code
@@ -415,7 +427,7 @@ class TurnTaking{
     }
     
     func speakByPhone(outofattempt: String) {
-
+        
         let speechSynthesizer = AVSpeechSynthesizer();
         let speechUtterance: AVSpeechUtterance = AVSpeechUtterance(string: outofattempt);
         
@@ -424,7 +436,7 @@ class TurnTaking{
         speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US");
         speechSynthesizer.speak(speechUtterance);
         httpRequest.recordRequest(urlSring: webURl, content: outofattempt, provider: "1")
-
+        
     }
     
     
